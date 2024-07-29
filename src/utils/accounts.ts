@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { AccountDataV1OptionalProps, AccountDataV1Response, AccountDataV2OptionalProps, AccountDataV2Response } from "../types";
-import { get, validateAPIKey } from "./lib";
+import { get, parseError, validateAPIKey } from "./lib";
 
 /**
  * Account Data V1
@@ -20,14 +20,14 @@ export async function getAccountDataV1(param1: string, param2: string, param3?: 
   const apiKey = isPuuid ? param2 : param3 as string;
   const props = isPuuid ? param3 as AccountDataV1OptionalProps : param4;
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     const url = isPuuid ? `/v1/by-puuid/account/${param1}` : `/v1/account/${param1}/${param2}`;
     return get<AccountDataV1Response>(apiKey, url, props || {});
   } catch (error) {
     console.error('Error fetching account data:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -49,13 +49,13 @@ export async function getAccountDataV2(param1: string, param2: string, param3?: 
   const apiKey = isPuuid ? param2 : param3 as string;
   const props = isPuuid ? param3 as AccountDataV2OptionalProps : param4;
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     const url = isPuuid ? `/v2/by-puuid/account/${param1}` : `/v2/account/${param1}/${param2}`;
     return get<AccountDataV2Response>(apiKey, url, props || {});
   } catch (error) {
     console.error('Error fetching account data:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

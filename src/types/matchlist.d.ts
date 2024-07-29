@@ -1,3 +1,5 @@
+import { APIResponse, DataError } from ".";
+
 export type MatchHistoryV3OptionalProps = {
   mode?: Gamemode;
   map?: GameMap;
@@ -345,12 +347,7 @@ export type MatchHistoryV3MatchData = {
   kills: MatchHistoryV3Kill[];
 };
 
-export type MatchHistoryV3Response = {
-  status: 200;
-  data: MatchHistoryV3MatchData[];
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
-}
+export type MatchHistoryV3Response = APIResponse<MatchHistoryV3MatchData[], 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
 
 export type MatchHistoryV4Map = {
   id: string;
@@ -616,12 +613,7 @@ export type MatchHistoryV4Data = {
   kills: MatchHistoryV4Kill[];
 };
 
-export type MatchHistoryV4Response = {
-  status: 200;
-  data: MatchHistoryV4Data[];
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
-}
+export type MatchHistoryV4Response = APIResponse<MatchHistoryV4Data[], 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
 
 export type MatchHistoryV4OptionalProps = {
   mode?: Gamemode;
@@ -630,10 +622,11 @@ export type MatchHistoryV4OptionalProps = {
 };
 
 export type StoredMatchesV1Response = {
-  status: 200;
+  success: true;
   results: StoredMatchesResults;
   data: StoredMatchesV1Item[];
 } | {
+  success: false;
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 

@@ -1,3 +1,5 @@
+import { APIResponse } from ".";
+
 export type UpcomingMatchV1GameType= {
   type: string;
   count: number;
@@ -48,12 +50,7 @@ export type UpcomingMatchV1Data = {
 export type UpcomingMatchV1Region = "emea" | "brazil" | "japan" | "korea" | "latin_america" | "latin_america_south" | "southeast_asia" | "vietnam" | "oceania";
 export type UpcomingMatchV1LeagueT = "champions" | "vrl_spain" | "vrl_northern_europe" | "vrl_dach" | "vrl_france" | "vrl_east" | "vrl_turkey" | "vrl_cis" | "mena_resilence" | "challengers_italy" | "challengers_portugal";
 
-export type UpcomingMatchV1Response = {
-  status: 200;
-  data: UpcomingMatchV1[];
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 503>[];
-};
+export type UpcomingMatchV1Response = APIResponse<UpcomingMatchV1[], 400 | 403 | 404 | 408 | 429 | 500 | 503>;
 
 export type UpcomingMatchV1OptionalProps = {
   region?: UpcomingMatchV1Region;

@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { CrosshairResponse } from "../types";
-import { get, validateAPIKey } from "./lib";
+import { get, parseError, validateAPIKey } from "./lib";
 
 /**
  * Crosshair Data V1
@@ -12,12 +12,12 @@ import { get, validateAPIKey } from "./lib";
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function generateCrosshairImage(id: string, apiKey: string): Promise<CrosshairResponse> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<CrosshairResponse>(apiKey, `/v1/crosshair/generate`, { id });
   } catch (error) {
     console.error('Error fetching crosshair image:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 };

@@ -1,9 +1,6 @@
-export type FeaturedStoreV1Response = {
-  status: 200;
-  data: FeaturedStoreV1;
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
-};
+import { APIResponse } from ".";
+
+export type FeaturedStoreV1Response = APIResponse<FeaturedStoreV1, 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
 
 export type FeaturedStoreV1 = {
   FeaturedBundle: FeaturedStoreV1BundleDetails;
@@ -35,12 +32,7 @@ export type FeaturedStoreV1ItemDetails = {
   Amount: string;
 };
 
-export type FeaturedStoreV2Response = {
-  status: 200;
-  data: FeaturedStoreV2Bundle[];
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
-};
+export type FeaturedStoreV2Response = APIResponse<FeaturedStoreV2Bundle[], 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
 
 export type FeaturedStoreV2Bundle = {
   bundle_uuid: string;
@@ -59,14 +51,11 @@ export type FeaturedStoreV2Item = {
   promo_item: boolean;
 };
 
-export type StoreOffersV1Response = {
-  status: 200;
-  data: {
-    Offers: StoreOffersV1Offer[];
-    UpgradeCurrencyOffers: StoreOffersV1UpgradeCurrencyOffer[];
-  };
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
+export type StoreOffersV1Response = APIResponse<StoreOffersV1, 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
+
+export type StoreOffersV1 = {
+  Offers: StoreOffersV1Offer[];
+  UpgradeCurrencyOffers: StoreOffersV1UpgradeCurrencyOffer[];
 };
 
 export type StoreOffersV1Offer = {
@@ -103,12 +92,7 @@ export type StoreOffersV1OfferDetails = {
 };
 
 
-export type StoreOffersV2Response = {
-  status: 200;
-  data: StoreOffersV2;
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
-};
+export type StoreOffersV2Response = APIResponse<StoreOffersV2, 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
 
 export type StoreOffersV2 = {
   offers: StoreOfferV2[];

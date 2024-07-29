@@ -17,6 +17,14 @@ export type ValorantAPIProps = {
   apiKey: string;
 };
 
+export type APIResponse<T = unknown, R = {}, S extends number = 400 | 403 | 404 | 408 | 429 | 500 | 503> = {
+  success: true;
+  data: T;
+} & R | {
+  success: false;
+  errors: DataError<S>[];
+} 
+
 export type DataError<S extends number = 400 | 403 | 404 | 408 | 429 | 500 | 503> = {
   code: number;
   message: string;

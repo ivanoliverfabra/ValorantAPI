@@ -1,13 +1,10 @@
+import { APIResponse } from ".";
+
 export type MMRDataV2OptionalProps = {
   season?: Season;
 }
 
-export type MMRDataV2Response = {
-  status: 200;
-  data: MMRDataV2Data;
-} | {
-  errors: DataError[];
-}
+export type MMRDataV2Response = APIResponse<MMRDataV2Data>;
 
 export type MMRDataV2Data = {
   name: string;
@@ -56,12 +53,7 @@ export type MMRDataV2ActRankWin = {
   tier: number;
 };
 
-export type MMRDataV3Response = {
-  status: 200;
-  data: MMRDataV3Data;
-} | {
-  errors: DataError[];
-}
+export type MMRDataV3Response = APIResponse<MMRDataV3Data>;
 
 export type MMRDataV3Data = {
   account: MMRDataV3Account;

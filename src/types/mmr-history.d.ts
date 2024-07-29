@@ -1,9 +1,10 @@
 export type MMRHistoryV1Response = {
-  status: 200;
+  success: true;
   name: string;
   tag: string;
   data: MMRHistoryV1Data[];
 } | {
+  success: false;
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 
@@ -34,10 +35,11 @@ export type MMRHistoryV1Map = {
 };
 
 export type StoredMMRV1Response = {
-  status: 200;
+  success: true;
   results: StoredMMRV1Results;
   data: StoredMMRV1Item[];
 } | {
+  success: false;
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 

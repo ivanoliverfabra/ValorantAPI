@@ -1,9 +1,6 @@
-export type ValorantVersionV1Response = {
-  status: 200;
-  data: ValorantVersionV1;
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
-};
+import { APIResponse } from ".";
+
+export type ValorantVersionV1Response = APIResponse<ValorantVersionV1, 400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>;
 
 export type ValorantVersionV1 = {
   region: Region;

@@ -1,13 +1,10 @@
+import { APIResponse } from ".";
+
 export type AccountDataV1OptionalProps = {
   force?: boolean;
 }
 
-export type AccountDataV1Response = {
-  status: 200;
-  data: AccountDataV1;
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 503>[];
-};
+export type AccountDataV1Response = APIResponse<AccountDataV1, 400 | 403 | 404 | 408 | 429 | 500 | 503>;
 
 export type AccountDataV1 = {
   puuid: string;
@@ -27,12 +24,7 @@ export type AccountDataV1 = {
 
 export type AccountDataV2OptionalProps = AccountDataV1OptionalProps;
 export type AccountDataV2Platform = "PC" | "CONSOLE";
-export type AccountDataV2Response = {
-  status: number;
-  data: AccountDataV2;
-} | {
-  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 503>[]
-};
+export type AccountDataV2Response = APIResponse<AccountDataV2, 400 | 403 | 404 | 408 | 429 | 500 | 503>;
 
 export type AccountDataV2 = {
   puuid: string;

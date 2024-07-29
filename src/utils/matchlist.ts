@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { MatchHistoryV3OptionalProps, MatchHistoryV3Response, MatchHistoryV4OptionalProps, MatchHistoryV4Response, Platform, Region, StoredMatchesV1OptionalProps, StoredMatchesV1Response } from "../types";
-import { get, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
+import { get, parseError, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
 
 /**
  * Match History V3
@@ -38,14 +38,14 @@ export async function getMatchHistoryV3(region: Region, nameOrPuuid: string, tag
     url = `/v3/by-puuid/matches/${region}/${puuid}`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<MatchHistoryV3Response>(apiKey, url, props || {});
   } catch (error) {
     console.error("Error fetching match history:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -84,14 +84,14 @@ export async function getMatchHistoryV4(region: Region, platform: Platform, name
     url = `/v4/by-puuid/matches/${region}/${platform}/${puuid}`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<MatchHistoryV4Response>(apiKey, url, props || {});
   } catch (error) {
     console.error("Error fetching match history:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -126,13 +126,13 @@ export async function getStoredMatchesV1(region: Region, nameOrPuuid: string, ta
     url = `/v1/by-puuid/stored-matches/${region}/${nameOrPuuid}`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<StoredMatchesV1Response>(apiKey, url, props || {});
   } catch (error) {
     console.error("Error fetching stored matches:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

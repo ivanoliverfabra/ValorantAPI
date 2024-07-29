@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { UpcomingMatchV1OptionalProps, UpcomingMatchV1Response } from "../types";
-import { get, validateAPIKey } from "./lib";
+import { get, parseError, validateAPIKey } from "./lib";
 
 /**
  * Upcoming Match V1
@@ -12,12 +12,12 @@ import { get, validateAPIKey } from "./lib";
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function getUpcomingMatches(apiKey: string, props?: UpcomingMatchV1OptionalProps): Promise<UpcomingMatchV1Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<UpcomingMatchV1Response>(apiKey, '/v1/esports/schedule', props || {});
   } catch (error) {
     console.error('Error fetching upcoming matches:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

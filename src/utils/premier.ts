@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { PremierConferenceV1Response, PremierLeaderboardConference, PremierLeaderboardResponse, PremierSeasonsV1Response, PremierTeamDetailsV1Response, PremierTeamHistoryV1Response, PremierTeamSearchV1Props, PremierTeamSearchV1Response, Region } from "../types";
-import { addQueryParams, get, validateAPIKey, validateRegion } from "./lib";
+import { get, parseError, validateAPIKey, validateRegion } from "./lib";
 
 /**
  * Premier Team Details V1
@@ -20,19 +20,19 @@ export async function getPremierTeamDetailsV1(team_id_or_name: string, team_tag_
 
   if (typeof possiblyApiKey === 'string') {
     apiKey = possiblyApiKey;
-    url = addQueryParams(`/v1/premier/${team_id_or_name}/${team_tag_or_apiKey}`, {});
+    url = `/v1/premier/${team_id_or_name}/${team_tag_or_apiKey}`;
   } else {
     apiKey = team_tag_or_apiKey;
     url = `/v1/premier/${team_id_or_name}`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<PremierTeamDetailsV1Response>(apiKey, url);
   } catch (error) {
     console.error("Error fetching premier team details:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -60,13 +60,13 @@ export async function getPremierTeamHistoryV1(team_id_or_name: string, team_tag_
     url = `/v1/premier/${team_id_or_name}/history`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<PremierTeamHistoryV1Response>(apiKey, url);
   } catch (error) {
     console.error("Error fetching premier team history:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -83,13 +83,13 @@ export async function getPremierTeamHistoryV1(team_id_or_name: string, team_tag_
 export async function searchPremierTeamsV1(props: PremierTeamSearchV1Props, apiKey: string): Promise<PremierTeamSearchV1Response> {
   const url = `/v1/premier/search`;
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<PremierTeamSearchV1Response>(apiKey, url, props);
   } catch (error) {
     console.error("Error searching premier teams:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -104,13 +104,13 @@ export async function searchPremierTeamsV1(props: PremierTeamSearchV1Props, apiK
 export async function getPremierConferences(apiKey: string): Promise<PremierConferenceV1Response> {
   const url = `/v1/premier/conferences`;
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<PremierConferenceV1Response>(apiKey, url);
   } catch (error) {
     console.error("Error fetching premier conferences:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -127,14 +127,14 @@ export async function getPremierConferences(apiKey: string): Promise<PremierConf
 export async function getPremierSeasonsV1(region: Region, apiKey: string): Promise<PremierSeasonsV1Response> {
   const url = `/v1/premier/seasons/${region}`;
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<PremierSeasonsV1Response>(apiKey, url);
   } catch (error) {
     console.error("Error fetching premier seasons:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -170,13 +170,13 @@ export async function getPremierLeaderboard(region: Region, param1: PremierLeade
     throw new Error("Invalid arguments");
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<PremierLeaderboardResponse>(apiKey, url);
   } catch (error) {
     console.error("Error fetching premier leaderboard:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

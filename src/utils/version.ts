@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { Region, ValorantVersionV1Response } from "../types";
-import { get, validateAPIKey, validateRegion } from "./lib";
+import { get, parseError, validateAPIKey, validateRegion } from "./lib";
 
 /**
  * Valorant Version V1
@@ -13,12 +13,12 @@ import { get, validateAPIKey, validateRegion } from "./lib";
  * @throws {INVALID_REGION} - If the region is invalid
  */
 export async function getValorantVersionV1(region: Region, apiKey: string): Promise<ValorantVersionV1Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get(apiKey, `/v1/version/${region}`)
   } catch (error) {
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

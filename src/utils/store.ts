@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { FeaturedStoreV1Response, FeaturedStoreV2Response, StoreOffersV1Response, StoreOffersV2Response } from "../types";
-import { get, validateAPIKey } from "./lib";
+import { get, parseError, validateAPIKey } from "./lib";
 
 /**
  * Store Featured V1
@@ -11,13 +11,13 @@ import { get, validateAPIKey } from "./lib";
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function getStoreFeaturedV1(apiKey: string): Promise<FeaturedStoreV1Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<FeaturedStoreV1Response>(apiKey, "/v1/store-featured");
   } catch (error) {
     console.error("Error fetching featured store items:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -29,13 +29,13 @@ export async function getStoreFeaturedV1(apiKey: string): Promise<FeaturedStoreV
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function getStoreFeaturedV2(apiKey: string): Promise<FeaturedStoreV2Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<FeaturedStoreV2Response>(apiKey, "/v2/store-featured");
   } catch (error) {
     console.error("Error fetching featured store items:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -48,13 +48,13 @@ export async function getStoreFeaturedV2(apiKey: string): Promise<FeaturedStoreV
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function getStoreOffersV1(apiKey: string): Promise<StoreOffersV1Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<StoreOffersV1Response>(apiKey, "/v1/store-offers");
   } catch (error) {
     console.error("Error fetching store offers:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -67,12 +67,12 @@ export async function getStoreOffersV1(apiKey: string): Promise<StoreOffersV1Res
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function getStoreOffersV2(apiKey: string): Promise<StoreOffersV2Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
     return get<StoreOffersV2Response>(apiKey, "/v2/store-offers");
   } catch (error) {
     console.error("Error fetching store offers:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

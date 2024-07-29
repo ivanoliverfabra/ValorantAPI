@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { LeaderboardV1OptionalProps, LeaderboardV1Response, LeaderboardV3OptionalProps, LeaderboardV3Response, Platform, Region } from "../types";
-import { get, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
+import { get, parseError, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
 
 /**
  * Get Leaderboard V1
@@ -16,14 +16,14 @@ import { get, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
  */
 export async function getLeaderboardV1(region: Region, apiKey: string, props?: LeaderboardV1OptionalProps): Promise<LeaderboardV1Response> {
   warnDeprecated('getLeaderboardV1', 'getLeaderboardV3');
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
   
   try {
     return get<LeaderboardV1Response>(apiKey, `/v1/leaderboards/${region}`, props);
   } catch (error) {
     console.error('Error fetching leaderboard:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -40,13 +40,13 @@ export async function getLeaderboardV1(region: Region, apiKey: string, props?: L
  * @throws {INVALID_REGION} - If the region is invalid
  */
 export async function getLeaderboardV3(region: Region, platform: Platform, apiKey: string, props?: LeaderboardV3OptionalProps): Promise<LeaderboardV3Response> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
   
   try {
     return get<LeaderboardV3Response>(apiKey, `/v1/leaderboards/${region}/${platform}`, props);
   } catch (error) {
     console.error('Error fetching leaderboard:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

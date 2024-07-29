@@ -1,3 +1,5 @@
+import { APIResponse } from ".";
+
 export type PlayerInfoV1 = {
   PlayerCardID: string;
   TitleID: string;
@@ -21,12 +23,7 @@ export type LeaderboardV1OptionalProps = {
   tag?: string;
 })
 
-export type LeaderboardV1Response = {
-  status: 200;
-  data: PlayerInfoV1[];
-} | {
-  errors: DataError<400 | 408 | 429 | 500>[];
-};
+export type LeaderboardV1Response = APIResponse<PlayerInfoV1[], 400 | 408 | 429 | 500>
 
 export type LeaderboardV3Tier = {
   id: number;
@@ -67,12 +64,7 @@ export type LeaderboardV3Data = {
   players: LeaderboardV3Player[];
 };
 
-export type LeaderboardV3Response = {
-  status: 200;
-  data: LeaderboardV3Data;
-} | {
-  errors: DataError[];
-};
+export type LeaderboardV3Response = APIResponse<LeaderboardV3Data, 400 | 408 | 429 | 500 | 404 | 403 | 503>
 
 export type LeaderboardV3OptionalProps = ({
   season_short?: Season;

@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { MMRHistoryV1Response, Region, StoredMMRV1OptionalProps, StoredMMRV1Response } from "../types";
-import { get, validateAPIKey, validateRegion } from "./lib";
+import { get, parseError, validateAPIKey, validateRegion } from "./lib";
 
 /**
  * MMR History V1
@@ -29,14 +29,14 @@ export async function getMMRHistoryV1(region: Region, nameOrPuuid: string, tagOr
     url = `/v1/by-puuid/mmr-history/${region}/${puuid}`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<MMRHistoryV1Response>(apiKey, url);
   } catch (error) {
     console.error("Error fetching MMR history:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }
 
@@ -70,13 +70,13 @@ export async function getStoredMMRHistoryV1(region: Region, nameOrPuuid: string,
     url = `/v1/by-puuid/stored-mmr-history/${region}/${nameOrPuuid}`;
   }
 
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
-  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
+  if (!validateRegion(region)) return parseError(INVALID_REGION);
 
   try {
     return get<StoredMMRV1Response>(apiKey, url, props || {});
   } catch (error) {
     console.error("Error fetching stored MMR history:", error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

@@ -1,3 +1,5 @@
+import { APIResponse } from ".";
+
 export type PremierTeamDetailsV1 = {
   id: string;
   name: string;
@@ -36,19 +38,9 @@ export type PremierTeamDetailsV1Member = {
   tag: string;
 };
 
-export type PremierTeamDetailsV1Response = {
-  status: 200;
-  data: PremierTeamDetailsV1;
-} | {
-  errors: DataError[];
-};
+export type PremierTeamDetailsV1Response = APIResponse<PremierTeamDetailsV1>;
 
-export type PremierTeamHistoryV1Response = {
-  status: 200;
-  data: PremierTeamHistoryV1Data;
-} | {
-  errors: DataError[];
-};
+export type PremierTeamHistoryV1Response = APIResponse<PremierTeamHistoryV1Data>;
 
 export type PremierTeamHistoryV1Data = {
   league_matches: PremierTeamHistoryV1LeagueMatch[];
@@ -70,12 +62,7 @@ export type PremierTeamSearchV1Props = {
 
 export type PremierTeamSearchV1 = "EU_CENTRAL_EAST" | "EU_WEST" | "EU_MIDDLE_EAST" | "EU_TURKEY" | "NA_US_EAST" | "NA_US_WEST" | "LATAM_NORTH" | "LATAM_SOUTH" | "BR_BRAZIL" | "KR_KOREA" | "AP_ASIA" | "AP_JAPAN" | "AP_OCEANIA" | "AP_SOUTH_ASIA"
 
-export type PremierTeamSearchV1Response = {
-  status: 200;
-  data: PremierTeamSearchV1Item[];
-} | {
-  errors: DataError[];
-};
+export type PremierTeamSearchV1Response = APIResponse<PremierTeamSearchV1Item[]>;
 
 export type PremierTeamSearchV1Item = {
   id: string;
@@ -100,12 +87,7 @@ export type PremierTeamSearchV1Customization = {
   tertiary: string;
 };
 
-export type PremierConferenceV1Response = {
-  status: 200;
-  data: PremierConferenceV1Item[];
-} | {
-  errors: DataError[];
-};
+export type PremierConferenceV1Response = APIResponse<PremierConferenceV1Item[]>;
 
 export type PremierConferenceV1Item = {
   id: string;
@@ -122,12 +104,7 @@ export type PremierConferenceV1Pod = {
   name: string;
 };
 
-export type PremierSeasonsV1Response = {
-  status: 200;
-  data: PremierSeasonsV1Item[];
-} | {
-  errors: DataError[];
-};
+export type PremierSeasonsV1Response = APIResponse<PremierSeasonsV1Item[]>;
 
 export type PremierSeasonsV1Item = {
   id: string;
@@ -174,12 +151,7 @@ export type PremierSeasonsV1ScheduledEvent = {
   ends_at: string;
 };
 
-export type PremierLeaderboardV1Response = {
-  status: 200;
-  data: PremierLeaderboardV1Item[];
-} | {
-  errors: DataError[];
-};
+export type PremierLeaderboardV1Response = APIResponse<PremierLeaderboardV1Item[]>;
 
 export type PremierLeaderboardV1Item = {
   id: string;
@@ -206,12 +178,7 @@ export type PremierLeaderboardV1Customization = {
 
 export type PremierLeaderboardConference = PremierTeamSearchV1;
 
-export type PremierLeaderboardResponse = {
-  status: 200;
-  data: PremierLeaderboardItem[];
-} | {
-  errors: DataError[];
-};
+export type PremierLeaderboardResponse = APIResponse<PremierLeaderboardItem[]>;
 
 export type PremierLeaderboardItem = {
   id: string;

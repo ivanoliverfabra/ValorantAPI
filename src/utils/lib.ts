@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 import { API_KEY_REGEX, BASE_API_URL, COUNTRYCODES, REGIONS } from "../constants";
-import { CountryCode, FunctionParams, Region, StatusCodeTuple } from "../types";
+import { APIResponse, CountryCode, DataError, FunctionParams, Region, StatusCodeTuple } from "../types";
 
 export function validateAPIKey(apiKey: string): boolean {
   return API_KEY_REGEX.test(apiKey);
@@ -36,10 +36,13 @@ export function addQueryParams(url: string, params: FunctionParams): string {
   return urlObj.toString();
 }
 
-export async function get<T = unknown>(apiKey: string, url: string, params?: FunctionParams, options?: AxiosRequestConfig): Promise<T> {
+export async function get<T = APIResponse>(apiKey: string, url: string, params?: FunctionParams, options?: AxiosRequestConfig): Promise<T> {
   try {
     const { data } = await initiateAxios(apiKey).get<T>(addQueryParams(url, params || {}), options);
-    return data;
+    return {
+      success: true,
+      ...data
+    };
   } catch (error: any) {
     throw new Error(`Error fetching data: ${error?.message || 'Unknown error'}`);
   }
@@ -48,7 +51,10 @@ export async function get<T = unknown>(apiKey: string, url: string, params?: Fun
 export async function post<T = unknown>(apiKey: string, url: string, body?: FunctionParams, params?: FunctionParams, options?: AxiosRequestConfig): Promise<T> {
   try {
     const { data } = await initiateAxios(apiKey).post<T>(addQueryParams(url, params || {}), body, options);
-    return data;
+    return {
+      success: true,
+      ...data
+    };
   } catch (error: any) {
     throw new Error(`Error fetching data: ${error?.message || 'Unknown error'}`);
   }
@@ -105,4 +111,8 @@ export const StatusCodeDescriptions: { [key in StatusCodeTuple as `${key[0]}_${k
 export function getStatusCodeDescription(code: number, status: number | "-"): string {
   const key = `${code}_${status}` as keyof typeof StatusCodeDescriptions;
   return StatusCodeDescriptions[key];
+}
+
+export function parseError<T = any, R = {}, S extends number = 400>(data: DataError<S>): APIResponse<T, R, S> {
+  return { success: false, errors: [data] };
 }

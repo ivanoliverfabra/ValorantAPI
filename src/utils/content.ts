@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
-import { GameData, GameDataOptionalProps, GameDataResponse } from "../types";
-import { get, validateAPIKey } from "./lib";
+import { GameDataOptionalProps, GameDataResponse } from "../types";
+import { get, parseError, validateAPIKey } from "./lib";
 
 /**
  * Game Data V1
@@ -12,12 +12,12 @@ import { get, validateAPIKey } from "./lib";
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
 export async function fetchGameData(apiKey: string, props?: GameDataOptionalProps): Promise<GameDataResponse> {
-  if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
-    return get<GameData>(apiKey, '/v1/game-data', props || {});
+    return get<GameDataResponse>(apiKey, '/v1/game-data', props || {});
   } catch (error) {
     console.error('Error fetching game data:', error);
-    return { errors: [INTERNAL_ERROR] };
+    return parseError(INTERNAL_ERROR);
   }
 }

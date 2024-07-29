@@ -1,9 +1,6 @@
-export type QueueStatusV1Response = {
-  status: 200;
-  data: QueueStatusV1Data[];
-} | {
-  errors: DataError[];
-};
+import { APIResponse } from ".";
+
+export type QueueStatusV1Response = APIResponse<QueueStatusV1Data[]>;
 
 export type QueueStatusV1Data = {
   mode: string;

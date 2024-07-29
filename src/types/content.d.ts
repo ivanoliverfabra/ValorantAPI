@@ -1,3 +1,5 @@
+import { APIResponse } from ".";
+
 export type LocalizedNames = {
   "ar-AE": string;
   "de-DE": string;
@@ -53,9 +55,7 @@ export type GameData = {
   acts: Act[];
 };
 
-export type GameDataResponse = GameData | {
-  errors: DataError<400 | 429 | 500>[];
-};
+export type GameDataResponse = APIResponse<GameData, 400 | 429 | 500>;
 
 export type GameDataOptionalProps = {
   locale: Locale;

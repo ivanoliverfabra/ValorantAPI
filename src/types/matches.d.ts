@@ -1,9 +1,6 @@
-export type MatchDetailsV2Response = {
-  status: 200;
-  data: MatchDetailsV2;
-} | {
-  errors: DataError[];
-};
+import { APIResponse } from ".";
+
+export type MatchDetailsV2Response = APIResponse<MatchDetailsV2, 400 | 408 | 429 | 500 | 404 | 403 | 503>
 
 export type MatchDetailsV2 = {
   metadata: {
@@ -318,12 +315,7 @@ export type MatchDetailsV2Assistant = {
   assistant_team: string;
 };
 
-export type MatchDetailsV4Response = {
-  status: 200;
-  data: MatchDetailsV4;
-} | {
-  errors: DataError[];
-};
+export type MatchDetailsV4Response = APIResponse<MatchDetailsV4, 400 | 408 | 429 | 500 | 404 | 403 | 503>;
 
 export type MatchDetailsV4 = {
   metadata: MatchDetailsV4Metadata;

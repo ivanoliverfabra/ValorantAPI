@@ -1,9 +1,6 @@
-export type StatusV1Response = {
-  status: 200;
-  data: StatusV1;
-} | {
-  errors: DataError[];
-}
+import { APIResponse } from ".";
+
+export type StatusV1Response = APIResponse<StatusV1>;
 
 export type StatusV1 = {
   maintenances: StatusV1Maintenance[];
