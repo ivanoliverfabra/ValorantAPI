@@ -56,3 +56,7 @@ type GameData = {
 type GameDataResponse = GameData | {
   errors: DataError<400 | 429 | 500>[];
 };
+
+type GameDataOptionalProps = {
+  locale: Locale;
+}

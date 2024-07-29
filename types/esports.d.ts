@@ -1,56 +1,61 @@
-type GameType = {
+type UpcomingMatchV1GameType = {
   type: string;
   count: number;
 };
 
-type Record = {
+type UpcomingMatchV1Record = {
   wins: number;
   losses: number;
 };
 
-type MatchDetailsV2Team = {
+type UpcomingMatchV1Team = {
   name: string;
   code: string;
   icon: string;
   has_won: boolean;
   game_wins: number;
-  record: Record;
+  record: UpcomingMatchV1Record;
 };
 
 type Match = {
   id: string;
-  game_type: GameType;
-  teams: MatchDetailsV2Team[];
+  game_type: UpcomingMatchV1GameType;
+  teams: UpcomingMatchV1Team[];
 };
 
-type Tournament = {
+type UpcomingMatchV1Tournament = {
   name: string;
   season: string;
 };
 
-type League = {
+type UpcomingMatchV1League = {
   name: string;
   identifier: string;
   icon: string;
   region: string;
 };
 
-type MatchData = {
+type UpcomingMatchV1Data = {
   date: string;
   state: string;
   type: string;
   vod: string;
-  league: League;
-  tournament: Tournament;
-  match: Match;
+  league: UpcomingMatchV1League;
+  tournament: UpcomingMatchV1Tournament;
+  match: UpcomingMatchV1Match;
 };
 
-type MatchRegion = "emea" | "brazil" | "japan" | "korea" | "latin_america" | "latin_america_south" | "southeast_asia" | "vietnam" | "oceania";
-type MatchLeague = "champions" | "vrl_spain" | "vrl_northern_europe" | "vrl_dach" | "vrl_france" | "vrl_east" | "vrl_turkey" | "vrl_cis" | "mena_resilence" | "challengers_italy" | "challengers_portugal";
+type UpcomingMatchV1Region = "emea" | "brazil" | "japan" | "korea" | "latin_america" | "latin_america_south" | "southeast_asia" | "vietnam" | "oceania";
+type UpcomingMatchV1LeagueT = "champions" | "vrl_spain" | "vrl_northern_europe" | "vrl_dach" | "vrl_france" | "vrl_east" | "vrl_turkey" | "vrl_cis" | "mena_resilence" | "challengers_italy" | "challengers_portugal";
 
-type MatchResponse = {
+type UpcomingMatchV1Response = {
   status: 200;
-  data: MatchData[];
+  data: UpcomingMatchV1[];
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 503>[];
+};
+
+type UpcomingMatchV1OptionalProps = {
+  region?: UpcomingMatchV1Region;
+  league?: UpcomingMatchV1LeagueT;
 };

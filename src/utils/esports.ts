@@ -1,14 +1,20 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
-import { addQueryParams, initiateAxios, validateAPIKey } from "./lib";
+import { get, validateAPIKey } from "./lib";
 
-export async function getUpcomingMatches(apiKey: string, region?: MatchRegion, league?: MatchLeague): Promise<MatchResponse> {
+/**
+ * Upcoming Match V1
+ * Fetch upcoming esports matches
+ * @param apiKey - The API key
+ * @param props - Optional parameters
+ * @returns {UpcomingMatchV1Response}
+ * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
+ * @throws {INVALID_API_KEY} - If the API key is invalid
+ */
+export async function getUpcomingMatches(apiKey: string, props?: UpcomingMatchV1OptionalProps): Promise<UpcomingMatchV1Response> {
   if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
 
   try {
-    const axiosInstance = initiateAxios(apiKey);
-    const url = addQueryParams('/v1/esports/schedule', { region, league });
-    const response = await axiosInstance.get<MatchResponse>(url);
-    return response.data;
+    return get<UpcomingMatchV1Response>(apiKey, '/v1/esports/schedule', props || {});
   } catch (error) {
     console.error('Error fetching upcoming matches:', error);
     return { errors: [INTERNAL_ERROR] };

@@ -1,6 +1,19 @@
-import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
-import { addQueryParams, initiateAxios, validateAPIKey } from "./lib";
+import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { get, validateAPIKey, validateRegion } from "./lib";
 
+/**
+ * MMR Data V2
+ * Fetch MMR data by region and player name or puuid
+ * @param region - The region to fetch the MMR data for
+ * @param nameOrPuuid - The name or puuid of the player
+ * @param tagOrApiKey - The tag or API key of the player
+ * @param apiKeyOrProps - The API key or optional parameters
+ * @param props - Optional parameters
+ * @returns {MMRDataV2Response}
+ * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
+ * @throws {INVALID_API_KEY} - If the API key is invalid
+ * @throws {INVALID_REGION} - If the region is invalid
+ */
 export async function getMMRDataV2(region: Region, name: string, tag: string, apiKey: string, props?: MMRDataV2OptionalProps): Promise<MMRDataV2Response>;
 export async function getMMRDataV2(region: Region, puuid: string, apiKey: string, props?: MMRDataV2OptionalProps): Promise<MMRDataV2Response>;
 export async function getMMRDataV2(region: Region, nameOrPuuid?: string, tagOrApiKey?: string, apiKeyOrProps?: string | MMRDataV2OptionalProps, optionalProps?: MMRDataV2OptionalProps): Promise<MMRDataV2Response> {
@@ -9,32 +22,39 @@ export async function getMMRDataV2(region: Region, nameOrPuuid?: string, tagOrAp
   let props: MMRDataV2OptionalProps | undefined;
 
   if (typeof apiKeyOrProps === 'string') {
-    const name = nameOrPuuid!;
-    const tag = tagOrApiKey!;
     apiKey = apiKeyOrProps;
     props = optionalProps;
-
-    url = addQueryParams(`/v2/mmr/${region}/${name}/${tag}`, props || {});
+    url = `/v2/mmr/${region}/${nameOrPuuid!}/${tagOrApiKey!}`;
   } else {
-    const puuid = nameOrPuuid!;
     apiKey = tagOrApiKey as string;
     props = apiKeyOrProps as MMRDataV2OptionalProps | undefined;
-
-    url = addQueryParams(`/v2/by-puuid/mmr/${region}/${puuid}`, props || {});
+    url = `/v2/by-puuid/mmr/${region}/${nameOrPuuid!}`;
   }
 
   if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
 
   try {
-    const axiosInstance = initiateAxios(apiKey);
-    const response = await axiosInstance.get<MMRDataV2Response>(url);
-    return response.data;
+    return get<MMRDataV2Response>(apiKey, url, props || {});
   } catch (error) {
     console.error("Error fetching MMR data:", error);
     return { errors: [INTERNAL_ERROR] };
   }
 }
 
+/**
+ * MMR Data V3
+ * Fetch MMR data by region and player name or puuid
+ * @param region - The region to fetch the MMR data for
+ * @param platform - The platform to fetch the MMR data for
+ * @param nameOrPuuid - The name or puuid of the player
+ * @param tagOrApiKey - The tag or API key of the player
+ * @param apiKey - The API key
+ * @returns {MMRDataV3Response}
+ * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
+ * @throws {INVALID_API_KEY} - If the API key is invalid
+ * @throws {INVALID_REGION} - If the region is invalid
+ */
 export async function getMMRDataV3(region: Region, platform: Platform, name: string, tag: string, apiKey: string): Promise<MMRDataV3Response>;
 export async function getMMRDataV3(region: Region, platform: Platform, puuid: string, apiKey: string): Promise<MMRDataV3Response>;
 export async function getMMRDataV3(region: Region, platform: Platform, nameOrPuuid: string, tagOrApiKey: string, possiblyApiKey?: string): Promise<MMRDataV3Response> {
@@ -42,24 +62,18 @@ export async function getMMRDataV3(region: Region, platform: Platform, nameOrPuu
   let apiKey: string;
 
   if (typeof possiblyApiKey === 'string') {
-    const name = nameOrPuuid;
-    const tag = tagOrApiKey;
     apiKey = possiblyApiKey;
-
-    url = `/v3/mmr/${region}/${platform}/${name}/${tag}`;
+    url = `/v3/mmr/${region}/${platform}/${nameOrPuuid}/${tagOrApiKey}`;
   } else {
-    const puuid = nameOrPuuid;
     apiKey = tagOrApiKey;
-
-    url = `/v3/by-puuid/mmr/${region}/${platform}/${puuid}`;
+    url = `/v3/by-puuid/mmr/${region}/${platform}/${nameOrPuuid!}`;
   }
 
   if (!validateAPIKey(apiKey)) return { errors: [INVALID_API_KEY] };
+  if (!validateRegion(region)) return { errors: [INVALID_REGION] };
 
   try {
-    const axiosInstance = initiateAxios(apiKey);
-    const response = await axiosInstance.get<MMRDataV3Response>(url);
-    return response.data;
+    return get<MMRDataV3Response>(apiKey, url);
   } catch (error) {
     console.error("Error fetching MMR data:", error);
     return { errors: [INTERNAL_ERROR] };

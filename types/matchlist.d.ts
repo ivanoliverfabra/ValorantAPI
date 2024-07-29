@@ -628,3 +628,87 @@ type MatchHistoryV4OptionalProps = {
   map?: GameMap;
   size?: number; // min: 1
 };
+
+type StoredMatchesV1Response = {
+  status: 200;
+  results: StoredMatchesResults;
+  data: StoredMatchesV1Item[];
+} | {
+  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
+};
+
+type StoredMatchesResults = {
+  total: number,
+  returned: number,
+  before: number,
+  after: number
+};
+
+type StoredMatchesV1Item = {
+  meta: StoredMatchesV1Meta;
+  stats: StoredMatchesV1Stats;
+  teams: StoredMatchesV1Teams;
+};
+
+type StoredMatchesV1Meta = {
+  id: string;
+  map: StoredMatchesV1Map;
+  version: string;
+  mode: string;
+  started_at: string;
+  season: StoredMatchesV1Season;
+  region: string;
+  cluster: string;
+};
+
+type StoredMatchesV1Map = {
+  id: string;
+  name: string;
+};
+
+type StoredMatchesV1Season = {
+  id: string;
+  short: string;
+};
+
+type StoredMatchesV1Stats = {
+  puuid: string;
+  team: string;
+  level: number;
+  character: StoredMatchesV1Character;
+  tier: number;
+  score: number;
+  kills: number;
+  deaths: number;
+  assists: number;
+  shots: StoredMatchesV1Shots;
+  damage: StoredMatchesV1Damage;
+};
+
+type StoredMatchesV1Character = {
+  id: string;
+  name: string;
+};
+
+type StoredMatchesV1Shots = {
+  head: number;
+  body: number;
+  leg: number;
+};
+
+type StoredMatchesV1Damage = {
+  dealt: number;
+  received: number;
+};
+
+type StoredMatchesV1Teams = {
+  red: number;
+  blue: number;
+};
+
+type StoredMatchesV1OptionalProps = {
+  mode?: Gamemode;
+  map?: GameMap;
+  page?: number;
+  size?: number;
+};

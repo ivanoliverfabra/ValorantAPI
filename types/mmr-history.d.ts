@@ -32,3 +32,49 @@ type MMRHistoryV1Map = {
   name: string;
   id: string;
 };
+
+type StoredMMRV1Response = {
+  status: 200;
+  results: StoredMMRV1Results;
+  data: StoredMMRV1Item[];
+} | {
+  errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
+};
+
+type StoredMMRV1Results = {
+  total: number;
+  returned: number;
+  before: number;
+  after: number;
+}
+
+type StoredMMRV1Item = {
+  match_id: string;
+  tier: StoredMMRV1Tier;
+  map: StoredMMRV1Map;
+  season: StoredMMRV1Season;
+  ranking_in_tier: number;
+  last_mmr_change: number;
+  elo: number;
+  date: string;
+};
+
+type StoredMMRV1Tier = {
+  id: number;
+  name: string;
+};
+
+type StoredMMRV1Map = {
+  id: string;
+  name: string;
+};
+
+type StoredMMRV1Season = {
+  id: string;
+  short: string;
+};
+
+type StoredMMRV1OptionalProps = {
+  page?: number;
+  size?: number;
+}
