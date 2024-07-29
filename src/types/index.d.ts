@@ -13,6 +13,21 @@ export * from "./store";
 export * from "./version";
 export * from "./website";
 
+import { AccountDataV1OptionalProps, AccountDataV1Response, AccountDataV2OptionalProps, AccountDataV2Response } from "./account";
+import { GameDataOptionalProps, GameDataResponse } from "./content";
+import { CrosshairResponse } from "./crosshair";
+import { UpcomingMatchV1OptionalProps, UpcomingMatchV1Response } from "./esports";
+import { LeaderboardV1OptionalProps, LeaderboardV1Response, LeaderboardV3OptionalProps, LeaderboardV3Response } from "./leaderboard";
+import { MatchDetailsV2Response, MatchDetailsV4Response } from "./matches";
+import { MatchHistoryV3Response, MatchHistoryV4Response, StoredMatchesV1Response } from "./matchlist";
+import { MMRDataV2OptionalProps, MMRDataV2Response, MMRDataV3Response } from "./mmr";
+import { MMRHistoryV1Response } from "./mmr-history";
+import { PremierConferenceV1Response, PremierLeaderboardConference, PremierLeaderboardResponse, PremierSeasonsV1Response, PremierTeamDetailsV1Response, PremierTeamHistoryV1Response, PremierTeamSearchV1Props, PremierTeamSearchV1Response } from "./premier";
+import { QueueStatusV1Response } from "./queue";
+import { StatusV1Response } from "./status";
+import { FeaturedStoreV1Response, FeaturedStoreV2Response, StoreOffersV1Response, StoreOffersV2Response } from "./store";
+import { ValorantVersionV1Response } from "./version";
+
 export type ValorantAPIProps = {
   apiKey: string;
 };

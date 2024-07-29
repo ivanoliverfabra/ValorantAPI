@@ -95,7 +95,7 @@ export type Economy = {
   };
 };
 
-export type MatchDetailsV2Player = {
+export type MatchLDetailsV2Player = {
   puuid: string;
   name: string;
   tag: string;
@@ -122,9 +122,9 @@ export type MatchDetailsV2Player = {
 };
 
 export type MatchHistoryV3Players = {
-  all_players: MatchDetailsV2Player[];
-  red: MatchDetailsV2Player[];
-  blue: MatchDetailsV2Player[];
+  all_players: MatchLDetailsV2Player[];
+  red: MatchLDetailsV2Player[];
+  blue: MatchLDetailsV2Player[];
 };
 
 export type MatchHistoryV3Observers = {
@@ -212,7 +212,7 @@ export type DefuseEvent = {
   }[];
 };
 
-export type MatchDetailsV2DamageEvent = {
+export type MatchLDetailsV2DamageEvent = {
   receiver_puuid: string;
   receiver_display_name: string;
   receiver_team: string;
@@ -222,7 +222,7 @@ export type MatchDetailsV2DamageEvent = {
   legshots: number;
 };
 
-export type MatchDetailsV2KillEvent = {
+export type MatchLDetailsV2KillEvent = {
   kill_time_in_round: number;
   kill_time_in_match: number;
   killer_puuid: string;
@@ -253,7 +253,7 @@ export type MatchDetailsV2KillEvent = {
   }[];
 };
 
-export type MatchDetailsV2PlayerStats = {
+export type MatchLDetailsV2PlayerStats = {
   ability_casts: {
     c_casts: number;
     q_casts: number;
@@ -263,12 +263,12 @@ export type MatchDetailsV2PlayerStats = {
   player_puuid: string;
   player_display_name: string;
   player_team: string;
-  damage_events: MatchDetailsV2DamageEvent[];
+  damage_events: MatchLDetailsV2DamageEvent[];
   damage: number;
   bodyshots: number;
   headshots: number;
   legshots: number;
-  kill_events: MatchDetailsV2KillEvent[];
+  kill_events: MatchLDetailsV2KillEvent[];
   kills: number;
   score: number;
   economy: {
@@ -303,7 +303,7 @@ export type MatchHistoryV3Round = {
   bomb_defused: boolean;
   plant_events: PlantEvent;
   defuse_events: DefuseEvent;
-  player_stats: MatchDetailsV2PlayerStats[];
+  player_stats: MatchLDetailsV2PlayerStats[];
 };
 
 export type MatchHistoryV3Kill = {

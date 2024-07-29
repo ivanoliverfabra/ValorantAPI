@@ -44,10 +44,11 @@ export function addQueryParams(url: string, params: FunctionParams): string {
 
 export async function get<T = APIResponse>(apiKey: string, url: string, params?: FunctionParams, options?: AxiosRequestConfig): Promise<T> {
   try {
-    const { data } = await initiateAxios(apiKey).get<T>(addQueryParams(url, params || {}), options);
+    const { data } = await initiateAxios(apiKey).get<T & { status: number }>(addQueryParams(url, params || {}), options);
+    const { status, ...rest } = data;
     return {
       success: true,
-      ...data
+      ...rest as T,
     };
   } catch (error: any) {
     throw new Error(`Error fetching data: ${error?.message || 'Unknown error'}`);
