@@ -1,4 +1,4 @@
-type LocalizedNames = {
+export type LocalizedNames = {
   "ar-AE": string;
   "de-DE": string;
   "en-GB": string;
@@ -20,7 +20,7 @@ type LocalizedNames = {
   "zn-TW": string;
 };
 
-type Entity = {
+export type Entity = {
   name: string;
   localizedNames: LocalizedNames[];
   id: string;
@@ -28,14 +28,14 @@ type Entity = {
   assetPath: string;
 };
 
-type Act = {
+export type Act = {
   name: string;
   localizedNames: LocalizedNames[];
   id: string;
   isActive: boolean;
 };
 
-type GameData = {
+export type GameData = {
   version: string;
   characters: Entity[];
   maps: Entity[];
@@ -53,10 +53,10 @@ type GameData = {
   acts: Act[];
 };
 
-type GameDataResponse = GameData | {
+export type GameDataResponse = GameData | {
   errors: DataError<400 | 429 | 500>[];
 };
 
-type GameDataOptionalProps = {
+export type GameDataOptionalProps = {
   locale: Locale;
 }

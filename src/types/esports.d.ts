@@ -1,14 +1,14 @@
-type UpcomingMatchV1GameType = {
+export type UpcomingMatchV1GameType= {
   type: string;
   count: number;
 };
 
-type UpcomingMatchV1Record = {
+export type UpcomingMatchV1Record = {
   wins: number;
   losses: number;
 };
 
-type UpcomingMatchV1Team = {
+export type UpcomingMatchV1Team = {
   name: string;
   code: string;
   icon: string;
@@ -17,25 +17,25 @@ type UpcomingMatchV1Team = {
   record: UpcomingMatchV1Record;
 };
 
-type Match = {
+export type Match = {
   id: string;
   game_type: UpcomingMatchV1GameType;
   teams: UpcomingMatchV1Team[];
 };
 
-type UpcomingMatchV1Tournament = {
+export type UpcomingMatchV1Tournament = {
   name: string;
   season: string;
 };
 
-type UpcomingMatchV1League = {
+export type UpcomingMatchV1League = {
   name: string;
   identifier: string;
   icon: string;
   region: string;
 };
 
-type UpcomingMatchV1Data = {
+export type UpcomingMatchV1Data = {
   date: string;
   state: string;
   type: string;
@@ -45,17 +45,17 @@ type UpcomingMatchV1Data = {
   match: UpcomingMatchV1Match;
 };
 
-type UpcomingMatchV1Region = "emea" | "brazil" | "japan" | "korea" | "latin_america" | "latin_america_south" | "southeast_asia" | "vietnam" | "oceania";
-type UpcomingMatchV1LeagueT = "champions" | "vrl_spain" | "vrl_northern_europe" | "vrl_dach" | "vrl_france" | "vrl_east" | "vrl_turkey" | "vrl_cis" | "mena_resilence" | "challengers_italy" | "challengers_portugal";
+export type UpcomingMatchV1Region = "emea" | "brazil" | "japan" | "korea" | "latin_america" | "latin_america_south" | "southeast_asia" | "vietnam" | "oceania";
+export type UpcomingMatchV1LeagueT = "champions" | "vrl_spain" | "vrl_northern_europe" | "vrl_dach" | "vrl_france" | "vrl_east" | "vrl_turkey" | "vrl_cis" | "mena_resilence" | "challengers_italy" | "challengers_portugal";
 
-type UpcomingMatchV1Response = {
+export type UpcomingMatchV1Response = {
   status: 200;
   data: UpcomingMatchV1[];
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 503>[];
 };
 
-type UpcomingMatchV1OptionalProps = {
+export type UpcomingMatchV1OptionalProps = {
   region?: UpcomingMatchV1Region;
   league?: UpcomingMatchV1LeagueT;
 };

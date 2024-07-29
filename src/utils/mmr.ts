@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { MMRDataV2OptionalProps, MMRDataV2Response, MMRDataV3Response, Platform, Region } from "../types";
 import { get, validateAPIKey, validateRegion } from "./lib";
 
 /**

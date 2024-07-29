@@ -1,4 +1,4 @@
-type PlayerInfoV1 = {
+export type PlayerInfoV1 = {
   PlayerCardID: string;
   TitleID: string;
   IsBanned: boolean;
@@ -12,7 +12,7 @@ type PlayerInfoV1 = {
   competitiveTier: number;
 };
 
-type LeaderboardV1OptionalProps = {
+export type LeaderboardV1OptionalProps = {
   season?: Season;
 } & ({
   puuid?: string;
@@ -21,25 +21,25 @@ type LeaderboardV1OptionalProps = {
   tag?: string;
 })
 
-type LeaderboardV1Response = {
+export type LeaderboardV1Response = {
   status: 200;
   data: PlayerInfoV1[];
 } | {
   errors: DataError<400 | 408 | 429 | 500>[];
 };
 
-type LeaderboardV3Tier = {
+export type LeaderboardV3Tier = {
   id: number;
   name: string;
 };
 
-type LeaderboardV3Threshold = {
+export type LeaderboardV3Threshold = {
   tier: LeaderboardV3Tier;
   start_index: number;
   threshold: number;
 };
 
-type LeaderboardV3Player = {
+export type LeaderboardV3Player = {
   card: string;
   title: string;
   is_banned: boolean;
@@ -54,27 +54,27 @@ type LeaderboardV3Player = {
   updated_at: string;
 };
 
-type LeaderboardV3Results = {
+export type LeaderboardV3Results = {
   total: number;
   returned: number;
   before: number;
   after: number;
 };
 
-type LeaderboardV3Data = {
+export type LeaderboardV3Data = {
   updated_at: string;
   thresholds: LeaderboardV3Threshold[];
   players: LeaderboardV3Player[];
 };
 
-type LeaderboardV3Response = {
+export type LeaderboardV3Response = {
   status: 200;
   data: LeaderboardV3Data;
 } | {
   errors: DataError[];
 };
 
-type LeaderboardV3OptionalProps = ({
+export type LeaderboardV3OptionalProps = ({
   season_short?: Season;
 } | {
   season_id?: number;

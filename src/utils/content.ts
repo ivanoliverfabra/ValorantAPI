@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
+import { GameData, GameDataOptionalProps, GameDataResponse } from "../types";
 import { get, validateAPIKey } from "./lib";
 
 /**

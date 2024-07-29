@@ -29,6 +29,14 @@ import {
   searchPremierTeamsV1
 } from "./utils";
 
+import {
+  ValorantAPIClass,
+  ValorantAPIProps
+} from "./types";
+
+export * from "./types";
+export * from "./utils";
+
 export default class ValorantAPI implements ValorantAPIClass {
   apiKey: string;
 

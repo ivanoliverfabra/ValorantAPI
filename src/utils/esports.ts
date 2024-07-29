@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
+import { UpcomingMatchV1OptionalProps, UpcomingMatchV1Response } from "../types";
 import { get, validateAPIKey } from "./lib";
 
 /**

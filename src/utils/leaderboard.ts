@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { LeaderboardV1OptionalProps, LeaderboardV1Response, LeaderboardV3OptionalProps, LeaderboardV3Response, Platform, Region } from "../types";
 import { get, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
 
 /**

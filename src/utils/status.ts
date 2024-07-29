@@ -1,4 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { Region } from "../types";
+import { StatusV1Response } from "../types/status";
 import { get, validateAPIKey, validateRegion } from "./lib";
 
 /**

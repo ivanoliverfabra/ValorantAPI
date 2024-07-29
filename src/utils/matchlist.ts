@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { MatchHistoryV3OptionalProps, MatchHistoryV3Response, MatchHistoryV4OptionalProps, MatchHistoryV4Response, Platform, Region, StoredMatchesV1OptionalProps, StoredMatchesV1Response } from "../types";
 import { get, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
 
 /**

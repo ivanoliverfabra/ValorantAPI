@@ -9,7 +9,9 @@
     "prepublishOnly": "bun run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "types",
+    "README.md"
   ],
   "keywords": [
     "bun",

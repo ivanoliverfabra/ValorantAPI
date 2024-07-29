@@ -1,20 +1,20 @@
-type FeaturedStoreV1Response = {
+export type FeaturedStoreV1Response = {
   status: 200;
   data: FeaturedStoreV1;
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 
-type FeaturedStoreV1 = {
+export type FeaturedStoreV1 = {
   FeaturedBundle: FeaturedStoreV1BundleDetails;
 };
 
-type FeaturedStoreV1BundleDetails = {
+export type FeaturedStoreV1BundleDetails = {
   Bundle: FeaturedStoreV1Bundle;
   Bundles: FeaturedStoreV1Bundle[];
 };
 
-type FeaturedStoreV1Bundle = {
+export type FeaturedStoreV1Bundle = {
   ID: string;
   DataAssetID: string;
   CurrencyID: string;
@@ -22,27 +22,27 @@ type FeaturedStoreV1Bundle = {
   Wholesaleonly: boolean;
 };
 
-type FeaturedStoreV1Item = {
+export type FeaturedStoreV1Item = {
   Item: FeaturedStoreV1ItemDetails;
   CurrencyID: string;
   DiscountPercent: number;
   IsPromoItem: boolean;
 };
 
-type FeaturedStoreV1ItemDetails = {
+export type FeaturedStoreV1ItemDetails = {
   ItemTypeID: string;
   ItemID: string;
   Amount: string;
 };
 
-type FeaturedStoreV2Response = {
+export type FeaturedStoreV2Response = {
   status: 200;
   data: FeaturedStoreV2Bundle[];
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 
-type FeaturedStoreV2Bundle = {
+export type FeaturedStoreV2Bundle = {
   bundle_uuid: string;
   bundle_price: number;
   whole_sale_only: boolean;
@@ -50,7 +50,7 @@ type FeaturedStoreV2Bundle = {
   items: FeaturedStoreV2Item[];
 };
 
-type FeaturedStoreV2Item = {
+export type FeaturedStoreV2Item = {
   uuid: string;
   name: string;
   image: string;
@@ -59,7 +59,7 @@ type FeaturedStoreV2Item = {
   promo_item: boolean;
 };
 
-type StoreOffersV1Response = {
+export type StoreOffersV1Response = {
   status: 200;
   data: {
     Offers: StoreOffersV1Offer[];
@@ -69,7 +69,7 @@ type StoreOffersV1Response = {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 
-type StoreOffersV1Offer = {
+export type StoreOffersV1Offer = {
   OfferID: string;
   IsDirectPurchase: number;
   StartDate: string;
@@ -79,20 +79,20 @@ type StoreOffersV1Offer = {
   Rewards: StoreOffersV1Reward[];
 };
 
-type StoreOffersV1Reward = {
+export type StoreOffersV1Reward = {
   ItemTypeID: string;
   ItemID: string;
   Quantity: number;
 };
 
-type StoreOffersV1UpgradeCurrencyOffer = {
+export type StoreOffersV1UpgradeCurrencyOffer = {
   OfferID: string;
   StorefrontItemID: string;
   Offer: StoreOffersV1OfferDetails;
   DiscountedPercent: number;
 };
 
-type StoreOffersV1OfferDetails = {
+export type StoreOffersV1OfferDetails = {
   OfferID: string;
   IsDirectPurchase: number;
   StartDate: string;
@@ -103,18 +103,18 @@ type StoreOffersV1OfferDetails = {
 };
 
 
-type StoreOffersV2Response = {
+export type StoreOffersV2Response = {
   status: 200;
   data: StoreOffersV2;
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 
-type StoreOffersV2 = {
+export type StoreOffersV2 = {
   offers: StoreOfferV2[];
 };
 
-type StoreOfferV2 = {
+export type StoreOfferV2 = {
   offer_id: string;
   cost: number;
   name: string;
@@ -124,7 +124,7 @@ type StoreOfferV2 = {
   content_tier: StoreOfferV2ContentTier;
 };
 
-type StoreOfferV2ContentTier = {
+export type StoreOfferV2ContentTier = {
   name: string;
   dev_name: string;
   icon: string;

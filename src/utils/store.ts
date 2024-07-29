@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
+import { FeaturedStoreV1Response, FeaturedStoreV2Response, StoreOffersV1Response, StoreOffersV2Response } from "../types";
 import { get, validateAPIKey } from "./lib";
 
 /**

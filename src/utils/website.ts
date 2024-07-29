@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_COUNTRY_CODE } from "../constants";
+import { CountryCode, ValorantNewsArticleV1Response } from "../types";
 import { get, validateAPIKey, validateCountryCode } from "./lib";
 
 /**

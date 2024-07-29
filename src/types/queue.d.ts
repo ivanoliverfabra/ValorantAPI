@@ -1,11 +1,11 @@
-type QueueStatusV1Response = {
+export type QueueStatusV1Response = {
   status: 200;
   data: QueueStatusV1Data[];
 } | {
   errors: DataError[];
 };
 
-type QueueStatusV1Data = {
+export type QueueStatusV1Data = {
   mode: string;
   mode_id: string;
   enabled: boolean;
@@ -22,31 +22,31 @@ type QueueStatusV1Data = {
   maps: QueueStatusV1Map[];
 };
 
-type QueueStatusV1PartySize = {
+export type QueueStatusV1PartySize = {
   max: number;
   min: number;
   invalid: number[];
   full_party_bypass: boolean;
 };
 
-type QueueStatusV1HighSkill = {
+export type QueueStatusV1HighSkill = {
   max_party_size: number;
   min_tier: number;
   max_tier: number;
 };
 
-type QueueStatusV1SkillDisparity = {
+export type QueueStatusV1SkillDisparity = {
   tier: number;
   name: string;
   max_tier: QueueStatusV1MaxTier;
 };
 
-type QueueStatusV1MaxTier = {
+export type QueueStatusV1MaxTier = {
   id: number;
   name: string;
 };
 
-type QueueStatusV1GameRules = {
+export type QueueStatusV1GameRules = {
   overtime_win_by_two: boolean;
   allow_lenient_surrender: boolean;
   allow_drop_out: boolean;
@@ -57,12 +57,12 @@ type QueueStatusV1GameRules = {
   premier_mode: boolean;
 };
 
-type QueueStatusV1Map = {
+export type QueueStatusV1Map = {
   map: QueueStatusV1MapDetails;
   enabled: boolean;
 };
 
-type QueueStatusV1MapDetails = {
+export type QueueStatusV1MapDetails = {
   id: string;
   name: string;
 };

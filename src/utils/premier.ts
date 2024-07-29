@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { PremierConferenceV1Response, PremierLeaderboardConference, PremierLeaderboardResponse, PremierSeasonsV1Response, PremierTeamDetailsV1Response, PremierTeamHistoryV1Response, PremierTeamSearchV1Props, PremierTeamSearchV1Response, Region } from "../types";
 import { addQueryParams, get, validateAPIKey, validateRegion } from "./lib";
 
 /**

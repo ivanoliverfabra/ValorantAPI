@@ -1,3 +1,5 @@
+import { DataError } from "./types";
+
 export const BASE_API_URL = 'https://api.henrikdev.xyz/valorant';
 export const API_KEY_REGEX = /^HDEV-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
 export const REGIONS = ['na', 'eu', 'ap', 'kr', 'br', 'latam', 'pbe', 'sea', 'jp'] as const;

@@ -1,5 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 import { API_KEY_REGEX, BASE_API_URL, COUNTRYCODES, REGIONS } from "../constants";
+import { CountryCode, FunctionParams, Region, StatusCodeTuple } from "../types";
 
 export function validateAPIKey(apiKey: string): boolean {
   return API_KEY_REGEX.test(apiKey);

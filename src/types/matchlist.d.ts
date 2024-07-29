@@ -1,15 +1,15 @@
-type MatchHistoryV3OptionalProps = {
+export type MatchHistoryV3OptionalProps = {
   mode?: Gamemode;
   map?: GameMap;
   size?: number; // min: 1
 }
 
-type PremierInfo = {
+export type PremierInfo = {
   tournament_id: string;
   matchup_id: string;
 };
 
-type MatchHistoryV3Metadata = {
+export type MatchHistoryV3Metadata = {
   map: string;
   game_version: string;
   game_length: number;
@@ -27,26 +27,26 @@ type MatchHistoryV3Metadata = {
   cluster: string;
 };
 
-type Asset = {
+export type Asset = {
   small: string;
   large: string;
   wide: string;
 };
 
-type AgentAsset = {
+export type AgentAsset = {
   small: string;
   full: string;
   bust: string;
   killfeed: string;
 };
 
-type SessionPlaytime = {
+export type SessionPlaytime = {
   minutes: number;
   seconds: number;
   milliseconds: number;
 };
 
-type Behaviour = {
+export type Behaviour = {
   afk_rounds: number;
   friendly_fire: {
     incoming: number;
@@ -55,24 +55,24 @@ type Behaviour = {
   rounds_in_spawn: number;
 };
 
-type OS = {
+export type OS = {
   name: string;
   version: string;
 };
 
-type Platform = {
+export type Platform = {
   type: string;
   os: OS;
 };
 
-type AbilityCasts = {
+export type AbilityCasts = {
   c_cast: number;
   q_cast: number;
   e_cast: number;
   x_cast: number;
 };
 
-type Stats = {
+export type Stats = {
   score: number;
   kills: number;
   deaths: number;
@@ -82,7 +82,7 @@ type Stats = {
   legshots: number;
 };
 
-type Economy = {
+export type Economy = {
   spent: {
     overall: number;
     average: number;
@@ -93,7 +93,7 @@ type Economy = {
   };
 };
 
-type MatchDetailsV2Player = {
+export type MatchDetailsV2Player = {
   puuid: string;
   name: string;
   tag: string;
@@ -119,13 +119,13 @@ type MatchDetailsV2Player = {
   damage_received: number;
 };
 
-type MatchHistoryV3Players = {
+export type MatchHistoryV3Players = {
   all_players: MatchDetailsV2Player[];
   red: MatchDetailsV2Player[];
   blue: MatchDetailsV2Player[];
 };
 
-type MatchHistoryV3Observers = {
+export type MatchHistoryV3Observers = {
   puuid: string;
   name: string;
   tag: string;
@@ -138,12 +138,12 @@ type MatchHistoryV3Observers = {
   party_id: string;
 };
 
-type MatchHistoryV3Coaches = {
+export type MatchHistoryV3Coaches = {
   puuid: string;
   team: string;
 };
 
-type Customization = {
+export type Customization = {
   icon: string;
   image: string;
   primary: string;
@@ -151,31 +151,31 @@ type Customization = {
   tertiary: string;
 };
 
-type Roaster = {
+export type Roaster = {
   members: string[];
   name: string;
   tag: string;
   customization: Customization;
 };
 
-type Team = {
+export type Team = {
   has_won: boolean;
   rounds_won: number;
   rounds_lost: number;
   roaster: Roaster;
 };
 
-type MatchHistoryV3Teams = {
+export type MatchHistoryV3Teams = {
   red: MatchDetailsV2Team;
   blue: MatchDetailsV2Team;
 };
 
-type Location = {
+export type Location = {
   x: number;
   y: number;
 };
 
-type PlantEvent = {
+export type PlantEvent = {
   plant_location: Location;
   planted_by: {
     puuid: string;
@@ -193,7 +193,7 @@ type PlantEvent = {
   }[];
 };
 
-type DefuseEvent = {
+export type DefuseEvent = {
   defuse_location: Location;
   defused_by: {
     puuid: string;
@@ -210,7 +210,7 @@ type DefuseEvent = {
   }[];
 };
 
-type MatchDetailsV2DamageEvent = {
+export type MatchDetailsV2DamageEvent = {
   receiver_puuid: string;
   receiver_display_name: string;
   receiver_team: string;
@@ -220,7 +220,7 @@ type MatchDetailsV2DamageEvent = {
   legshots: number;
 };
 
-type MatchDetailsV2KillEvent = {
+export type MatchDetailsV2KillEvent = {
   kill_time_in_round: number;
   kill_time_in_match: number;
   killer_puuid: string;
@@ -251,7 +251,7 @@ type MatchDetailsV2KillEvent = {
   }[];
 };
 
-type MatchDetailsV2PlayerStats = {
+export type MatchDetailsV2PlayerStats = {
   ability_casts: {
     c_casts: number;
     q_casts: number;
@@ -294,7 +294,7 @@ type MatchDetailsV2PlayerStats = {
   stayed_in_spawn: boolean;
 };
 
-type MatchHistoryV3Round = {
+export type MatchHistoryV3Round = {
   winning_team: string;
   end_type: string;
   bomb_planted: boolean;
@@ -304,7 +304,7 @@ type MatchHistoryV3Round = {
   player_stats: MatchDetailsV2PlayerStats[];
 };
 
-type MatchHistoryV3Kill = {
+export type MatchHistoryV3Kill = {
   kill_time_in_round: number;
   kill_time_in_match: number;
   killer_puuid: string;
@@ -335,7 +335,7 @@ type MatchHistoryV3Kill = {
   }[];
 };
 
-type MatchHistoryV3MatchData = {
+export type MatchHistoryV3MatchData = {
   metadata: MatchHistoryV3Metadata;
   players: MatchHistoryV3Players;
   observers: MatchHistoryV3Observers[];
@@ -345,35 +345,35 @@ type MatchHistoryV3MatchData = {
   kills: MatchHistoryV3Kill[];
 };
 
-type MatchHistoryV3Response = {
+export type MatchHistoryV3Response = {
   status: 200;
   data: MatchHistoryV3MatchData[];
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 }
 
-type MatchHistoryV4Map = {
+export type MatchHistoryV4Map = {
   id: string;
   name: string;
 };
 
-type MatchHistoryV4Queue = {
+export type MatchHistoryV4Queue = {
   id: string;
   name: string;
   mode_type: string;
 };
 
-type MatchHistoryV4Season = {
+export type MatchHistoryV4Season = {
   id: string;
   short: string;
 };
 
-type MatchHistoryV4PartyRrPenalty = {
+export type MatchHistoryV4PartyRrPenalty = {
   party_id: string;
   penalty: number;
 };
 
-type MatchHistoryV4Metadata = {
+export type MatchHistoryV4Metadata = {
   match_id: string;
   map: MatchHistoryV4Map;
   game_version: string;
@@ -389,12 +389,12 @@ type MatchHistoryV4Metadata = {
   cluster: string;
 };
 
-type MatchHistoryV4Damage = {
+export type MatchHistoryV4Damage = {
   dealt: number;
   received: number;
 };
 
-type MatchHistoryV4Stats = {
+export type MatchHistoryV4Stats = {
   score: number;
   kills: number;
   deaths: number;
@@ -405,56 +405,56 @@ type MatchHistoryV4Stats = {
   damage: MatchHistoryV4Damage;
 };
 
-type MatchHistoryV4AbilityCasts = {
+export type MatchHistoryV4AbilityCasts = {
   grenade: number;
   ability1: number;
   ability2: number;
   ultimate: number;
 };
 
-type MatchHistoryV4Tier = {
+export type MatchHistoryV4Tier = {
   id: number;
   name: string;
 };
 
-type MatchHistoryV4Customization = {
+export type MatchHistoryV4Customization = {
   card: string;
   title: string;
   preferred_level_border: string;
 };
 
-type MatchHistoryV4FriendlyFire = {
+export type MatchHistoryV4FriendlyFire = {
   incoming: number;
   outgoing: number;
 };
 
-type MatchHistoryV4Behavior = {
+export type MatchHistoryV4Behavior = {
   afk_rounds: number;
   friendly_fire: MatchHistoryV4FriendlyFire;
   rounds_in_spawn: number;
 };
 
-type MatchHistoryV4Spent = {
+export type MatchHistoryV4Spent = {
   overall: number;
   average: number;
 };
 
-type MatchHistoryV4LoadoutValue = {
+export type MatchHistoryV4LoadoutValue = {
   overall: number;
   average: number;
 };
 
-type MatchHistoryV4Economy = {
+export type MatchHistoryV4Economy = {
   spent: MatchHistoryV4Spent;
   loadout_value: MatchHistoryV4LoadoutValue;
 };
 
-type MatchHistoryV4Agent = {
+export type MatchHistoryV4Agent = {
   id: string;
   name: string;
 };
 
-type MatchHistoryV4Player = {
+export type MatchHistoryV4Player = {
   puuid: string;
   name: string;
   tag: string;
@@ -472,7 +472,7 @@ type MatchHistoryV4Player = {
   economy: MatchHistoryV4Economy;
 };
 
-type MatchHistoryV4Observer = {
+export type MatchHistoryV4Observer = {
   puuid: string;
   name: string;
   tag: string;
@@ -483,17 +483,17 @@ type MatchHistoryV4Observer = {
   party_id: string;
 };
 
-type MatchHistoryV4Coach = {
+export type MatchHistoryV4Coach = {
   puuid: string;
   team_id: string;
 };
 
-type MatchHistoryV4Rounds = {
+export type MatchHistoryV4Rounds = {
   won: number;
   lost: number;
 };
 
-type MatchHistoryV4PremierRoster = {
+export type MatchHistoryV4PremierRoster = {
   id: string;
   name: string;
   tag: string;
@@ -501,19 +501,19 @@ type MatchHistoryV4PremierRoster = {
   customization: MatchHistoryV4Customization;
 };
 
-type MatchHistoryV4Team = {
+export type MatchHistoryV4Team = {
   team_id: string;
   rounds: MatchHistoryV4Rounds;
   won: number;
   premier_roster: MatchHistoryV4PremierRoster;
 };
 
-type MatchHistoryV4Location = {
+export type MatchHistoryV4Location = {
   x: number;
   y: number;
 };
 
-type MatchHistoryV4PlantEvent = {
+export type MatchHistoryV4PlantEvent = {
   round_time_in_ms: number;
   site: string;
   location: MatchHistoryV4Location;
@@ -521,20 +521,20 @@ type MatchHistoryV4PlantEvent = {
   player_locations: MatchHistoryV4PlayerLocation[];
 };
 
-type MatchHistoryV4DefuseEvent = {
+export type MatchHistoryV4DefuseEvent = {
   round_time_in_ms: number;
   location: MatchHistoryV4Location;
   player: MatchHistoryV4Player;
   player_locations: MatchHistoryV4PlayerLocation[];
 };
 
-type MatchHistoryV4PlayerLocation = {
+export type MatchHistoryV4PlayerLocation = {
   player: MatchHistoryV4Player;
   view_radians: number;
   location: MatchHistoryV4Location;
 };
 
-type MatchHistoryV4DamageEvent = {
+export type MatchHistoryV4DamageEvent = {
   player: MatchHistoryV4Player;
   bodyshots: number;
   headshots: number;
@@ -542,7 +542,7 @@ type MatchHistoryV4DamageEvent = {
   damage: number;
 };
 
-type MatchHistoryV4RoundStats = {
+export type MatchHistoryV4RoundStats = {
   player: MatchHistoryV4Player;
   ability_casts: MatchHistoryV4AbilityCasts;
   damage_events: MatchHistoryV4DamageEvent[];
@@ -565,7 +565,7 @@ type MatchHistoryV4RoundStats = {
   stayed_in_spawn: number;
 };
 
-type MatchHistoryV4Round = {
+export type MatchHistoryV4Round = {
   id: number;
   result: string;
   ceremony: string;
@@ -575,21 +575,21 @@ type MatchHistoryV4Round = {
   stats: MatchHistoryV4RoundStats[];
 };
 
-type MatchHistoryV4Killer = {
+export type MatchHistoryV4Killer = {
   puuid: string;
   name: string;
   tag: string;
   team: string;
 };
 
-type MatchHistoryV4Victim = {
+export type MatchHistoryV4Victim = {
   puuid: string;
   name: string;
   tag: string;
   team: string;
 };
 
-type MatchHistoryV4Kill = {
+export type MatchHistoryV4Kill = {
   time_in_round_in_ms: number;
   time_in_match_in_ms: number;
   round: number;
@@ -606,7 +606,7 @@ type MatchHistoryV4Kill = {
   player_locations: MatchHistoryV4PlayerLocation[];
 };
 
-type MatchHistoryV4Data = {
+export type MatchHistoryV4Data = {
   metadata: MatchHistoryV4Metadata;
   players: MatchHistoryV4Player[];
   observers: MatchHistoryV4Observer[];
@@ -616,20 +616,20 @@ type MatchHistoryV4Data = {
   kills: MatchHistoryV4Kill[];
 };
 
-type MatchHistoryV4Response = {
+export type MatchHistoryV4Response = {
   status: 200;
   data: MatchHistoryV4Data[];
 } | {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 }
 
-type MatchHistoryV4OptionalProps = {
+export type MatchHistoryV4OptionalProps = {
   mode?: Gamemode;
   map?: GameMap;
   size?: number; // min: 1
 };
 
-type StoredMatchesV1Response = {
+export type StoredMatchesV1Response = {
   status: 200;
   results: StoredMatchesResults;
   data: StoredMatchesV1Item[];
@@ -637,20 +637,20 @@ type StoredMatchesV1Response = {
   errors: DataError<400 | 403 | 404 | 408 | 429 | 500 | 501 | 503>[];
 };
 
-type StoredMatchesResults = {
+export type StoredMatchesResults = {
   total: number,
   returned: number,
   before: number,
   after: number
 };
 
-type StoredMatchesV1Item = {
+export type StoredMatchesV1Item = {
   meta: StoredMatchesV1Meta;
   stats: StoredMatchesV1Stats;
   teams: StoredMatchesV1Teams;
 };
 
-type StoredMatchesV1Meta = {
+export type StoredMatchesV1Meta = {
   id: string;
   map: StoredMatchesV1Map;
   version: string;
@@ -661,17 +661,17 @@ type StoredMatchesV1Meta = {
   cluster: string;
 };
 
-type StoredMatchesV1Map = {
+export type StoredMatchesV1Map = {
   id: string;
   name: string;
 };
 
-type StoredMatchesV1Season = {
+export type StoredMatchesV1Season = {
   id: string;
   short: string;
 };
 
-type StoredMatchesV1Stats = {
+export type StoredMatchesV1Stats = {
   puuid: string;
   team: string;
   level: number;
@@ -685,28 +685,28 @@ type StoredMatchesV1Stats = {
   damage: StoredMatchesV1Damage;
 };
 
-type StoredMatchesV1Character = {
+export type StoredMatchesV1Character = {
   id: string;
   name: string;
 };
 
-type StoredMatchesV1Shots = {
+export type StoredMatchesV1Shots = {
   head: number;
   body: number;
   leg: number;
 };
 
-type StoredMatchesV1Damage = {
+export type StoredMatchesV1Damage = {
   dealt: number;
   received: number;
 };
 
-type StoredMatchesV1Teams = {
+export type StoredMatchesV1Teams = {
   red: number;
   blue: number;
 };
 
-type StoredMatchesV1OptionalProps = {
+export type StoredMatchesV1OptionalProps = {
   mode?: Gamemode;
   map?: GameMap;
   page?: number;

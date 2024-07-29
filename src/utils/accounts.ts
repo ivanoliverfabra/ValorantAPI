@@ -1,4 +1,5 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
+import { AccountDataV1OptionalProps, AccountDataV1Response, AccountDataV2OptionalProps, AccountDataV2Response } from "../types";
 import { get, validateAPIKey } from "./lib";
 
 /**
