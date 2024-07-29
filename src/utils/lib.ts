@@ -23,23 +23,17 @@ export function initiateAxios(apiKey: string): AxiosInstance {
   });
 };
 
-export function addQueryParams(url: string, params: FunctionParams): string {
-  if (!url.startsWith("https://") && !url.startsWith("http://")) {
-    url = `${BASE_API_URL}/${url}`;
-  }
-  
-  const urlObj = new URL(url);
-  const urlParams = new URLSearchParams(urlObj.search);
-  
+export function addQueryParams(url: string, params: { [key: string]: any }): string {
+  const [baseUrl, queryString] = url.split('?');
+  const urlParams = new URLSearchParams(queryString);
+
   Object.entries(params).forEach(([key, value]) => {
     if (value === undefined) return;
     urlParams.set(key, value.toString());
   });
-  
-  urlObj.search = urlParams.toString();
-  
-  const finalUrl = urlObj.toString();
-  return finalUrl.startsWith(BASE_API_URL) ? finalUrl.replace(`${BASE_API_URL}/`, "") : finalUrl;
+
+  const finalUrl = `${baseUrl}?${urlParams.toString()}`;
+  return finalUrl;
 }
 
 export async function get<T = APIResponse>(apiKey: string, url: string, params?: FunctionParams, options?: AxiosRequestConfig): Promise<T> {
