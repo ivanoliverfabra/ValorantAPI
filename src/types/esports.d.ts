@@ -19,7 +19,7 @@ export type UpcomingMatchV1Team = {
   record: UpcomingMatchV1Record;
 };
 
-export type Match = {
+export type UpcomingMatchV1Match = {
   id: string;
   game_type: UpcomingMatchV1GameType;
   teams: UpcomingMatchV1Team[];
@@ -37,7 +37,7 @@ export type UpcomingMatchV1League = {
   region: string;
 };
 
-export type UpcomingMatchV1Data = {
+export type UpcomingMatchV1 = {
   date: string;
   state: string;
   type: string;

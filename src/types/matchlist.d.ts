@@ -62,7 +62,7 @@ export type OS = {
   version: string;
 };
 
-export type Platform = {
+export type MatchlistPlatform = {
   type: string;
   os: OS;
 };
@@ -113,7 +113,7 @@ export type MatchDetailsV2Player = {
     agent: AgentAsset;
   };
   behaviour: Behaviour;
-  platform: Platform;
+  platform: MatchlistPlatform;
   ability_casts: AbilityCasts;
   stats: Stats;
   economy: Economy;
@@ -131,7 +131,7 @@ export type MatchHistoryV3Observers = {
   puuid: string;
   name: string;
   tag: string;
-  platform: Platform;
+  platform: MatchlistPlatform;
   session_playtime: SessionPlaytime;
   team: string;
   level: number;
