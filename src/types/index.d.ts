@@ -93,10 +93,10 @@ export type SearchPremierTeamsV1 = (props: PremierTeamSearchV1Props) => Promise<
 
 export type GetQueueStatus = (region: Region) => Promise<QueueStatusV1Response>;
 
-export type GetRegionStatusV1 = (region: Region) => Promise<RegionStatusV1Response>;
+export type GetRegionStatusV1 = (region: Region) => Promise<StatusV1Response>;
 
-export type GetStoreFeaturedV1 = () => Promise<StoreFeaturedV1Response>;
-export type GetStoreFeaturedV2 = () => Promise<StoreFeaturedV2Response>;
+export type GetStoreFeaturedV1 = () => Promise<FeaturedStoreV1Response>;
+export type GetStoreFeaturedV2 = () => Promise<FeaturedStoreV2Response>;
 export type GetStoreOffersV1 = () => Promise<StoreOffersV1Response>;
 export type GetStoreOffersV2 = () => Promise<StoreOffersV2Response>;
 
