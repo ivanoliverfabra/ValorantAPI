@@ -1,2 +1,12 @@
-export const one = 1
-export const two = 2
+import { AxiosInstance } from "axios";
+import { initiateAxios } from "./utils";
+
+export default class ValorantAPI {
+  private readonly axios: AxiosInstance;
+
+  constructor(props: ValorantAPIProps) {
+    this.axios = initiateAxios(props.apiKey);
+  }
+
+  // ...
+}

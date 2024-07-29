@@ -1,6 +1,6 @@
 {
   "name": "valorant-wrapper-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "",
@@ -12,19 +12,25 @@
     "dist"
   ],
   "keywords": [
-    "bun"
+    "bun",
+    "valorant",
+    "riot",
+    "unofficial-valorant-api"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wobsoriano/pkg-name#readme",
+  "homepage": "https://github.com/ivanoliverfabra/ValorantAPI",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wobsoriano/pkg-name.git"
+    "url": "git+https://github.com/ivanoliverfabra/ValorantAPI.git"
   },
   "bugs": "https://github.com/wobsoriano/pkg-name/issues",
-  "author": "Robert Soriano <sorianorobertc@gmail.com>",
+  "author": "Ivan Oliver <ivan@fabra.me>",
   "devDependencies": {
-    "bun-plugin-dts": "^0.2.1",
-    "@types/bun": "^1.0.0",
-    "typescript": "^5.2.2"
+    "bun-plugin-dts": "^0.2.3",
+    "@types/bun": "^1.1.6",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
   }
 }
