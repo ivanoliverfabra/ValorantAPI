@@ -20,3 +20,7 @@ HDEV_API_KEY=YOUR_API_KEY
 ```
 
 If you set the environment variable `HDEV_API_KEY` to your API key, you can use the library without passing the API key as a parameter to the functions.
+
+## Get API Key
+
+<a href="https://discord.gg/X3GaVkX2YN" target="_blank"><img src="https://discordapp.com/api/guilds/704231681309278228/widget.png?style=banner2"/></a>
