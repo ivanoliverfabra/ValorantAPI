@@ -64,7 +64,7 @@ export default class ValorantAPI implements ValorantAPIClass {
     upcoming: (props) => getUpcomingMatches(this.apiKey, props),
     details: {
       v2: (matchId) => getMatchDetailsV2(matchId, this.apiKey),
-      v4: (platform, matchId) => getMatchDetailsV4(platform, matchId, this.apiKey),
+      v4: (region, matchId) => getMatchDetailsV4(region, matchId, this.apiKey),
     },
     history: {
       v3: {

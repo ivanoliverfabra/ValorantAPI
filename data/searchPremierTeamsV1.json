@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "0e0129a6-9b2f-41e4-8ba1-0915e27ebf7c",
+      "name": "MORBIDLY OBESE",
+      "tag": "OBESE",
+      "conference": "NA_US_WEST",
+      "division": 21,
+      "affinity": "na",
+      "region": "na",
+      "losses": 3,
+      "wins": 11,
+      "score": 991175,
+      "ranking": 1,
+      "customization": {
+        "icon": "c5b2a5ea-4070-c721-a441-feb969cbff35",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/c5b2a5ea-4070-c721-a441-feb969cbff35?primary=9a4e16&secondary=a5702d&tertiary=ece8e1",
+        "primary": "#9a4e16",
+        "secondary": "#a5702d",
+        "tertiary": "#ece8e1"
+      },
+      "updated_at": "2024-06-26T17:35:43.841Z"
+    },
+    {
+      "id": "0e0129a6-9b2f-41e4-8ba1-0915e27ebf7c",
+      "name": "MORBIDLY OBESE",
+      "tag": "OBESE",
+      "conference": "NA_SUPER",
+      "division": 22,
+      "affinity": "na",
+      "region": "na",
+      "losses": 1,
+      "wins": 9,
+      "score": 900,
+      "ranking": 0,
+      "customization": {
+        "icon": "c5b2a5ea-4070-c721-a441-feb969cbff35",
+        "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/c5b2a5ea-4070-c721-a441-feb969cbff35?primary=9a4e16&secondary=a5702d&tertiary=ece8e1",
+        "primary": "#9a4e16",
+        "secondary": "#a5702d",
+        "tertiary": "#ece8e1"
+      },
+      "updated_at": "2024-07-30T13:11:54.26Z"
+    }
+  ]
+}

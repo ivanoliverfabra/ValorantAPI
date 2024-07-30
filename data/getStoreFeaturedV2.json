@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "data": [
+    {
+      "bundle_uuid": "35815cab-429d-79e4-43f5-e0af8fdac22b",
+      "bundle_price": 6700,
+      "whole_sale_only": false,
+      "items": [
+        {
+          "uuid": "91130713-44e6-8436-d34c-e3badaf241b7",
+          "name": "RGX 11z Pro Karambit",
+          "image": "https://media.valorant-api.com/weaponskins/91130713-44e6-8436-d34c-e3badaf241b7/displayicon.png",
+          "type": "skin_level",
+          "amount": 1,
+          "discount_percent": 0.23,
+          "base_price": 4350,
+          "discounted_price": 3350,
+          "promo_item": false
+        },
+        {
+          "uuid": "142be691-42a0-c0a1-f6ed-57b3158def7e",
+          "name": "RGX 11z Pro Sheriff",
+          "image": "https://media.valorant-api.com/weaponskins/142be691-42a0-c0a1-f6ed-57b3158def7e/displayicon.png",
+          "type": "skin_level",
+          "amount": 1,
+          "discount_percent": 0.23,
+          "base_price": 2175,
+          "discounted_price": 1675,
+          "promo_item": false
+        },
+        {
+          "uuid": "fdeb2877-4030-e396-f0cb-998868362c12",
+          "name": "RGX 11z Pro Outlaw",
+          "image": "https://media.valorant-api.com/weaponskins/fdeb2877-4030-e396-f0cb-998868362c12/displayicon.png",
+          "type": "skin_level",
+          "amount": 1,
+          "discount_percent": 0.23,
+          "base_price": 2175,
+          "discounted_price": 1675,
+          "promo_item": false
+        },
+        {
+          "uuid": "b7a9cf2e-4488-88b9-a2c0-ed88fb189e9b",
+          "name": "RGX 11z Pro, Ep 9 Buddy",
+          "image": "https://media.valorant-api.com/buddies/b7a9cf2e-4488-88b9-a2c0-ed88fb189e9b/displayicon.png",
+          "type": "buddy",
+          "amount": 2,
+          "discount_percent": 1,
+          "base_price": 475,
+          "discounted_price": 0,
+          "promo_item": false
+        },
+        {
+          "uuid": "76ca86c6-4fdf-9799-f091-9d873c61b87e",
+          "name": "RGX 11z Pro, Ep 9 Card",
+          "image": "https://media.valorant-api.com/playercards/76ca86c6-4fdf-9799-f091-9d873c61b87e/displayicon.png",
+          "type": "player_card",
+          "amount": 1,
+          "discount_percent": 1,
+          "base_price": 575,
+          "discounted_price": 0,
+          "promo_item": false
+        },
+        {
+          "uuid": "7e4984e0-4ec8-5dd8-acd7-2cbc960116a9",
+          "name": "RGX 11z Pro, Ep 9 Spray",
+          "image": "https://media.valorant-api.com/sprays/7e4984e0-4ec8-5dd8-acd7-2cbc960116a9/displayicon.png",
+          "type": "spray",
+          "amount": 1,
+          "discount_percent": 1,
+          "base_price": 325,
+          "discounted_price": 0,
+          "promo_item": false
+        }
+      ],
+      "seconds_remaining": 193812,
+      "expires_at": "2024-08-01T20:59:59.744Z"
+    }
+  ]
+}

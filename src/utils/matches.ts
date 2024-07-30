@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
-import { MatchDetailsV2Response, MatchDetailsV4Response, Platform } from "../types";
-import { get, parseAPIKey, parseError, validateAPIKey, warnBroken } from "./lib";
+import { MatchDetailsV2Response, MatchDetailsV4Response, Region } from "../types";
+import { get, parseAPIKey, parseError, validateAPIKey } from "./lib";
 
 /**
  * Match Details V2
@@ -32,16 +32,13 @@ export async function getMatchDetailsV2(matchId: string, apiKey?: string): Promi
  * @returns {MatchDetailsV3Response}
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
- * @deprecated Use getMatchDetailsV2
  */
-export async function getMatchDetailsV4(platform: Platform, matchId: string, apiKey?: string): Promise<MatchDetailsV4Response> {
-  warnBroken('getMatchDetailsV4', 'getMatchDetailsV2');
-
+export async function getMatchDetailsV4(region: Region, matchId: string, apiKey?: string): Promise<MatchDetailsV4Response> {
   apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
   
   try {
-    return get<MatchDetailsV4Response>(apiKey!, `/v4/match/${platform}/${matchId}`);
+    return get<MatchDetailsV4Response>(apiKey!, `/v4/match/${region}/${matchId}`);
   } catch (error) {
     console.error('Error fetching match details:', error);
     return parseError(INTERNAL_ERROR);

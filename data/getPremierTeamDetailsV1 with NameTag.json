@@ -1,0 +1,136 @@
+{
+  "success": true,
+  "data": {
+    "id": "0e0129a6-9b2f-41e4-8ba1-0915e27ebf7c",
+    "name": "MORBIDLY OBESE",
+    "tag": "OBESE",
+    "enrolled": true,
+    "stats": {
+      "wins": 9,
+      "matches": 10,
+      "losses": 1,
+      "rounds_won": 128,
+      "rounds_lost": 66
+    },
+    "placement": {
+      "points": 900,
+      "conference": "NA_SUPER",
+      "division": 22,
+      "place": 0
+    },
+    "customization": {
+      "icon": "c5b2a5ea-4070-c721-a441-feb969cbff35",
+      "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/c5b2a5ea-4070-c721-a441-feb969cbff35?primary=9a4e16&secondary=a5702d&tertiary=ece8e1",
+      "primary": "#9a4e16",
+      "secondary": "#a5702d",
+      "tertiary": "#ece8e1"
+    },
+    "member": [
+      {
+        "puuid": "90bc8233-6f5a-5375-b279-a59abcc99216",
+        "name": "heartless",
+        "tag": "css"
+      },
+      {
+        "puuid": "8a210f88-449d-5438-a08a-e164101471ea",
+        "name": "Banana Strangler",
+        "tag": "thom"
+      },
+      {
+        "puuid": "7e72c2fe-84e4-5066-8061-b51ff6dbdc92",
+        "name": "sogo ツ",
+        "tag": "soren"
+      },
+      {
+        "puuid": "a816b287-1161-5f46-acc3-4f0aec15de15",
+        "name": "Excite",
+        "tag": "MVP"
+      },
+      {
+        "puuid": "ca94228f-66cc-5dde-a1bf-76da4b2e3712",
+        "name": "AlphaFly",
+        "tag": "Coach"
+      },
+      {
+        "puuid": "a21a01a4-ea6c-58a5-9e34-06da18416bb6",
+        "name": "HUYNH",
+        "tag": "Smirk"
+      },
+      {
+        "puuid": "e4034bf5-87fe-5ded-8644-12cb246a51bf",
+        "name": "papi",
+        "tag": "tae"
+      },
+      {
+        "puuid": "94aa9982-97f4-53da-9c77-5175d368cd39",
+        "name": "Dinxx",
+        "tag": "frog"
+      },
+      {
+        "puuid": "a21a01a4-ea6c-58a5-9e34-06da18416bb6",
+        "name": "HUYNH",
+        "tag": "Smirk"
+      },
+      {
+        "puuid": "7e72c2fe-84e4-5066-8061-b51ff6dbdc92",
+        "name": "sogo ツ",
+        "tag": "soren"
+      },
+      {
+        "puuid": "8a210f88-449d-5438-a08a-e164101471ea",
+        "name": "Banana Strangler",
+        "tag": "thom"
+      },
+      {
+        "puuid": "ca94228f-66cc-5dde-a1bf-76da4b2e3712",
+        "name": "AlphaFly",
+        "tag": "Coach"
+      },
+      {
+        "puuid": "e4034bf5-87fe-5ded-8644-12cb246a51bf",
+        "name": "papi",
+        "tag": "tae"
+      },
+      {
+        "puuid": "a816b287-1161-5f46-acc3-4f0aec15de15",
+        "name": "Excite",
+        "tag": "MVP"
+      },
+      {
+        "puuid": "004a9bab-ef61-558e-a319-fae6472c615f",
+        "name": "mehzy",
+        "tag": "2007m"
+      },
+      {
+        "puuid": "57acfa9e-d3a2-5fae-94c3-50bfb29a69ee",
+        "name": "dice2005",
+        "tag": "x3005"
+      },
+      {
+        "puuid": "a9621ba1-f1be-5518-93ea-8df0175ce19c",
+        "name": "JoBa",
+        "tag": "boba"
+      },
+      {
+        "puuid": "fdb46744-0a4b-5ba2-b442-0595e4694d3d",
+        "name": "j breezy",
+        "tag": "101"
+      },
+      {
+        "puuid": "be5cacb7-3ed6-52c2-b892-6675b4e15d6f",
+        "name": "Austin",
+        "tag": "limp"
+      },
+      {
+        "puuid": "3b85e687-df47-5bed-8f93-4feebf16a509",
+        "name": "khs",
+        "tag": "vibe"
+      },
+      {
+        "puuid": "053946ca-8bfe-50d4-a439-68d06edf9e90",
+        "name": "Nick",
+        "tag": "G59"
+      }
+    ]
+  }
+}

@@ -2097,7 +2097,7 @@ export type GetUpcomingMatches = (props?: UpcomingMatchV1OptionalProps) => Promi
 
 export type GetMatchDetailsV2 = (matchId: string) => Promise<MatchDetailsV2Response>;
 
-export type GetMatchDetailsV4 = (platform: Platform, matchId: string) => Promise<MatchDetailsV4Response | void>;
+export type GetMatchDetailsV4 = (region: Region, matchId: string) => Promise<MatchDetailsV4Response | void>;
 
 export type GetMatchHistoryV3<P extends boolean = false> = P extends true 
   ? (region: Region, puuid: string) => Promise<MatchHistoryV3Response>

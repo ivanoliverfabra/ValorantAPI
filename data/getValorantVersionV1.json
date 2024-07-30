@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "region": "na",
+    "branch": "release-09.02",
+    "build_date": "Jul 20 2024",
+    "build_ver": "09.02.00.2681436",
+    "last_checked": "2024-07-30T14:44:41.355Z",
+    "version": 19,
+    "version_for_api": "release-09.02-shipping-19-2681436"
+  }
+}

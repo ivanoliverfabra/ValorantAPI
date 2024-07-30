@@ -1,0 +1,3765 @@
+{
+  "success": true,
+  "data": [
+    {
+      "date": "2024-07-2523:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/s5T4UVWYcYA",
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619405",
+        "teams": [
+          {
+            "name": "SaD Esports",
+            "code": "SAD",
+            "icon": "http://static.lolesports.com/teams/1709875101367_sadesportsmain.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 0,
+              "losses": 2
+            }
+          },
+          {
+            "name": "TSM",
+            "code": "TSM",
+            "icon": "http://static.lolesports.com/teams/1710835883442_White-Logo-Mark.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2607:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers SEA PH",
+        "identifier": "challengers_sea_ph",
+        "icon": "http://static.lolesports.com/leagues/1673418714681_VCTChallengersSpark1.png",
+        "region": "SOUTHEAST ASIA"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112524901769471664",
+        "teams": [
+          {
+            "name": "OASIS GAMING",
+            "code": "OAS",
+            "icon": "http://static.lolesports.com/teams/1652174098356_VCT21_OASISGAMING_Logo_Color.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          },
+          {
+            "name": "ZOL Esports",
+            "code": "ZOL",
+            "icon": "http://static.lolesports.com/teams/1679919918738_CopyofNEWZOLSOcialmediaLogoPNGFORM.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2607:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/L9TuJCLsTJ4",
+      "league": {
+        "name": "Challengers SEA ID",
+        "identifier": "challengers_sea_id",
+        "icon": "http://static.lolesports.com/leagues/1673418697560_VCTChallengersSpark1.png",
+        "region": "SOUTHEAST ASIA"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112433222746864558",
+        "teams": [
+          {
+            "name": "BOOM ESPORTS",
+            "code": "BME",
+            "icon": "http://static.lolesports.com/teams/boom-color.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 4,
+              "losses": 1
+            }
+          },
+          {
+            "name": "BIGETRON ARCTIC",
+            "code": "BTR",
+            "icon": "http://static.lolesports.com/teams/1679561089922_BIGETRONARCTIC.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2608:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers KR",
+        "identifier": "game_changers_kr",
+        "icon": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "game_changers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112755611490033029",
+        "teams": [
+          {
+            "name": "SGA Incheon",
+            "code": "SGA",
+            "icon": "http://static.lolesports.com/teams/1721811800078_SGA2.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 2
+            }
+          },
+          {
+            "name": "MIR Gaming",
+            "code": "MIR",
+            "icon": "http://static.lolesports.com/teams/1721811528651_Mir_Logo.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2610:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/L9TuJCLsTJ4",
+      "league": {
+        "name": "Challengers SEA ID",
+        "identifier": "challengers_sea_id",
+        "icon": "http://static.lolesports.com/leagues/1673418697560_VCTChallengersSpark1.png",
+        "region": "SOUTHEAST ASIA"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112433222746864546",
+        "teams": [
+          {
+            "name": "TEAM ARF",
+            "code": "ARF",
+            "icon": "http://static.lolesports.com/teams/1651949318311_ARF_LOGO_white-ARFTEAM.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          },
+          {
+            "name": "ALTER EGO",
+            "code": "AE",
+            "icon": "http://static.lolesports.com/teams/VCT21_AlterEgo_Logo_Color.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2611:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers KR",
+        "identifier": "game_changers_kr",
+        "icon": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "game_changers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112755611490164105",
+        "teams": [
+          {
+            "name": "Nuclear GC",
+            "code": "NCGC",
+            "icon": "http://static.lolesports.com/teams/1721811649561_NC.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          },
+          {
+            "name": "URACHACHA",
+            "code": "UR",
+            "icon": "http://static.lolesports.com/teams/1721811700412_1.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2614:30:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers Türkiye",
+        "identifier": "vrl_turkey",
+        "icon": "http://static.lolesports.com/leagues/1672932276425_TURKIYE_ICON_400_400.png",
+        "region": "EMEA"
+      },
+      "tournament": {
+        "name": "emea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112433495917886734",
+        "teams": [
+          {
+            "name": "HOWL Esports",
+            "code": "HOWL",
+            "icon": "http://static.lolesports.com/teams/1704800601784_HOWLbeyaz.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "PCIFIC KABASAKAL",
+            "code": "PCF",
+            "icon": "http://static.lolesports.com/teams/1715599432530_beyaz.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 4,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2615:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers East",
+        "identifier": "vrl_east",
+        "icon": "http://static.lolesports.com/leagues/1672932157903_EAST_ICON_400_400.png",
+        "region": "EMEA"
+      },
+      "tournament": {
+        "name": "emea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112405402169268725",
+        "teams": [
+          {
+            "name": "Diamant Esports",
+            "code": "DIA",
+            "icon": "http://static.lolesports.com/teams/1651220920353_Diamant_Ico_512x512.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "Acend",
+            "code": "ACE",
+            "icon": "http://static.lolesports.com/teams/1645434356978_ACEND_VECTOR_PURPLE_WITHOUT_TEXT1.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2615:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers Northern Europe",
+        "identifier": "vrl_northern_europe",
+        "icon": "http://static.lolesports.com/leagues/1672932221970_NORTH_ICON_400_400.png",
+        "region": "EMEA"
+      },
+      "tournament": {
+        "name": "emea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112404393009714846",
+        "teams": [
+          {
+            "name": "Apeks",
+            "code": "APK",
+            "icon": "http://static.lolesports.com/teams/1673468188944_Apeks_Logomark_Orange1.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          },
+          {
+            "name": "SweetNSour",
+            "code": "SNS",
+            "icon": "http://static.lolesports.com/teams/1705488685620_SweetNSour.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2616:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers Italy",
+        "identifier": "challengers_italy",
+        "icon": "http://static.lolesports.com/leagues/1672932185938_ITALY_ICON_400_400.png",
+        "region": "EMEA"
+      },
+      "tournament": {
+        "name": "emea_regional_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112434072919333622",
+        "teams": [
+          {
+            "name": "Dsyre",
+            "code": "DSY",
+            "icon": "http://static.lolesports.com/teams/1705526935482_LOGOMARK-DSYRE-REBRAND-white-NicoloMureddu.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          },
+          {
+            "name": "NOVO Esports",
+            "code": "NOVO",
+            "icon": "http://static.lolesports.com/teams/1705526901516_LogoNovoesportsbianco1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2616:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers MENA",
+        "identifier": "mena_resilence",
+        "icon": "http://static.lolesports.com/leagues/1672932199669_MENA_ICON_400_400.png",
+        "region": "EMEA"
+      },
+      "tournament": {
+        "name": "emea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112715816929285552",
+        "teams": [
+          {
+            "name": "Team Falcons",
+            "code": "FLC",
+            "icon": "http://static.lolesports.com/teams/1644224643795_output-onlinepngtools.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          },
+          {
+            "name": "R8 Esports",
+            "code": "R8",
+            "icon": "http://static.lolesports.com/teams/1707897702104_Asset363x.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2620:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers BR",
+        "identifier": "challengers_br",
+        "icon": "http://static.lolesports.com/leagues/1673419029644_VCTChallengersSpark1.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "challengers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112757392927819806",
+        "teams": [
+          {
+            "name": "Stellae Gaming",
+            "code": "STE",
+            "icon": "http://static.lolesports.com/teams/1707475556413_Padrao-ThiagoCampos.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "2GAME eSports",
+            "code": "2G",
+            "icon": "http://static.lolesports.com/teams/1707475414047_MAINLOGO-2GAMEESPORTS-TRANSPARENTBACKGROUND-DarlanDaSilva1.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2620:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/otexVXqoHpA",
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619413",
+        "teams": [
+          {
+            "name": "DarkZero",
+            "code": "DZ",
+            "icon": "http://static.lolesports.com/teams/1718964280057_DZ-mark.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          },
+          {
+            "name": "Oxygen Esports",
+            "code": "OXG",
+            "icon": "http://static.lolesports.com/teams/1709874562189_OXG_Icon-Green_6.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2620:30:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers LATAM",
+        "identifier": "challengers_latam",
+        "icon": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112432767869150170",
+        "teams": [
+          {
+            "name": "9z Globant",
+            "code": "9ZG",
+            "icon": "http://static.lolesports.com/teams/1710746201629_FULLCOLORFORDARK.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 2
+            }
+          },
+          {
+            "name": "RETA",
+            "code": "RETA",
+            "icon": "http://static.lolesports.com/teams/1676362489151_TransparenteMesadetrabajo1-8.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2623:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers BR",
+        "identifier": "challengers_br",
+        "icon": "http://static.lolesports.com/leagues/1673419029644_VCTChallengersSpark1.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "challengers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112757392927819802",
+        "teams": [
+          {
+            "name": "THE 7",
+            "code": "777",
+            "icon": "http://static.lolesports.com/teams/1718904608581_logotheseven.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Galorys",
+            "code": "GLRS",
+            "icon": "http://static.lolesports.com/teams/1707475258997_IconeGalorys_Degrade-MarcosSoares.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 4,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2623:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/dVCeq16Haiw",
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619417",
+        "teams": [
+          {
+            "name": "Blinn",
+            "code": "BLIN",
+            "icon": "http://static.lolesports.com/teams/1715717648576_BLINN.jpg",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          },
+          {
+            "name": "TSM",
+            "code": "TSM",
+            "icon": "http://static.lolesports.com/teams/1710835883442_White-Logo-Mark.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2623:30:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers LATAM",
+        "identifier": "challengers_latam",
+        "icon": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112432767869215710",
+        "teams": [
+          {
+            "name": "All Knights",
+            "code": "AK",
+            "icon": "http://static.lolesports.com/teams/1712621752514_ONECOLORFORDARKBG.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "E-Xolos LAZER",
+            "code": "EXL",
+            "icon": "http://static.lolesports.com/teams/1631549606952_LAZER-XOLOS-2021-1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2704:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/2208605468",
+      "league": {
+        "name": "Challengers JPN",
+        "identifier": "challengers_jpn",
+        "icon": "http://static.lolesports.com/leagues/1674125917239_VCTChallengersSpark1.png",
+        "region": "JAPAN"
+      },
+      "tournament": {
+        "name": "challengers_jpn_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112449913694051296",
+        "teams": [
+          {
+            "name": "FENNEL",
+            "code": "FL",
+            "icon": "http://static.lolesports.com/teams/1645525438670_FENNEL.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Sengoku Gaming",
+            "code": "SG",
+            "icon": "http://static.lolesports.com/teams/1674205561108_SengokuGaming1.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 0,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2705:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers KR",
+        "identifier": "game_changers_kr",
+        "icon": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "game_changers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112755611490164109",
+        "teams": [
+          {
+            "name": "URACHACHA",
+            "code": "UR",
+            "icon": "http://static.lolesports.com/teams/1721811700412_1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "MIR Gaming",
+            "code": "MIR",
+            "icon": "http://static.lolesports.com/teams/1721811528651_Mir_Logo.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2707:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/aUFl63gk-JA",
+      "league": {
+        "name": "Challengers SEA ID",
+        "identifier": "challengers_sea_id",
+        "icon": "http://static.lolesports.com/leagues/1673418697560_VCTChallengersSpark1.png",
+        "region": "SOUTHEAST ASIA"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112433222746864562",
+        "teams": [
+          {
+            "name": "BOOM ESPORTS",
+            "code": "BME",
+            "icon": "http://static.lolesports.com/teams/boom-color.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 4,
+              "losses": 1
+            }
+          },
+          {
+            "name": "TEAM ARF",
+            "code": "ARF",
+            "icon": "http://static.lolesports.com/teams/1651949318311_ARF_LOGO_white-ARFTEAM.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2708:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers KR",
+        "identifier": "game_changers_kr",
+        "icon": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "game_changers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112755611490164113",
+        "teams": [
+          {
+            "name": "Nuclear GC",
+            "code": "NCGC",
+            "icon": "http://static.lolesports.com/teams/1721811649561_NC.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          },
+          {
+            "name": "SGA Incheon",
+            "code": "SGA",
+            "icon": "http://static.lolesports.com/teams/1721811800078_SGA2.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 0,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2708:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers KR",
+        "identifier": "challengers_kr",
+        "icon": "http://static.lolesports.com/leagues/1674218302715_VCTChallengersSpark1.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "challengers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112478394486496611",
+        "teams": [
+          {
+            "name": "Sin Prisa Gaming",
+            "code": "SPG",
+            "icon": "http://static.lolesports.com/teams/1716283865690_SPG.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          },
+          {
+            "name": "NS Redforce",
+            "code": "NS",
+            "icon": "http://static.lolesports.com/teams/1674219422693_NS_.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 4,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2710:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers SEA VN",
+        "identifier": "challengers_sea_vn",
+        "icon": "http://static.lolesports.com/leagues/1673418991331_VCTChallengersSpark1.png",
+        "region": "VIETNAM"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112518847780803253",
+        "teams": [
+          {
+            "name": "Rapid Lofi",
+            "code": "RLF",
+            "icon": "http://static.lolesports.com/teams/1706612393759_RAPIDLOFI.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          },
+          {
+            "name": "FPTxFlash",
+            "code": "FPT",
+            "icon": "http://static.lolesports.com/teams/1706612259639_logo.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2715:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers East",
+        "identifier": "vrl_east",
+        "icon": "http://static.lolesports.com/leagues/1672932157903_EAST_ICON_400_400.png",
+        "region": "EMEA"
+      },
+      "tournament": {
+        "name": "emea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112405402169268731",
+        "teams": [
+          {
+            "name": "GoNext Esports",
+            "code": "GN",
+            "icon": "http://static.lolesports.com/teams/1679583566236_FinalLogo-GONEXT-07-1_1.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Diamant Esports",
+            "code": "DIA",
+            "icon": "http://static.lolesports.com/teams/1651220920353_Diamant_Ico_512x512.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2718:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers LATAM",
+        "identifier": "challengers_latam",
+        "icon": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112432767869215720",
+        "teams": [
+          {
+            "name": "9z Globant",
+            "code": "9ZG",
+            "icon": "http://static.lolesports.com/teams/1710746201629_FULLCOLORFORDARK.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 0,
+              "losses": 2
+            }
+          },
+          {
+            "name": "E-Xolos LAZER",
+            "code": "EXL",
+            "icon": "http://static.lolesports.com/teams/1631549606952_LAZER-XOLOS-2021-1.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2720:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers BR",
+        "identifier": "challengers_br",
+        "icon": "http://static.lolesports.com/leagues/1673419029644_VCTChallengersSpark1.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "challengers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112757392927819810",
+        "teams": [
+          {
+            "name": "2GAME eSports",
+            "code": "2G",
+            "icon": "http://static.lolesports.com/teams/1707475414047_MAINLOGO-2GAMEESPORTS-TRANSPARENTBACKGROUND-DarlanDaSilva1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "Galorys",
+            "code": "GLRS",
+            "icon": "http://static.lolesports.com/teams/1707475258997_IconeGalorys_Degrade-MarcosSoares.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 4,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2721:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers LATAM",
+        "identifier": "challengers_latam",
+        "icon": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112432767869215714",
+        "teams": [
+          {
+            "name": "All Knights",
+            "code": "AK",
+            "icon": "http://static.lolesports.com/teams/1712621752514_ONECOLORFORDARKBG.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "RETA",
+            "code": "RETA",
+            "icon": "http://static.lolesports.com/teams/1676362489151_TransparenteMesadetrabajo1-8.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2804:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers JPN",
+        "identifier": "challengers_jpn",
+        "icon": "http://static.lolesports.com/leagues/1674125917239_VCTChallengersSpark1.png",
+        "region": "JAPAN"
+      },
+      "tournament": {
+        "name": "challengers_jpn_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112449913694051302",
+        "teams": [
+          {
+            "name": "RIDDLE ORDER",
+            "code": "RID",
+            "icon": "http://static.lolesports.com/teams/1715849788853_6569a81625295.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          },
+          {
+            "name": "FENNEL",
+            "code": "FL",
+            "icon": "http://static.lolesports.com/teams/1645525438670_FENNEL.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2805:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers KR",
+        "identifier": "game_changers_kr",
+        "icon": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "game_changers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112755611490164117",
+        "teams": [
+          {
+            "name": "URACHACHA",
+            "code": "UR",
+            "icon": "http://static.lolesports.com/teams/1721811700412_1.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "Nuclear GC",
+            "code": "NCGC",
+            "icon": "http://static.lolesports.com/teams/1721811649561_NC.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2808:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers KR",
+        "identifier": "game_changers_kr",
+        "icon": "http://static.lolesports.com/leagues/1663662378687_VCT_Game_Changers_Bug_Yellow_Dark.png",
+        "region": "KOREA"
+      },
+      "tournament": {
+        "name": "game_changers_kr_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112755611490164121",
+        "teams": [
+          {
+            "name": "URACHACHA",
+            "code": "UR",
+            "icon": "http://static.lolesports.com/teams/1721811700412_1.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "MIR Gaming",
+            "code": "MIR",
+            "icon": "http://static.lolesports.com/teams/1721811528651_Mir_Logo.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2808:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/v7JhQLOQRkM",
+      "league": {
+        "name": "Challengers SEA ID",
+        "identifier": "challengers_sea_id",
+        "icon": "http://static.lolesports.com/leagues/1673418697560_VCTChallengersSpark1.png",
+        "region": "SOUTHEAST ASIA"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112433222746864568",
+        "teams": [
+          {
+            "name": "BOOM ESPORTS",
+            "code": "BME",
+            "icon": "http://static.lolesports.com/teams/boom-color.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 4,
+              "losses": 1
+            }
+          },
+          {
+            "name": "ALTER EGO",
+            "code": "AE",
+            "icon": "http://static.lolesports.com/teams/VCT21_AlterEgo_Logo_Color.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2810:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers SEA VN",
+        "identifier": "challengers_sea_vn",
+        "icon": "http://static.lolesports.com/leagues/1673418991331_VCTChallengersSpark1.png",
+        "region": "VIETNAM"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112518847780803259",
+        "teams": [
+          {
+            "name": "Fancy United Esports",
+            "code": "FCY",
+            "icon": "http://static.lolesports.com/teams/1652174457630_FANCY---GOLD1.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Rapid Lofi",
+            "code": "RLF",
+            "icon": "http://static.lolesports.com/teams/1706612393759_RAPIDLOFI.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2820:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers BR",
+        "identifier": "challengers_br",
+        "icon": "http://static.lolesports.com/leagues/1673419029644_VCTChallengersSpark1.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "challengers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112757392927819814",
+        "teams": [
+          {
+            "name": "THE 7",
+            "code": "777",
+            "icon": "http://static.lolesports.com/teams/1718904608581_logotheseven.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Galorys",
+            "code": "GLRS",
+            "icon": "http://static.lolesports.com/teams/1707475258997_IconeGalorys_Degrade-MarcosSoares.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 4,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2821:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers LATAM",
+        "identifier": "challengers_latam",
+        "icon": "http://static.lolesports.com/leagues/EventChallengersSelectedtrue.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112432767869215724",
+        "teams": [
+          {
+            "name": "All Knights",
+            "code": "AK",
+            "icon": "http://static.lolesports.com/teams/1712621752514_ONECOLORFORDARKBG.png",
+            "has_won": true,
+            "game_wins": 3,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "E-Xolos LAZER",
+            "code": "EXL",
+            "icon": "http://static.lolesports.com/teams/1631549606952_LAZER-XOLOS-2021-1.png",
+            "has_won": false,
+            "game_wins": 2,
+            "record": {
+              "wins": 1,
+              "losses": 2
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-2920:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/V3V7ycN7G0M",
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619409",
+        "teams": [
+          {
+            "name": "Moist x Shopify",
+            "code": "MXS",
+            "icon": "http://static.lolesports.com/teams/1709874863937_FULL_COLOR_OUTLINE.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "M80",
+            "code": "M80",
+            "icon": "http://static.lolesports.com/teams/1675299553664_M80Logo-LightBackgroundUsage.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2920:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers BR",
+        "identifier": "game_changers_series_brazil",
+        "icon": "http://static.lolesports.com/leagues/logo-gc-png.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "game_changers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112803823479792633",
+        "teams": [
+          {
+            "name": "Team Liquid Visa",
+            "code": "TL",
+            "icon": "http://static.lolesports.com/teams/1721660424740_TLXVISAVALOLockup11.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Team Brave Soldiers",
+            "code": "TBS",
+            "icon": "http://static.lolesports.com/teams/1712821582813_17142-Team-Brave-Soldiers-1.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 1,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2922:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516282",
+        "teams": [
+          {
+            "name": "VISA KRÜ Blaze",
+            "code": "KRÜ",
+            "icon": "http://static.lolesports.com/teams/1712388943097_Blaze-20241.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 1,
+              "losses": 0
+            }
+          },
+          {
+            "name": "FiRePOWER",
+            "code": "FIRE",
+            "icon": "http://static.lolesports.com/teams/1710924079853_logo_FiRePOWER_color.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2923:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": "https://youtu.be/U5mcmueGOYY",
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619421",
+        "teams": [
+          {
+            "name": "Oxygen Esports",
+            "code": "OXG",
+            "icon": "http://static.lolesports.com/teams/1709874562189_OXG_Icon-Green_6.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 2
+            }
+          },
+          {
+            "name": "TSM",
+            "code": "TSM",
+            "icon": "http://static.lolesports.com/teams/1710835883442_White-Logo-Mark.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-2923:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers BR",
+        "identifier": "game_changers_series_brazil",
+        "icon": "http://static.lolesports.com/leagues/logo-gc-png.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "game_changers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112803823479792637",
+        "teams": [
+          {
+            "name": "LOUD",
+            "code": "LOUD",
+            "icon": "http://static.lolesports.com/teams/1678555383091_loudicon_Prancheta1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 1
+            }
+          },
+          {
+            "name": "MIBR",
+            "code": "MIBR",
+            "icon": "http://static.lolesports.com/teams/1665269804418_MUDACARAI.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3001:00:00UTC",
+      "state": "completed",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516222",
+        "teams": [
+          {
+            "name": "MYVRA",
+            "code": "MVR",
+            "icon": "http://static.lolesports.com/teams/1710925876581_MYVRA-LOGO-VIOLETA-02.png",
+            "has_won": false,
+            "game_wins": 1,
+            "record": {
+              "wins": 0,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Fusion X",
+            "code": "FSX",
+            "icon": "http://static.lolesports.com/teams/1676634475720_31.png",
+            "has_won": true,
+            "game_wins": 2,
+            "record": {
+              "wins": 1,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3020:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619425",
+        "teams": [
+          {
+            "name": "TSM",
+            "code": "TSM",
+            "icon": "http://static.lolesports.com/teams/1710835883442_White-Logo-Mark.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 3,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Moist x Shopify",
+            "code": "MXS",
+            "icon": "http://static.lolesports.com/teams/1709874863937_FULL_COLOR_OUTLINE.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3020:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers BR",
+        "identifier": "game_changers_series_brazil",
+        "icon": "http://static.lolesports.com/leagues/logo-gc-png.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "game_changers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112803823479792653",
+        "teams": [
+          {
+            "name": "Revoada",
+            "code": "REV",
+            "icon": "http://static.lolesports.com/teams/1712821665373_m1e1fL1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 1
+            }
+          },
+          {
+            "name": "LOUD",
+            "code": "LOUD",
+            "icon": "http://static.lolesports.com/teams/1678555383091_loudicon_Prancheta1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3022:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516318",
+        "teams": [
+          {
+            "name": "Leviatan",
+            "code": "LEV",
+            "icon": "http://static.lolesports.com/teams/1676634597365_LeviatanMain1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "9z Globant",
+            "code": "9ZG",
+            "icon": "http://static.lolesports.com/teams/1710923990171_FullColor.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3023:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers BR",
+        "identifier": "game_changers_series_brazil",
+        "icon": "http://static.lolesports.com/leagues/logo-gc-png.png",
+        "region": "BRAZIL"
+      },
+      "tournament": {
+        "name": "game_changers_br_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112803823479792657",
+        "teams": [
+          {
+            "name": "Team Leveling",
+            "code": "TLV",
+            "icon": "http://static.lolesports.com/teams/1720994725766_TLVlogo2.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 1
+            }
+          },
+          {
+            "name": "Team Brave Soldiers",
+            "code": "TBS",
+            "icon": "http://static.lolesports.com/teams/1712821582813_17142-Team-Brave-Soldiers-1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3101:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516258",
+        "teams": [
+          {
+            "name": "KS Hunters",
+            "code": "KS",
+            "icon": "http://static.lolesports.com/teams/1710927223595_Logo_KS_Team_1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Akave",
+            "code": "AKV",
+            "icon": "http://static.lolesports.com/teams/1710926016722_CopiadeLOGO_AKAVE_V1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3108:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers SEA PH",
+        "identifier": "challengers_sea_ph",
+        "icon": "http://static.lolesports.com/leagues/1673418714681_VCTChallengersSpark1.png",
+        "region": "SOUTHEAST ASIA"
+      },
+      "tournament": {
+        "name": "sea_challengers_leagues_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112524901769471670",
+        "teams": [
+          {
+            "name": "ZOL Esports",
+            "code": "ZOL",
+            "icon": "http://static.lolesports.com/teams/1679919918738_CopyofNEWZOLSOcialmediaLogoPNGFORM.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 1
+            }
+          },
+          {
+            "name": "NAOS Esports",
+            "code": "NAOS",
+            "icon": "http://static.lolesports.com/teams/1652174062330_VCT21_NaosEsports_Logo_Color.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 2,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 5
+        }
+      }
+    },
+    {
+      "date": "2024-07-3119:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868581874",
+        "teams": [
+          {
+            "name": "University War",
+            "code": "UW",
+            "icon": "http://static.lolesports.com/teams/1710925556628_01_University_War_Red.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Zen Esports",
+            "code": "ZEN",
+            "icon": "http://static.lolesports.com/teams/1719822366124_Asset6.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3120:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Challengers NA",
+        "identifier": "challengers_na",
+        "icon": "http://static.lolesports.com/leagues/1675329392841_Gold1.png",
+        "region": "NORTH AMERICA"
+      },
+      "tournament": {
+        "name": "challengers_na_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112789864328619429",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "M80",
+            "code": "M80",
+            "icon": "http://static.lolesports.com/teams/1675299553664_M80Logo-LightBackgroundUsage.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 3,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-07-3122:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516278",
+        "teams": [
+          {
+            "name": "Killer7",
+            "code": "K7",
+            "icon": "http://static.lolesports.com/teams/1710926392503_LOGO-K7_trazo.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Bon Bon Bum",
+            "code": "BBB",
+            "icon": "http://static.lolesports.com/teams/1719822455724_LogoBonBonBum2024.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0108:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243272427",
+        "teams": [
+          {
+            "name": "Gen.G ",
+            "code": "GEN",
+            "icon": "http://static.lolesports.com/teams/1678453609404_GenG_logo_200407-051.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Sentinels",
+            "code": "SEN",
+            "icon": "http://static.lolesports.com/teams/sentinels.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0111:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243272431",
+        "teams": [
+          {
+            "name": "FunPlus Phoenix",
+            "code": "FPX",
+            "icon": "http://static.lolesports.com/teams/1644542485597_download38.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Team Heretics",
+            "code": "TH",
+            "icon": "http://static.lolesports.com/teams/1674060672534_600px-Team_Heretics_2022_allmode1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0208:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243206875",
+        "teams": [
+          {
+            "name": "DRX",
+            "code": "DRX",
+            "icon": "http://static.lolesports.com/teams/1705652820016_DRXwhite.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "KRÜ Esports",
+            "code": "KRÜ",
+            "icon": "http://static.lolesports.com/teams/1630017626481_kru.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0211:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243206871",
+        "teams": [
+          {
+            "name": "FNATIC",
+            "code": "FNC",
+            "icon": "http://static.lolesports.com/teams/1644542427486_download37.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Bilibili Gaming",
+            "code": "BLG",
+            "icon": "http://static.lolesports.com/teams/1707126028220_BLG.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0308:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243927807",
+        "teams": [
+          {
+            "name": "Leviatán Esports",
+            "code": "LEV",
+            "icon": "http://static.lolesports.com/teams/1644148043034_Leviatncolor.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Talon Esports",
+            "code": "TLN",
+            "icon": "http://static.lolesports.com/teams/1674056858749_Talon_Esports_logo1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0311:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243927811",
+        "teams": [
+          {
+            "name": "Team Vitality",
+            "code": "VIT",
+            "icon": "http://static.lolesports.com/teams/1722030793680_VITALITY_YELLOW.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Trace Esports",
+            "code": "TE",
+            "icon": "http://static.lolesports.com/teams/1707127076044_TE.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0408:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243993367",
+        "teams": [
+          {
+            "name": "G2 Esports",
+            "code": "G2",
+            "icon": "http://static.lolesports.com/teams/1675329807714_G2-Esports-Logo1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Paper Rex",
+            "code": "PRX",
+            "icon": "http://static.lolesports.com/teams/1630018120582_paper-rex-2021.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0411:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243993363",
+        "teams": [
+          {
+            "name": "EDWARD Gaming",
+            "code": "EDG",
+            "icon": "http://static.lolesports.com/teams/1707125463810_EDG.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "FUT Esports",
+            "code": "FUT",
+            "icon": "http://static.lolesports.com/teams/1644342678681_FUT_VRL_DARK.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0519:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868581866",
+        "teams": [
+          {
+            "name": "Zen Esports",
+            "code": "ZEN",
+            "icon": "http://static.lolesports.com/teams/1719822366124_Asset6.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Leviatan",
+            "code": "LEV",
+            "icon": "http://static.lolesports.com/teams/1676634597365_LeviatanMain1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0522:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516242",
+        "teams": [
+          {
+            "name": "Akave",
+            "code": "AKV",
+            "icon": "http://static.lolesports.com/teams/1710926016722_CopiadeLOGO_AKAVE_V1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "MYVRA",
+            "code": "MVR",
+            "icon": "http://static.lolesports.com/teams/1710925876581_MYVRA-LOGO-VIOLETA-02.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0608:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243272435",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0611:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243206879",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0708:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243927815",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0711:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244189979",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0808:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243272439",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0811:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243206883",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0908:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243927819",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-0911:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244189983",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1008:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243272443",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1011:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243206887",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1108:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895243993359",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1111:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244189987",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1222:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516298",
+        "teams": [
+          {
+            "name": "University War",
+            "code": "UW",
+            "icon": "http://static.lolesports.com/teams/1710925556628_01_University_War_Red.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "VISA KRÜ Blaze",
+            "code": "KRÜ",
+            "icon": "http://static.lolesports.com/teams/1712388943097_Blaze-20241.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1301:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516238",
+        "teams": [
+          {
+            "name": "Killer7",
+            "code": "K7",
+            "icon": "http://static.lolesports.com/teams/1710926392503_LOGO-K7_trazo.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "Fusion X",
+            "code": "FSX",
+            "icon": "http://static.lolesports.com/teams/1676634475720_31.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 1,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1319:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516302",
+        "teams": [
+          {
+            "name": "9z Globant",
+            "code": "9ZG",
+            "icon": "http://static.lolesports.com/teams/1710923990171_FullColor.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "FiRePOWER",
+            "code": "FIRE",
+            "icon": "http://static.lolesports.com/teams/1710924079853_logo_FiRePOWER_color.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 1
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1322:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Game Changers LATAM",
+        "identifier": "game_changers_latam",
+        "icon": "http://static.lolesports.com/leagues/1676629257516_604be13d01964.png",
+        "region": "LATIN AMERICA"
+      },
+      "tournament": {
+        "name": "game_changers_latam_split_2",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112710290868516270",
+        "teams": [
+          {
+            "name": "Bon Bon Bum",
+            "code": "BBB",
+            "icon": "http://static.lolesports.com/teams/1719822455724_LogoBonBonBum2024.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "KS Hunters",
+            "code": "KS",
+            "icon": "http://static.lolesports.com/teams/1710927223595_Logo_KS_Team_1.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1408:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244189991",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1411:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244189995",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1508:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244189999",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1511:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244190003",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    },
+    {
+      "date": "2024-08-1608:00:00UTC",
+      "state": "unstarted",
+      "type": "match",
+      "vod": null,
+      "league": {
+        "name": "Champions",
+        "identifier": "champions",
+        "icon": "http://static.lolesports.com/leagues/1636575094815_VCT_Spark_Gold.png",
+        "region": "INTERNATIONAL"
+      },
+      "tournament": {
+        "name": "vct_champions",
+        "season": "2024"
+      },
+      "match": {
+        "id": "112806895244190015",
+        "teams": [
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          },
+          {
+            "name": "TBD",
+            "code": "TBD",
+            "icon": "https://static.lolesports.com/teams/team-tbd.png",
+            "has_won": false,
+            "game_wins": 0,
+            "record": {
+              "wins": 0,
+              "losses": 0
+            }
+          }
+        ],
+        "game_type": {
+          "type": "bestOf",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

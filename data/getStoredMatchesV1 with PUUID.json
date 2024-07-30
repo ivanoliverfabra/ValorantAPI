@@ -1,0 +1,3071 @@
+{
+  "success": true,
+  "results": {
+    "total": 68,
+    "returned": 68,
+    "before": 0,
+    "after": 68
+  },
+  "data": [
+    {
+      "meta": {
+        "id": "bafa8522-7bcc-4923-824a-c28c5142ec07",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Unrated",
+        "started_at": "2024-07-30T03:33:33.447Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 133,
+        "character": {
+          "id": "1dbf2edd-4729-0984-3115-daa5eed44993",
+          "name": "Clove"
+        },
+        "tier": 0,
+        "score": 11868,
+        "kills": 38,
+        "deaths": 27,
+        "assists": 9,
+        "shots": {
+          "head": 25,
+          "body": 88,
+          "leg": 7
+        },
+        "damage": {
+          "made": 8112,
+          "received": 5274
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 12
+      }
+    },
+    {
+      "meta": {
+        "id": "c6355fab-2a60-4b0f-9124-ca446fe4f807",
+        "map": {
+          "id": "224b0a95-48b9-f703-1bd8-67aca101a61f",
+          "name": "Abyss"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-30T03:07:04.753Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 133,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 19,
+        "score": 3760,
+        "kills": 10,
+        "deaths": 15,
+        "assists": 4,
+        "shots": {
+          "head": 9,
+          "body": 28,
+          "leg": 0
+        },
+        "damage": {
+          "made": 2522,
+          "received": 2350
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 2
+      }
+    },
+    {
+      "meta": {
+        "id": "28e7e44a-767b-4012-b45e-80c3c1419fd6",
+        "map": {
+          "id": "224b0a95-48b9-f703-1bd8-67aca101a61f",
+          "name": "Abyss"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Swiftplay",
+        "started_at": "2024-07-29T06:15:11.235Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 133,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 0,
+        "score": 1324,
+        "kills": 5,
+        "deaths": 6,
+        "assists": 1,
+        "shots": {
+          "head": 2,
+          "body": 9,
+          "leg": 1
+        },
+        "damage": {
+          "made": 665,
+          "received": 1073
+        }
+      },
+      "teams": {
+        "red": 1,
+        "blue": 5
+      }
+    },
+    {
+      "meta": {
+        "id": "6c7fdacc-d221-426e-be51-4608be85e142",
+        "map": {
+          "id": "b529448b-4d60-346e-e89e-00a4c527a405",
+          "name": "Fracture"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Swiftplay",
+        "started_at": "2024-07-29T05:59:02.148Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 133,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 0,
+        "score": 1246,
+        "kills": 5,
+        "deaths": 8,
+        "assists": 0,
+        "shots": {
+          "head": 2,
+          "body": 9,
+          "leg": 1
+        },
+        "damage": {
+          "made": 667,
+          "received": 1516
+        }
+      },
+      "teams": {
+        "red": 4,
+        "blue": 5
+      }
+    },
+    {
+      "meta": {
+        "id": "3d76b8b3-8f42-4930-b2aa-226195500eff",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-29T00:55:39.349Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 133,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 19,
+        "score": 5583,
+        "kills": 19,
+        "deaths": 14,
+        "assists": 6,
+        "shots": {
+          "head": 13,
+          "body": 46,
+          "leg": 2
+        },
+        "damage": {
+          "made": 3668,
+          "received": 2558
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 7
+      }
+    },
+    {
+      "meta": {
+        "id": "279c7c98-3139-49d7-baac-f60e75c41b35",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-29T00:06:19.639Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 133,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 19,
+        "score": 6246,
+        "kills": 21,
+        "deaths": 16,
+        "assists": 4,
+        "shots": {
+          "head": 16,
+          "body": 68,
+          "leg": 8
+        },
+        "damage": {
+          "made": 4382,
+          "received": 2861
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "f5838acd-bef2-4f63-ae70-750ec0d0a6c2",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-28T06:38:51.316Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 133,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 19,
+        "score": 5253,
+        "kills": 21,
+        "deaths": 7,
+        "assists": 3,
+        "shots": {
+          "head": 15,
+          "body": 34,
+          "leg": 1
+        },
+        "damage": {
+          "made": 3166,
+          "received": 2478
+        }
+      },
+      "teams": {
+        "red": 2,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "b4dc2cc0-f589-414d-97f1-393332ac5529",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-28T05:52:44.583Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 19,
+        "score": 4805,
+        "kills": 17,
+        "deaths": 11,
+        "assists": 3,
+        "shots": {
+          "head": 15,
+          "body": 50,
+          "leg": 1
+        },
+        "damage": {
+          "made": 3273,
+          "received": 1947
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 7
+      }
+    },
+    {
+      "meta": {
+        "id": "39f49cb3-0d4b-4858-882e-e1773af7904e",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-27T22:41:26.026Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 132,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 19,
+        "score": 1237,
+        "kills": 5,
+        "deaths": 4,
+        "assists": 1,
+        "shots": {
+          "head": 4,
+          "body": 10,
+          "leg": 0
+        },
+        "damage": {
+          "made": 703,
+          "received": 637
+        }
+      },
+      "teams": {
+        "red": 4,
+        "blue": 1
+      }
+    },
+    {
+      "meta": {
+        "id": "a792b84c-fc80-489c-a3fd-b55f2d55342b",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-27T21:57:32.344Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 19,
+        "score": 3756,
+        "kills": 14,
+        "deaths": 18,
+        "assists": 3,
+        "shots": {
+          "head": 9,
+          "body": 37,
+          "leg": 2
+        },
+        "damage": {
+          "made": 2417,
+          "received": 3112
+        }
+      },
+      "teams": {
+        "red": 9,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "39bfdf01-0494-4462-8399-fe388ce130b9",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-27T21:16:06.61Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 19,
+        "score": 4887,
+        "kills": 18,
+        "deaths": 14,
+        "assists": 5,
+        "shots": {
+          "head": 11,
+          "body": 40,
+          "leg": 8
+        },
+        "damage": {
+          "made": 3376,
+          "received": 2417
+        }
+      },
+      "teams": {
+        "red": 8,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "b5a9a496-9df3-453c-a9eb-fa40fe251c68",
+        "map": {
+          "id": "b529448b-4d60-346e-e89e-00a4c527a405",
+          "name": "Fracture"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Unrated",
+        "started_at": "2024-07-27T02:36:43.74Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 0,
+        "score": 5530,
+        "kills": 23,
+        "deaths": 4,
+        "assists": 4,
+        "shots": {
+          "head": 13,
+          "body": 40,
+          "leg": 9
+        },
+        "damage": {
+          "made": 3530,
+          "received": 1136
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 3
+      }
+    },
+    {
+      "meta": {
+        "id": "2f3ef625-7761-4402-bc9a-8a7bf21a3d9e",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Premier",
+        "started_at": "2024-07-27T00:00:23.865Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 0,
+        "score": 4130,
+        "kills": 12,
+        "deaths": 17,
+        "assists": 8,
+        "shots": {
+          "head": 8,
+          "body": 49,
+          "leg": 7
+        },
+        "damage": {
+          "made": 3184,
+          "received": 2851
+        }
+      },
+      "teams": {
+        "red": 9,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "6fc8e833-f445-4574-955b-6c4184523bfb",
+        "map": {
+          "id": "224b0a95-48b9-f703-1bd8-67aca101a61f",
+          "name": "Abyss"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-26T17:49:47.87Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 19,
+        "score": 4444,
+        "kills": 15,
+        "deaths": 17,
+        "assists": 11,
+        "shots": {
+          "head": 8,
+          "body": 47,
+          "leg": 2
+        },
+        "damage": {
+          "made": 3141,
+          "received": 3303
+        }
+      },
+      "teams": {
+        "red": 11,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "49fbec8b-d98b-4610-a9fe-7e8305913f95",
+        "map": {
+          "id": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
+          "name": "Haven"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-26T17:18:46.323Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 132,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 19,
+        "score": 4046,
+        "kills": 15,
+        "deaths": 8,
+        "assists": 1,
+        "shots": {
+          "head": 8,
+          "body": 34,
+          "leg": 6
+        },
+        "damage": {
+          "made": 2536,
+          "received": 1598
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 4
+      }
+    },
+    {
+      "meta": {
+        "id": "c6261635-76f9-4185-ada2-189e9cf9f5d6",
+        "map": {
+          "id": "224b0a95-48b9-f703-1bd8-67aca101a61f",
+          "name": "Abyss"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-26T16:44:50.817Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 132,
+        "character": {
+          "id": "1dbf2edd-4729-0984-3115-daa5eed44993",
+          "name": "Clove"
+        },
+        "tier": 19,
+        "score": 3941,
+        "kills": 15,
+        "deaths": 12,
+        "assists": 8,
+        "shots": {
+          "head": 12,
+          "body": 30,
+          "leg": 5
+        },
+        "damage": {
+          "made": 2767,
+          "received": 2455
+        }
+      },
+      "teams": {
+        "red": 5,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "67592b77-5e8f-4424-9fb4-08989f506796",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Premier",
+        "started_at": "2024-07-25T23:58:06.103Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Georgia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 131,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 0,
+        "score": 5054,
+        "kills": 17,
+        "deaths": 7,
+        "assists": 7,
+        "shots": {
+          "head": 13,
+          "body": 43,
+          "leg": 1
+        },
+        "damage": {
+          "made": 3522,
+          "received": 1510
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 1
+      }
+    },
+    {
+      "meta": {
+        "id": "0a6d4baf-d5fb-4614-8f03-72ccf470cc7c",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Premier",
+        "started_at": "2024-07-25T23:05:34.495Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 131,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 0,
+        "score": 6217,
+        "kills": 24,
+        "deaths": 15,
+        "assists": 7,
+        "shots": {
+          "head": 13,
+          "body": 59,
+          "leg": 7
+        },
+        "damage": {
+          "made": 4084,
+          "received": 3185
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 10
+      }
+    },
+    {
+      "meta": {
+        "id": "c7fe597a-f8b5-4da2-9add-186744d6423e",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-24T17:21:52.798Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 130,
+        "character": {
+          "id": "1dbf2edd-4729-0984-3115-daa5eed44993",
+          "name": "Clove"
+        },
+        "tier": 19,
+        "score": 4347,
+        "kills": 15,
+        "deaths": 16,
+        "assists": 11,
+        "shots": {
+          "head": 9,
+          "body": 32,
+          "leg": 4
+        },
+        "damage": {
+          "made": 2821,
+          "received": 3288
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "a053de07-dbf3-4151-ba0b-0f2630ecfdd9",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-23T00:42:17.02Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 129,
+        "character": {
+          "id": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+          "name": "Iso"
+        },
+        "tier": 20,
+        "score": 8511,
+        "kills": 30,
+        "deaths": 21,
+        "assists": 5,
+        "shots": {
+          "head": 17,
+          "body": 70,
+          "leg": 2
+        },
+        "damage": {
+          "made": 5124,
+          "received": 4163
+        }
+      },
+      "teams": {
+        "red": 9,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "ef0936a6-69b9-4a64-8936-b8b60c2a610c",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-19T19:34:59.698Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 128,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 19,
+        "score": 2728,
+        "kills": 9,
+        "deaths": 15,
+        "assists": 2,
+        "shots": {
+          "head": 8,
+          "body": 23,
+          "leg": 1
+        },
+        "damage": {
+          "made": 1794,
+          "received": 2493
+        }
+      },
+      "teams": {
+        "red": 2,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "5ada5c08-730a-4c2d-aad7-d943e0cbc647",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-18T20:32:59.393Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 127,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 19,
+        "score": 2373,
+        "kills": 8,
+        "deaths": 13,
+        "assists": 1,
+        "shots": {
+          "head": 5,
+          "body": 31,
+          "leg": 4
+        },
+        "damage": {
+          "made": 1635,
+          "received": 2120
+        }
+      },
+      "teams": {
+        "red": 1,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "13502b95-cf83-488c-8000-dce208d38dd8",
+        "map": {
+          "id": "224b0a95-48b9-f703-1bd8-67aca101a61f",
+          "name": "Abyss"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-18T19:54:33.054Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 127,
+        "character": {
+          "id": "1dbf2edd-4729-0984-3115-daa5eed44993",
+          "name": "Clove"
+        },
+        "tier": 19,
+        "score": 5028,
+        "kills": 17,
+        "deaths": 13,
+        "assists": 10,
+        "shots": {
+          "head": 9,
+          "body": 35,
+          "leg": 6
+        },
+        "damage": {
+          "made": 3158,
+          "received": 2668
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 7
+      }
+    },
+    {
+      "meta": {
+        "id": "66d405d6-6851-45cb-9531-11aa51646014",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-18T19:14:54.034Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 127,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 18,
+        "score": 3327,
+        "kills": 11,
+        "deaths": 20,
+        "assists": 10,
+        "shots": {
+          "head": 10,
+          "body": 27,
+          "leg": 2
+        },
+        "damage": {
+          "made": 2252,
+          "received": 3455
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 10
+      }
+    },
+    {
+      "meta": {
+        "id": "c6a9b013-863f-463b-885a-420c2ca76015",
+        "map": {
+          "id": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
+          "name": "Haven"
+        },
+        "version": "release-09.01-shipping-21-2669223",
+        "mode": "Competitive",
+        "started_at": "2024-07-16T19:20:11.797Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 126,
+        "character": {
+          "id": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+          "name": "Iso"
+        },
+        "tier": 17,
+        "score": 5049,
+        "kills": 19,
+        "deaths": 8,
+        "assists": 5,
+        "shots": {
+          "head": 13,
+          "body": 36,
+          "leg": 7
+        },
+        "damage": {
+          "made": 3284,
+          "received": 1846
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 2
+      }
+    },
+    {
+      "meta": {
+        "id": "748da4a0-56fb-4323-af8e-1b9cec8473ce",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Competitive",
+        "started_at": "2024-07-16T16:12:47.558Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 126,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 17,
+        "score": 3644,
+        "kills": 14,
+        "deaths": 8,
+        "assists": 6,
+        "shots": {
+          "head": 9,
+          "body": 27,
+          "leg": 5
+        },
+        "damage": {
+          "made": 2318,
+          "received": 1564
+        }
+      },
+      "teams": {
+        "red": 3,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "424ec10a-027c-4e0a-a063-373f650735a3",
+        "map": {
+          "id": "224b0a95-48b9-f703-1bd8-67aca101a61f",
+          "name": "Abyss"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Competitive",
+        "started_at": "2024-07-16T01:22:03.97Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 125,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 17,
+        "score": 4908,
+        "kills": 18,
+        "deaths": 12,
+        "assists": 8,
+        "shots": {
+          "head": 13,
+          "body": 28,
+          "leg": 0
+        },
+        "damage": {
+          "made": 3203,
+          "received": 2114
+        }
+      },
+      "teams": {
+        "red": 5,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "e2ee67fe-cef7-49ce-94c3-36555b05a91f",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Competitive",
+        "started_at": "2024-07-16T00:48:42.121Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 125,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 17,
+        "score": 3521,
+        "kills": 13,
+        "deaths": 15,
+        "assists": 2,
+        "shots": {
+          "head": 8,
+          "body": 35,
+          "leg": 0
+        },
+        "damage": {
+          "made": 2319,
+          "received": 2718
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 5
+      }
+    },
+    {
+      "meta": {
+        "id": "0e6a286b-db22-47ec-ba47-a771f8a8eeb8",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Premier",
+        "started_at": "2024-07-07T00:02:09.911Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 122,
+        "character": {
+          "id": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
+          "name": "Brimstone"
+        },
+        "tier": 0,
+        "score": 5514,
+        "kills": 19,
+        "deaths": 16,
+        "assists": 7,
+        "shots": {
+          "head": 14,
+          "body": 43,
+          "leg": 0
+        },
+        "damage": {
+          "made": 3322,
+          "received": 3874
+        }
+      },
+      "teams": {
+        "red": 10,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "01440546-c0e9-4a94-b44b-5faf2b351445",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Competitive",
+        "started_at": "2024-07-06T20:47:02.427Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 122,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 17,
+        "score": 4657,
+        "kills": 15,
+        "deaths": 14,
+        "assists": 3,
+        "shots": {
+          "head": 8,
+          "body": 51,
+          "leg": 2
+        },
+        "damage": {
+          "made": 3012,
+          "received": 2436
+        }
+      },
+      "teams": {
+        "red": 9,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "e981c0ee-dc7f-4200-83eb-1ccc1cdc2d30",
+        "map": {
+          "id": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
+          "name": "Haven"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Competitive",
+        "started_at": "2024-07-03T18:45:23.31Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Georgia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 120,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 0,
+        "score": 6926,
+        "kills": 23,
+        "deaths": 19,
+        "assists": 3,
+        "shots": {
+          "head": 10,
+          "body": 59,
+          "leg": 6
+        },
+        "damage": {
+          "made": 4285,
+          "received": 3808
+        }
+      },
+      "teams": {
+        "red": 11,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "485f9ebd-bd67-42c3-b9fa-790d40910eab",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-09.00-shipping-28-2628993",
+        "mode": "Competitive",
+        "started_at": "2024-07-03T18:01:47.813Z",
+        "season": {
+          "id": "52ca6698-41c1-e7de-4008-8994d2221209",
+          "short": "e9a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Illinois)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 120,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 0,
+        "score": 7208,
+        "kills": 26,
+        "deaths": 13,
+        "assists": 16,
+        "shots": {
+          "head": 18,
+          "body": 54,
+          "leg": 5
+        },
+        "damage": {
+          "made": 5084,
+          "received": 2752
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 8
+      }
+    },
+    {
+      "meta": {
+        "id": "b4867486-252e-47fa-bb93-c904a235ae1e",
+        "map": {
+          "id": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
+          "name": "Breeze"
+        },
+        "version": "release-08.11-shipping-51-2606987",
+        "mode": "Swiftplay",
+        "started_at": "2024-06-15T04:04:34.26Z",
+        "season": {
+          "id": "4539cac3-47ae-90e5-3d01-b3812ca3274e",
+          "short": "e8a3"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 116,
+        "character": {
+          "id": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+          "name": "Iso"
+        },
+        "tier": 0,
+        "score": 1510,
+        "kills": 4,
+        "deaths": 5,
+        "assists": 1,
+        "shots": {
+          "head": 3,
+          "body": 13,
+          "leg": 0
+        },
+        "damage": {
+          "made": 1015,
+          "received": 852
+        }
+      },
+      "teams": {
+        "red": 1,
+        "blue": 5
+      }
+    },
+    {
+      "meta": {
+        "id": "931736a5-ef39-42ed-97e6-86b8c1d11e0b",
+        "map": {
+          "id": "d960549e-485c-e861-8d71-aa9d1aed12a2",
+          "name": "Split"
+        },
+        "version": "release-08.05-shipping-13-2404755",
+        "mode": "Competitive",
+        "started_at": "2024-03-30T19:52:07.548Z",
+        "season": {
+          "id": "22d10d66-4d2a-a340-6c54-408c7bd53807",
+          "short": "e8a2"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 98,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 22,
+        "score": 1864,
+        "kills": 5,
+        "deaths": 13,
+        "assists": 1,
+        "shots": {
+          "head": 2,
+          "body": 26,
+          "leg": 6
+        },
+        "damage": {
+          "made": 1292,
+          "received": 2261
+        }
+      },
+      "teams": {
+        "red": 0,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "f32cfc39-3d22-4db8-8ca1-eaea14041ffb",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-08.04-shipping-4-2324912",
+        "mode": "Competitive",
+        "started_at": "2024-03-21T05:01:04.499Z",
+        "season": {
+          "id": "22d10d66-4d2a-a340-6c54-408c7bd53807",
+          "short": "e8a2"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 95,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 21,
+        "score": 4474,
+        "kills": 16,
+        "deaths": 12,
+        "assists": 5,
+        "shots": {
+          "head": 10,
+          "body": 38,
+          "leg": 1
+        },
+        "damage": {
+          "made": 2979,
+          "received": 2615
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 7
+      }
+    },
+    {
+      "meta": {
+        "id": "745f3cf7-fef2-42d2-926e-bf3bdc94d602",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-08.04-shipping-4-2324912",
+        "mode": "Competitive",
+        "started_at": "2024-03-21T04:25:39.123Z",
+        "season": {
+          "id": "22d10d66-4d2a-a340-6c54-408c7bd53807",
+          "short": "e8a2"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 95,
+        "character": {
+          "id": "6f2a04ca-43e0-be17-7f36-b3908627744d",
+          "name": "Skye"
+        },
+        "tier": 21,
+        "score": 2040,
+        "kills": 7,
+        "deaths": 11,
+        "assists": 8,
+        "shots": {
+          "head": 5,
+          "body": 18,
+          "leg": 4
+        },
+        "damage": {
+          "made": 1462,
+          "received": 2174
+        }
+      },
+      "teams": {
+        "red": 5,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "5e80b546-2f08-419e-b422-f197c861a5a6",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-08.04-shipping-4-2324912",
+        "mode": "Unrated",
+        "started_at": "2024-03-09T02:24:12.006Z",
+        "season": {
+          "id": "22d10d66-4d2a-a340-6c54-408c7bd53807",
+          "short": "e8a2"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 91,
+        "character": {
+          "id": "569fdd95-4d10-43ab-ca70-79becc718b46",
+          "name": "Sage"
+        },
+        "tier": 0,
+        "score": 5418,
+        "kills": 17,
+        "deaths": 17,
+        "assists": 9,
+        "shots": {
+          "head": 13,
+          "body": 34,
+          "leg": 6
+        },
+        "damage": {
+          "made": 3609,
+          "received": 3361
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "2b2b78f9-7f78-4768-be7a-ed64ff46f78a",
+        "map": {
+          "id": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
+          "name": "Breeze"
+        },
+        "version": "release-08.03-shipping-11-2301612",
+        "mode": "Competitive",
+        "started_at": "2024-03-03T22:08:32.306Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 88,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 21,
+        "score": 5906,
+        "kills": 20,
+        "deaths": 18,
+        "assists": 6,
+        "shots": {
+          "head": 12,
+          "body": 37,
+          "leg": 3
+        },
+        "damage": {
+          "made": 3838,
+          "received": 3586
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 11
+      }
+    },
+    {
+      "meta": {
+        "id": "b4b2d7ea-0a33-4b90-a569-458eb7a36659",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-08.03-shipping-11-2301612",
+        "mode": "Competitive",
+        "started_at": "2024-02-26T01:48:08.025Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 84,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 21,
+        "score": 6329,
+        "kills": 20,
+        "deaths": 14,
+        "assists": 8,
+        "shots": {
+          "head": 12,
+          "body": 55,
+          "leg": 8
+        },
+        "damage": {
+          "made": 4431,
+          "received": 2682
+        }
+      },
+      "teams": {
+        "red": 7,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "c2d48ebc-7ba2-4625-be0e-1b9b57981bd8",
+        "map": {
+          "id": "d960549e-485c-e861-8d71-aa9d1aed12a2",
+          "name": "Split"
+        },
+        "version": "release-08.01-shipping-4-2228372",
+        "mode": "Competitive",
+        "started_at": "2024-01-24T02:29:06.421Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 72,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 18,
+        "score": 4457,
+        "kills": 15,
+        "deaths": 15,
+        "assists": 5,
+        "shots": {
+          "head": 6,
+          "body": 52,
+          "leg": 0
+        },
+        "damage": {
+          "made": 3007,
+          "received": 2801
+        }
+      },
+      "teams": {
+        "red": 7,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "3988c07b-835e-4aca-966e-25d3cece7db2",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-22T22:24:40.837Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 71,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 18,
+        "score": 4411,
+        "kills": 14,
+        "deaths": 17,
+        "assists": 7,
+        "shots": {
+          "head": 6,
+          "body": 45,
+          "leg": 5
+        },
+        "damage": {
+          "made": 3035,
+          "received": 3251
+        }
+      },
+      "teams": {
+        "red": 10,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "72278986-c9ab-4a2b-81ea-3f6ac7cf691d",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-22T20:40:45.893Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 71,
+        "character": {
+          "id": "8e253930-4c05-31dd-1b6c-968525494517",
+          "name": "Omen"
+        },
+        "tier": 18,
+        "score": 4721,
+        "kills": 16,
+        "deaths": 20,
+        "assists": 8,
+        "shots": {
+          "head": 9,
+          "body": 37,
+          "leg": 8
+        },
+        "damage": {
+          "made": 2862,
+          "received": 4709
+        }
+      },
+      "teams": {
+        "red": 10,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "6158dc5d-e875-4e27-a0ee-e30148ff9273",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-22T20:04:36.332Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 71,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 18,
+        "score": 5133,
+        "kills": 17,
+        "deaths": 16,
+        "assists": 0,
+        "shots": {
+          "head": 12,
+          "body": 30,
+          "leg": 5
+        },
+        "damage": {
+          "made": 3458,
+          "received": 3083
+        }
+      },
+      "teams": {
+        "red": 8,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "87a1fec7-793f-4af1-b648-af7f4c2bd292",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-21T04:47:31.302Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 70,
+        "character": {
+          "id": "8e253930-4c05-31dd-1b6c-968525494517",
+          "name": "Omen"
+        },
+        "tier": 18,
+        "score": 4284,
+        "kills": 14,
+        "deaths": 17,
+        "assists": 7,
+        "shots": {
+          "head": 11,
+          "body": 32,
+          "leg": 3
+        },
+        "damage": {
+          "made": 3024,
+          "received": 3313
+        }
+      },
+      "teams": {
+        "red": 10,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "10c61e7f-f8d4-4f00-9f29-b0c5f4865669",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-19T23:13:31.354Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 70,
+        "character": {
+          "id": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
+          "name": "Sova"
+        },
+        "tier": 18,
+        "score": 3226,
+        "kills": 8,
+        "deaths": 17,
+        "assists": 6,
+        "shots": {
+          "head": 6,
+          "body": 40,
+          "leg": 1
+        },
+        "damage": {
+          "made": 2102,
+          "received": 2888
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 6
+      }
+    },
+    {
+      "meta": {
+        "id": "92cca3e6-1079-4c8f-8bb2-43f106cee6fd",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-19T22:20:43.099Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 70,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 17,
+        "score": 6709,
+        "kills": 18,
+        "deaths": 23,
+        "assists": 8,
+        "shots": {
+          "head": 11,
+          "body": 59,
+          "leg": 3
+        },
+        "damage": {
+          "made": 4486,
+          "received": 4276
+        }
+      },
+      "teams": {
+        "red": 14,
+        "blue": 12
+      }
+    },
+    {
+      "meta": {
+        "id": "bb38a517-1278-4c1f-8169-7fc51807aa25",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-18T22:59:12.698Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 70,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 16,
+        "score": 3859,
+        "kills": 14,
+        "deaths": 10,
+        "assists": 5,
+        "shots": {
+          "head": 13,
+          "body": 22,
+          "leg": 1
+        },
+        "damage": {
+          "made": 2728,
+          "received": 2141
+        }
+      },
+      "teams": {
+        "red": 6,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "7c3efedf-79ad-4715-ba82-aa2ee7092b6c",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-18T22:16:06.265Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 69,
+        "character": {
+          "id": "eb93336a-449b-9c1b-0a54-a891f7921d69",
+          "name": "Phoenix"
+        },
+        "tier": 16,
+        "score": 5526,
+        "kills": 17,
+        "deaths": 18,
+        "assists": 6,
+        "shots": {
+          "head": 11,
+          "body": 48,
+          "leg": 5
+        },
+        "damage": {
+          "made": 3775,
+          "received": 3600
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "865527b6-6f32-4b4c-ad88-672f622a40e3",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-18T21:09:47.333Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 69,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 16,
+        "score": 5803,
+        "kills": 22,
+        "deaths": 14,
+        "assists": 1,
+        "shots": {
+          "head": 12,
+          "body": 53,
+          "leg": 3
+        },
+        "damage": {
+          "made": 3908,
+          "received": 2785
+        }
+      },
+      "teams": {
+        "red": 7,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "70d30144-2215-4e8a-8a04-f0e2d311e624",
+        "map": {
+          "id": "e2ad5c54-4114-a870-9641-8ea21279579a",
+          "name": "Icebox"
+        },
+        "version": "release-08.00-shipping-14-2191955",
+        "mode": "Competitive",
+        "started_at": "2024-01-09T23:13:19.065Z",
+        "season": {
+          "id": "ec876e6c-43e8-fa63-ffc1-2e8d4db25525",
+          "short": "e8a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 66,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 0,
+        "score": 3704,
+        "kills": 13,
+        "deaths": 19,
+        "assists": 4,
+        "shots": {
+          "head": 12,
+          "body": 24,
+          "leg": 2
+        },
+        "damage": {
+          "made": 2273,
+          "received": 3369
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "b83f1d2b-b2dd-4f77-834b-3b47d4c24608",
+        "map": {
+          "id": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
+          "name": "Breeze"
+        },
+        "version": "release-07.12-shipping-15-2164217",
+        "mode": "Competitive",
+        "started_at": "2024-01-06T19:49:17.917Z",
+        "season": {
+          "id": "4401f9fd-4170-2e4c-4bc3-f3b4d7d150d1",
+          "short": "e7a3"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 65,
+        "character": {
+          "id": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
+          "name": "Chamber"
+        },
+        "tier": 21,
+        "score": 3910,
+        "kills": 14,
+        "deaths": 10,
+        "assists": 3,
+        "shots": {
+          "head": 7,
+          "body": 25,
+          "leg": 6
+        },
+        "damage": {
+          "made": 2414,
+          "received": 2048
+        }
+      },
+      "teams": {
+        "red": 3,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "980b3f73-64b8-46ed-8955-d40a04a3e02b",
+        "map": {
+          "id": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
+          "name": "Breeze"
+        },
+        "version": "release-07.12-shipping-15-2164217",
+        "mode": "Competitive",
+        "started_at": "2024-01-06T06:07:37.792Z",
+        "season": {
+          "id": "4401f9fd-4170-2e4c-4bc3-f3b4d7d150d1",
+          "short": "e7a3"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 65,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 21,
+        "score": 5925,
+        "kills": 22,
+        "deaths": 19,
+        "assists": 4,
+        "shots": {
+          "head": 15,
+          "body": 32,
+          "leg": 4
+        },
+        "damage": {
+          "made": 3763,
+          "received": 3510
+        }
+      },
+      "teams": {
+        "red": 10,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "39862197-20c6-4ea5-b22a-c4302a411608",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-07.07-shipping-5-997586",
+        "mode": "Competitive",
+        "started_at": "2023-10-07T23:50:59.139Z",
+        "season": {
+          "id": "03dfd004-45d4-ebfd-ab0a-948ce780dac4",
+          "short": "e7a2"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 51,
+        "character": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "tier": 20,
+        "score": 6360,
+        "kills": 21,
+        "deaths": 19,
+        "assists": 6,
+        "shots": {
+          "head": 25,
+          "body": 76,
+          "leg": 5
+        },
+        "damage": {
+          "made": 4711,
+          "received": 3730
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 11
+      }
+    },
+    {
+      "meta": {
+        "id": "070aef10-a539-4f4b-9a56-5e34f6b5795a",
+        "map": {
+          "id": "92584fbe-486a-b1b2-9faa-39b0f486b498",
+          "name": "Sunset"
+        },
+        "version": "release-07.06-shipping-4-983570",
+        "mode": "Competitive",
+        "started_at": "2023-09-30T22:30:36.75Z",
+        "season": {
+          "id": "03dfd004-45d4-ebfd-ab0a-948ce780dac4",
+          "short": "e7a2"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 50,
+        "character": {
+          "id": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
+          "name": "Reyna"
+        },
+        "tier": 19,
+        "score": 8311,
+        "kills": 29,
+        "deaths": 17,
+        "assists": 1,
+        "shots": {
+          "head": 23,
+          "body": 59,
+          "leg": 0
+        },
+        "damage": {
+          "made": 5481,
+          "received": 3794
+        }
+      },
+      "teams": {
+        "red": 9,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "e5f6300f-6aeb-4218-ac6a-f9564128184a",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-07.02-shipping-19-935635",
+        "mode": "Competitive",
+        "started_at": "2023-08-03T20:25:13.612Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 41,
+        "character": {
+          "id": "8e253930-4c05-31dd-1b6c-968525494517",
+          "name": "Omen"
+        },
+        "tier": 20,
+        "score": 4821,
+        "kills": 16,
+        "deaths": 21,
+        "assists": 11,
+        "shots": {
+          "head": 12,
+          "body": 32,
+          "leg": 3
+        },
+        "damage": {
+          "made": 2800,
+          "received": 3863
+        }
+      },
+      "teams": {
+        "red": 10,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "e2b2b4be-3ef0-43ec-92be-c118de24479d",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-07.01-shipping-28-925799",
+        "mode": "Competitive",
+        "started_at": "2023-07-23T16:11:39.228Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 38,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 19,
+        "score": 5890,
+        "kills": 18,
+        "deaths": 12,
+        "assists": 8,
+        "shots": {
+          "head": 14,
+          "body": 61,
+          "leg": 2
+        },
+        "damage": {
+          "made": 4169,
+          "received": 2567
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "109c0617-14c8-44b8-a560-316861611546",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-07.01-shipping-28-925799",
+        "mode": "Premier",
+        "started_at": "2023-07-23T00:28:32.715Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 38,
+        "character": {
+          "id": "707eab51-4836-f488-046a-cda6bf494859",
+          "name": "Viper"
+        },
+        "tier": 0,
+        "score": 5380,
+        "kills": 17,
+        "deaths": 19,
+        "assists": 11,
+        "shots": {
+          "head": 14,
+          "body": 47,
+          "leg": 3
+        },
+        "damage": {
+          "made": 3767,
+          "received": 3690
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 15
+      }
+    },
+    {
+      "meta": {
+        "id": "abbb8fd6-43ce-4aa2-b195-6081e6bfab62",
+        "map": {
+          "id": "b529448b-4d60-346e-e89e-00a4c527a405",
+          "name": "Fracture"
+        },
+        "version": "release-07.01-shipping-28-925799",
+        "mode": "Competitive",
+        "started_at": "2023-07-22T21:51:23.912Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 38,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 19,
+        "score": 3123,
+        "kills": 10,
+        "deaths": 18,
+        "assists": 7,
+        "shots": {
+          "head": 6,
+          "body": 29,
+          "leg": 2
+        },
+        "damage": {
+          "made": 2327,
+          "received": 3415
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 9
+      }
+    },
+    {
+      "meta": {
+        "id": "87c5b94b-f805-41ef-bf9f-b0b3dce9d8c0",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-07.01-shipping-28-925799",
+        "mode": "Competitive",
+        "started_at": "2023-07-22T20:09:47.014Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 38,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 19,
+        "score": 4609,
+        "kills": 17,
+        "deaths": 15,
+        "assists": 8,
+        "shots": {
+          "head": 8,
+          "body": 37,
+          "leg": 0
+        },
+        "damage": {
+          "made": 2850,
+          "received": 2894
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 7
+      }
+    },
+    {
+      "meta": {
+        "id": "92c63a3c-4a0c-49d9-96de-d09e1e54410d",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-07.01-shipping-28-925799",
+        "mode": "Competitive",
+        "started_at": "2023-07-22T19:33:18.983Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Georgia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 38,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 19,
+        "score": 6008,
+        "kills": 23,
+        "deaths": 18,
+        "assists": 4,
+        "shots": {
+          "head": 14,
+          "body": 44,
+          "leg": 2
+        },
+        "damage": {
+          "made": 3556,
+          "received": 3353
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 10
+      }
+    },
+    {
+      "meta": {
+        "id": "f7ef40ab-dc22-4ad3-a0cd-7e8a9ffbdd32",
+        "map": {
+          "id": "fd267378-4d1d-484f-ff52-77821ed10dc2",
+          "name": "Pearl"
+        },
+        "version": "release-07.01-shipping-17-917901",
+        "mode": "Competitive",
+        "started_at": "2023-07-19T02:37:40.83Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 37,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 19,
+        "score": 3858,
+        "kills": 13,
+        "deaths": 17,
+        "assists": 6,
+        "shots": {
+          "head": 9,
+          "body": 33,
+          "leg": 4
+        },
+        "damage": {
+          "made": 2578,
+          "received": 2779
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 7
+      }
+    },
+    {
+      "meta": {
+        "id": "4d726f9c-4920-4f1a-90ea-26995b06882a",
+        "map": {
+          "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+          "name": "Ascent"
+        },
+        "version": "release-07.01-shipping-17-917901",
+        "mode": "Competitive",
+        "started_at": "2023-07-16T20:40:54.541Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Georgia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 36,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 18,
+        "score": 5485,
+        "kills": 18,
+        "deaths": 20,
+        "assists": 4,
+        "shots": {
+          "head": 11,
+          "body": 42,
+          "leg": 4
+        },
+        "damage": {
+          "made": 3634,
+          "received": 3512
+        }
+      },
+      "teams": {
+        "red": 12,
+        "blue": 14
+      }
+    },
+    {
+      "meta": {
+        "id": "fd5e39d9-634d-4e08-b0b1-12a84983698a",
+        "map": {
+          "id": "b529448b-4d60-346e-e89e-00a4c527a405",
+          "name": "Fracture"
+        },
+        "version": "release-07.01-shipping-17-917901",
+        "mode": "Deathmatch",
+        "started_at": "2023-07-14T15:44:30.943Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "level": 35,
+        "character": {
+          "id": "569fdd95-4d10-43ab-ca70-79becc718b46",
+          "name": "Sage"
+        },
+        "tier": 0,
+        "score": 8530,
+        "kills": 28,
+        "deaths": 32,
+        "assists": 5,
+        "shots": {
+          "head": 0,
+          "body": 0,
+          "leg": 0
+        },
+        "damage": {
+          "made": 0,
+          "received": 0
+        }
+      },
+      "teams": {
+        "red": 28,
+        "blue": 28
+      }
+    },
+    {
+      "meta": {
+        "id": "f450009e-7a7e-4a41-b941-59b2a70e1428",
+        "map": {
+          "id": "d960549e-485c-e861-8d71-aa9d1aed12a2",
+          "name": "Split"
+        },
+        "version": "release-07.00-shipping-29-913116",
+        "mode": "Competitive",
+        "started_at": "2023-07-08T20:44:49.282Z",
+        "season": {
+          "id": "0981a882-4e7d-371a-70c4-c3b4f46c504a",
+          "short": "e7a1"
+        },
+        "region": "na",
+        "cluster": "US Central (Georgia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 32,
+        "character": {
+          "id": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
+          "name": "Brimstone"
+        },
+        "tier": 16,
+        "score": 5595,
+        "kills": 21,
+        "deaths": 10,
+        "assists": 10,
+        "shots": {
+          "head": 12,
+          "body": 36,
+          "leg": 1
+        },
+        "damage": {
+          "made": 3493,
+          "received": 2257
+        }
+      },
+      "teams": {
+        "red": 5,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "3539aac1-8b88-43e4-9650-3a41aab2e0fb",
+        "map": {
+          "id": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
+          "name": "Bind"
+        },
+        "version": "release-06.11-shipping-10-893942",
+        "mode": "Unrated",
+        "started_at": "2023-06-12T18:38:20.55Z",
+        "season": {
+          "id": "2de5423b-4aad-02ad-8d9b-c0a931958861",
+          "short": "e6a3"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 27,
+        "character": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "tier": 0,
+        "score": 3506,
+        "kills": 11,
+        "deaths": 13,
+        "assists": 3,
+        "shots": {
+          "head": 7,
+          "body": 34,
+          "leg": 1
+        },
+        "damage": {
+          "made": 2513,
+          "received": 2330
+        }
+      },
+      "teams": {
+        "red": 13,
+        "blue": 1
+      }
+    },
+    {
+      "meta": {
+        "id": "7b457241-fccb-49d5-a057-0d8504b4e1f5",
+        "map": {
+          "id": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
+          "name": "Lotus"
+        },
+        "version": "release-06.10-shipping-9-885592",
+        "mode": "Competitive",
+        "started_at": "2023-05-23T21:03:21.762Z",
+        "season": {
+          "id": "2de5423b-4aad-02ad-8d9b-c0a931958861",
+          "short": "e6a3"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 26,
+        "character": {
+          "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+          "name": "Cypher"
+        },
+        "tier": 18,
+        "score": 4665,
+        "kills": 15,
+        "deaths": 14,
+        "assists": 2,
+        "shots": {
+          "head": 12,
+          "body": 34,
+          "leg": 3
+        },
+        "damage": {
+          "made": 3121,
+          "received": 2589
+        }
+      },
+      "teams": {
+        "red": 9,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "875b9bd0-7f4f-4a9b-be87-f2408819e9f6",
+        "map": {
+          "id": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
+          "name": "Haven"
+        },
+        "version": "release-06.08-shipping-19-875485",
+        "mode": "Competitive",
+        "started_at": "2023-05-21T02:53:17.611Z",
+        "season": {
+          "id": "2de5423b-4aad-02ad-8d9b-c0a931958861",
+          "short": "e6a3"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Red",
+        "level": 26,
+        "character": {
+          "id": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
+          "name": "Sova"
+        },
+        "tier": 18,
+        "score": 3828,
+        "kills": 14,
+        "deaths": 15,
+        "assists": 2,
+        "shots": {
+          "head": 15,
+          "body": 22,
+          "leg": 0
+        },
+        "damage": {
+          "made": 2545,
+          "received": 2911
+        }
+      },
+      "teams": {
+        "red": 5,
+        "blue": 13
+      }
+    },
+    {
+      "meta": {
+        "id": "8725d8dd-71a4-483d-8e19-55fdc3fd8187",
+        "map": {
+          "id": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
+          "name": "Haven"
+        },
+        "version": "release-06.03-shipping-8-833875",
+        "mode": "Competitive",
+        "started_at": "2023-03-04T20:09:09.527Z",
+        "season": {
+          "id": "9c91a445-4f78-1baa-a3ea-8f8aadf4914d",
+          "short": "e6a1"
+        },
+        "region": "na",
+        "cluster": "US East (N. Virginia)"
+      },
+      "stats": {
+        "puuid": "79bed427-e691-573d-9bc1-046d8f817de8",
+        "team": "Blue",
+        "level": 23,
+        "character": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "tier": 16,
+        "score": 6453,
+        "kills": 20,
+        "deaths": 23,
+        "assists": 4,
+        "shots": {
+          "head": 14,
+          "body": 41,
+          "leg": 6
+        },
+        "damage": {
+          "made": 4244,
+          "received": 4208
+        }
+      },
+      "teams": {
+        "red": 15,
+        "blue": 13
+      }
+    }
+  ]
+}

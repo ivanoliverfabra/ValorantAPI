@@ -1,0 +1,11 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "code": 0,
+      "message": "Broken route",
+      "status": 404,
+      "details": "The route provided is no longer supported or is broken."
+    }
+  ]
+}

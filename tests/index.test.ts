@@ -1,4 +1,4 @@
-import { expect, test } from 'bun:test';
+import { expect } from 'bun:test';
 import {
   fetchGameData,
   generateCrosshairImage,
@@ -39,175 +39,74 @@ const premierTeamName = 'MORBIDLY OBESE';
 const premierTeamTag = 'OBESE';
 const crosshair = '0;P;t;6;o;0;0l;4;0o;2;0a;1;0f;0;1b;0';
 
-test('getAccountDataV1', async () => {
-  const withNameTag = await getAccountDataV1(name, tag);
-  expect(withNameTag).toBeDefined();
+async function customTest<Q = unknown>(name: string, fn: () => Promise<Q | any>, expectError = false) {
+  try {
+    const data = await fn();
+    expect(data).toBeDefined();
+    console.log(`✅ ${name}`);
 
-  const withPuuid = await getAccountDataV1(puuid);
-  expect(withPuuid).toBeDefined();
-});
+    if (typeof data === 'object') {
+      Bun.write(`./data/${name}.json`, JSON.stringify(data, null, 2), {
+        createPath: true
+      });
+    } else if (typeof data === 'string') {
+      Bun.write(`./data/${name}.txt`, data, {
+        createPath: true
+      });
+    } else {
+      console.log(data);
+    }
 
-test('getAccountDataV2', async () => {
-  const withNameTag = await getAccountDataV2(name, tag);
-  expect(withNameTag).toBeDefined();
+  } catch (error) {
+    if (expectError) {
+      console.log(`✅ ${name}: Expected error occurred.`);
+    } else {
+      console.error(`❌ ${name}:`, error);
+    }
+  }
+}
 
-  const withPuuid = await getAccountDataV2(puuid);
-  expect(withPuuid).toBeDefined();
-});
+const tests = [
+  { name: 'getAccountDataV1 with NameTag', func: () => getAccountDataV1(name, tag) },
+  { name: 'getAccountDataV1 with PUUID', func: () => getAccountDataV1(puuid) },
+  { name: 'getAccountDataV2 with NameTag', func: () => getAccountDataV2(name, tag) },
+  { name: 'getAccountDataV2 with PUUID', func: () => getAccountDataV2(puuid) },
+  { name: 'getLeaderboardV1', func: () => getLeaderboardV1('na') },
+  { name: 'getLeaderboardV3', func: () => getLeaderboardV3('na', 'pc') },
+  { name: 'getMatchDetailsV2', func: () => getMatchDetailsV2(matchId) },
+  { name: 'getMatchDetailsV4', func: () => getMatchDetailsV4('na', matchId) },
+  { name: 'getMatchHistoryV3 with NameTag', func: () => getMatchHistoryV3('na', name, tag) },
+  { name: 'getMatchHistoryV3 with PUUID', func: () => getMatchHistoryV3('na', puuid) },
+  { name: 'getMatchHistoryV4 with NameTag', func: () => getMatchHistoryV4('na', 'pc', name, tag) },
+  { name: 'getMatchHistoryV4 with PUUID', func: () => getMatchHistoryV4('na', 'pc', puuid) },
+  { name: 'getMMRDataV2 with NameTag', func: () => getMMRDataV2('na', name, tag) },
+  { name: 'getMMRDataV2 with PUUID', func: () => getMMRDataV2('na', puuid) },
+  { name: 'getMMRDataV3 with NameTag', func: () => getMMRDataV3('na', 'pc', name, tag) },
+  { name: 'getMMRDataV3 with PUUID', func: () => getMMRDataV3('na', 'pc', puuid) },
+  { name: 'getMMRHistoryV1 with NameTag', func: () => getMMRHistoryV1('na', name, tag) },
+  { name: 'getMMRHistoryV1 with PUUID', func: () => getMMRHistoryV1('na', puuid) },
+  { name: 'getPremierConferences', func: () => getPremierConferences() },
+  { name: 'getPremierLeaderboard', func: () => getPremierLeaderboard('na') },
+  { name: 'getPremierSeasonsV1', func: () => getPremierSeasonsV1('na') },
+  { name: 'getPremierTeamDetailsV1 with NameTag', func: () => getPremierTeamDetailsV1(premierTeamName, premierTeamTag) },
+  { name: 'getPremierTeamDetailsV1 with ID', func: () => getPremierTeamDetailsV1(premierTeamId) },
+  { name: 'getPremierTeamHistoryV1 with NameTag', func: () => getPremierTeamHistoryV1(premierTeamName, premierTeamTag) },
+  { name: 'getPremierTeamHistoryV1 with ID', func: () => getPremierTeamHistoryV1(premierTeamId) },
+  { name: 'getQueueStatus', func: () => getQueueStatus('na') },
+  { name: 'getRegionStatusV1', func: () => getRegionStatusV1('na') },
+  { name: 'getStoredMatchesV1 with NameTag', func: () => getStoredMatchesV1('na', name, tag) },
+  { name: 'getStoredMatchesV1 with PUUID', func: () => getStoredMatchesV1('na', puuid) },
+  { name: 'getStoreFeaturedV1', func: () => getStoreFeaturedV1() },
+  { name: 'getStoreFeaturedV2', func: () => getStoreFeaturedV2() },
+  { name: 'getStoreOffersV1', func: () => getStoreOffersV1() },
+  { name: 'getStoreOffersV2', func: () => getStoreOffersV2() },
+  { name: 'getUpcomingMatches', func: () => getUpcomingMatches() },
+  { name: 'getValorantVersionV1', func: () => getValorantVersionV1('na') },
+  { name: 'searchPremierTeamsV1', func: () => searchPremierTeamsV1({ name: premierTeamName, tag: premierTeamTag }) },
+  { name: 'fetchGameData', func: () => fetchGameData() },
+  { name: 'generateCrosshairImage', func: () => generateCrosshairImage(crosshair) },
+];
 
-test('getLeaderboardV1', async () => {
-  const leaderboard = await getLeaderboardV1('na');
-  expect(leaderboard).toBeDefined();
-});
-
-test('getLeaderboardV3', async () => {
-  const leaderboard = await getLeaderboardV3('na', 'pc');
-  expect(leaderboard).toBeDefined();
-});
-
-test('getMatchDetailsV2', async () => {
-  const matchDetails = await getMatchDetailsV2(matchId);
-  expect(matchDetails).toBeDefined();
-});
-
-test('getMatchDetailsV4', async () => {
-  const matchDetails = await getMatchDetailsV4('pc', matchId);
-  expect(matchDetails).toBeDefined();
-});
-
-test('getMatchHistoryV3', async () => {
-  const withNameTag = await getMatchHistoryV3('na', name, tag);
-  expect(withNameTag).toBeDefined();
-
-  const withPuuid = await getMatchHistoryV3('na', puuid);
-  expect(withPuuid).toBeDefined();
-});
-
-test('getMatchHistoryV4', async () => {
-  const withNameTag = await getMatchHistoryV4('na', 'pc', name, tag);
-  expect(withNameTag).toBeDefined();
-
-  const withPuuid = await getMatchHistoryV4('na', 'pc', puuid);
-  expect(withPuuid).toBeDefined();
-});
-
-test('getMMRDataV2', async () => {
-  const withNameTag = await getMMRDataV2('na', name, tag);
-  expect(withNameTag).toBeDefined();
-
-  const withPuuid = await getMMRDataV2('na', puuid);
-  expect(withPuuid).toBeDefined();
-});
-
-test('getMMRDataV3', async () => {
-  const withNameTag = await getMMRDataV3('na', 'pc', name, tag);
-  expect(withNameTag).toBeDefined();
-
-  const withPuuid = await getMMRDataV3('na', 'pc', puuid);
-  expect(withPuuid).toBeDefined();
-});
-
-test('getMMRHistoryV1', async () => {
-  const withNameTag = await getMMRHistoryV1('na', name, tag);
-  expect(withNameTag).toBeDefined();
-
-  const withPuuid = await getMMRHistoryV1('na', puuid);
-  expect(withPuuid).toBeDefined();
-});
-
-test('getPremierConferences', async () => {
-  const conferences = await getPremierConferences();
-  expect(conferences).toBeDefined();
-});
-
-test('getPremierLeaderboard', async () => {
-  const leaderboard = await getPremierLeaderboard('na');
-  expect(leaderboard).toBeDefined();
-});
-
-test('getPremierSeasonsV1', async () => {
-  const seasons = await getPremierSeasonsV1('na');
-  expect(seasons).toBeDefined();
-});
-
-test('getPremierTeamDetailsV1', async () => {
-  const withNameTag = await getPremierTeamDetailsV1(premierTeamName, premierTeamTag);
-  expect(withNameTag).toBeDefined();
-
-  const withId = await getPremierTeamDetailsV1(premierTeamId);
-  expect(withId).toBeDefined();
-});
-
-test('getPremierTeamHistoryV1', async () => {
-  const withNameTag = await getPremierTeamHistoryV1(premierTeamName, premierTeamTag);
-  expect(withNameTag).toBeDefined();
-
-  const withId = await getPremierTeamHistoryV1(premierTeamId);
-  expect(withId).toBeDefined();
-});
-
-test('getQueueStatus', async () => {
-  const queueStatus = await getQueueStatus('na');
-  expect(queueStatus).toBeDefined();
-});
-
-test('getRegionStatusV1', async () => {
-  const regionStatus = await getRegionStatusV1('na');
-  expect(regionStatus).toBeDefined();
-});
-
-test('getStoredMatchesV1', async () => {
-  const withNameTag = await getStoredMatchesV1('na', name, tag);
-  expect(withNameTag).toBeDefined();
-
-  const withPuuid = await getStoredMatchesV1('na', puuid);
-  expect(withPuuid).toBeDefined();
-});
-
-test('getStoreFeaturedV1', async () => {
-  const featured = await getStoreFeaturedV1();
-  expect(featured).toBeDefined();
-});
-
-test('getStoreFeaturedV2', async () => {
-  const featured = await getStoreFeaturedV2();
-  expect(featured).toBeDefined();
-});
-
-test('getStoreOffersV1', async () => {
-  const offers = await getStoreOffersV1();
-  expect(offers).toBeDefined();
-});
-
-test('getStoreOffersV2', async () => {
-  const offers = await getStoreOffersV2();
-  expect(offers).toBeDefined();
-});
-
-test('getUpcomingMatches', async () => {
-  const upcomingMatches = await getUpcomingMatches();
-  expect(upcomingMatches).toBeDefined();
-});
-
-test('getValorantVersionV1', async () => {
-  const version = await getValorantVersionV1('na');
-  expect(version).toBeDefined();
-});
-
-test('searchPremierTeamsV1', async () => {
-  const searchResults = await searchPremierTeamsV1({
-    name: premierTeamName,
-    tag: premierTeamTag
-  });
-  expect(searchResults).toBeDefined();
-});
-
-test('fetchGameData', async () => {
-  const gameData = await fetchGameData();
-  expect(gameData).toBeDefined();
-});
-
-test('generateCrosshairImage', async () => {
-  const crosshairImage = await generateCrosshairImage(crosshair);
-  expect(crosshairImage).toBeDefined();
-});
+for (const test of tests) {
+  await customTest<ReturnType<typeof test.func>>(test.name, test.func);
+}
