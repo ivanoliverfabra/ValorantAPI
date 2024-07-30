@@ -1,4 +1,4 @@
-import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
+import { BROKEN_ROUTE, INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { QueueStatusV1Response, Region } from "../types";
 import { get, parseAPIKey, parseError, validateAPIKey, validateRegion, warnBroken } from "./lib";
 
@@ -13,8 +13,10 @@ import { get, parseAPIKey, parseError, validateAPIKey, validateRegion, warnBroke
  * @throws {INVALID_REGION} - If the region is invalid
  * @deprecated No longer supported
  */
-export async function getQueueStatus(region: Region, apiKey?: string): Promise<QueueStatusV1Response | void> {
-  return warnBroken("getQueueStatus");
+export async function getQueueStatus(region: Region, apiKey?: string): Promise<QueueStatusV1Response> {
+  warnBroken("getQueueStatus");
+  return parseError(BROKEN_ROUTE);
+
   apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
   if (!validateRegion(region)) return parseError(INVALID_REGION);

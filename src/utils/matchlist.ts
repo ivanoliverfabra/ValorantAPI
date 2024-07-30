@@ -83,7 +83,7 @@ export async function getMatchHistoryV4(region: Region, platform: Platform, name
     props = apiKeyOrProps as MatchHistoryV4OptionalProps | undefined;
     url = `/v4/by-puuid/matches/${region}/${platform}/${puuid}`;
   }
-
+  
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
   if (!validateRegion(region)) return parseError(INVALID_REGION);
 

@@ -69,7 +69,7 @@ export async function getMMRDataV3(region: Region, platform: Platform, nameOrPuu
     apiKey = parseAPIKey(tagOrApiKey);
     url = `/v3/by-puuid/mmr/${region}/${platform}/${nameOrPuuid!}`;
   }
-
+  
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
   if (!validateRegion(region)) return parseError(INVALID_REGION);
 

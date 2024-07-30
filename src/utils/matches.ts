@@ -34,8 +34,9 @@ export async function getMatchDetailsV2(matchId: string, apiKey?: string): Promi
  * @throws {INVALID_API_KEY} - If the API key is invalid
  * @deprecated Use getMatchDetailsV2
  */
-export async function getMatchDetailsV4(platform: Platform, matchId: string, apiKey?: string): Promise<MatchDetailsV4Response | void> {
-  return warnBroken('getMatchDetailsV4', 'getMatchDetailsV2');
+export async function getMatchDetailsV4(platform: Platform, matchId: string, apiKey?: string): Promise<MatchDetailsV4Response> {
+  warnBroken('getMatchDetailsV4', 'getMatchDetailsV2');
+
   apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
   

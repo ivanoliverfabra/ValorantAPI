@@ -1,6 +1,6 @@
 {
   "name": "@ivanoliverfabra/valorant-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "",
@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/ivanoliverfabra/ValorantAPI.git"
   },
-  "bugs": "https://github.com/wobsoriano/pkg-name/issues",
+  "bugs": "https://github.com/ivanoliverfabra/ValorantAPI/issues",
   "author": "Ivan Oliver <ivan@fabra.me>",
   "devDependencies": {
     "bun-plugin-dts": "^0.2.3",

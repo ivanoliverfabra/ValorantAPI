@@ -41,3 +41,10 @@ export const INVALID_COUNTRY_CODE: DataError<400> = {
   status: 400,
   details: "The country code provided is invalid."
 };
+
+export const BROKEN_ROUTE: DataError<404> = {
+  code: 0,
+  message: "Broken route",
+  status: 404,
+  details: "The route provided is no longer supported or is broken."
+};

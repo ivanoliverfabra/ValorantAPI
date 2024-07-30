@@ -37,7 +37,7 @@ const matchId = '28e7e44a-767b-4012-b45e-80c3c1419fd6';
 const premierTeamId = '0e0129a6-9b2f-41e4-8ba1-0915e27ebf7c';
 const premierTeamName = 'MORBIDLY OBESE';
 const premierTeamTag = 'OBESE';
-const crosshair = '0;P;h;0;f;0;0t;1;0l;4;0o;1;0a;1;0f;0;1t;3;1o;2;1a;1;1m;0;1f;0';
+const crosshair = '0;P;t;6;o;0;0l;4;0o;2;0a;1;0f;0;1b;0';
 
 test('getAccountDataV1', async () => {
   const withNameTag = await getAccountDataV1(name, tag);
@@ -72,7 +72,7 @@ test('getMatchDetailsV2', async () => {
 
 test('getMatchDetailsV4', async () => {
   const matchDetails = await getMatchDetailsV4('pc', matchId);
-  expect(matchDetails).toBeUndefined();
+  expect(matchDetails).toBeDefined();
 });
 
 test('getMatchHistoryV3', async () => {
@@ -148,12 +148,12 @@ test('getPremierTeamHistoryV1', async () => {
 
 test('getQueueStatus', async () => {
   const queueStatus = await getQueueStatus('na');
-  expect(queueStatus).toBeUndefined();
+  expect(queueStatus).toBeDefined();
 });
 
 test('getRegionStatusV1', async () => {
   const regionStatus = await getRegionStatusV1('na');
-  expect(regionStatus).toBeUndefined();
+  expect(regionStatus).toBeDefined();
 });
 
 test('getStoredMatchesV1', async () => {
