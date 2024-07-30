@@ -24,15 +24,15 @@
       "premier": null,
       "party_rr_penaltys": [
         {
-          "party_id": "139ba277-a725-419d-b4ce-2756c5798aa4",
-          "penalty": 0
-        },
-        {
           "party_id": "e9db14ee-3ca5-4a94-bc9b-74bdb720a62a",
           "penalty": 0
         },
         {
           "party_id": "f6706752-568a-4b87-9e5c-ffd21dc3a7e4",
+          "penalty": 0
+        },
+        {
+          "party_id": "139ba277-a725-419d-b4ce-2756c5798aa4",
           "penalty": 0
         }
       ],

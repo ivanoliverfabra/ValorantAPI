@@ -44,13 +44,16 @@ async function customTest<Q = unknown>(name: string, fn: () => Promise<Q | any>,
     const data = await fn();
     expect(data).toBeDefined();
     console.log(`✅ ${name}`);
+    const fileName = name.split(" ")[0];
+
+    if (!data) throw new Error('No data returned.');
 
     if (typeof data === 'object') {
-      Bun.write(`./data/${name}.json`, JSON.stringify(data, null, 2), {
+      Bun.write(`./data/${fileName}.json`, JSON.stringify(data, null, 2), {
         createPath: true
       });
     } else if (typeof data === 'string') {
-      Bun.write(`./data/${name}.txt`, data, {
+      Bun.write(`./data/${fileName}.txt`, data, {
         createPath: true
       });
     } else {

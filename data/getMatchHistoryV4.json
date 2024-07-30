@@ -25,15 +25,15 @@
         "premier": null,
         "party_rr_penaltys": [
           {
+            "party_id": "0278247a-f12b-4f1b-89d4-16dfda34674a",
+            "penalty": 0
+          },
+          {
             "party_id": "c4f7a07c-d10f-4058-89e3-a169c241825f",
             "penalty": 0
           },
           {
             "party_id": "7072da77-3ab1-4868-bbb6-3a03a419d5b7",
-            "penalty": 0
-          },
-          {
-            "party_id": "0278247a-f12b-4f1b-89d4-16dfda34674a",
             "penalty": 0
           }
         ],
@@ -58115,11 +58115,11 @@
             "penalty": 0
           },
           {
-            "party_id": "f6706752-568a-4b87-9e5c-ffd21dc3a7e4",
+            "party_id": "139ba277-a725-419d-b4ce-2756c5798aa4",
             "penalty": 0
           },
           {
-            "party_id": "139ba277-a725-419d-b4ce-2756c5798aa4",
+            "party_id": "f6706752-568a-4b87-9e5c-ffd21dc3a7e4",
             "penalty": 0
           }
         ],
@@ -67166,11 +67166,11 @@
         "premier": null,
         "party_rr_penaltys": [
           {
-            "party_id": "139ba277-a725-419d-b4ce-2756c5798aa4",
+            "party_id": "857d9e7a-f7e4-4c4d-b472-c04acf22ffcc",
             "penalty": 0
           },
           {
-            "party_id": "857d9e7a-f7e4-4c4d-b472-c04acf22ffcc",
+            "party_id": "139ba277-a725-419d-b4ce-2756c5798aa4",
             "penalty": 0
           },
           {
