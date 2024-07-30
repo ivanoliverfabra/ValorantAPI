@@ -1,7 +1,9 @@
 import { DataError } from "./types";
 
+export const API_KEY_NAME = 'HDEV_API_KEY';
 export const BASE_API_URL = 'https://api.henrikdev.xyz/valorant';
 export const API_KEY_REGEX = /^HDEV-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
+export const PUUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
 export const REGIONS = ['na', 'eu', 'ap', 'kr', 'br', 'latam', 'pbe', 'sea', 'jp'] as const;
 export const COUNTRYCODES = ["en-us", "en-gb", "de-de", "es-es", "es-mx", "fr-fr", "it-it", "ja-jp", "ko-kr", "pt-br", "ru-ru", "tr-tr", "vi-vn"] as const;
 

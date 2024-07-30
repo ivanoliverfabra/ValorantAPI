@@ -37,7 +37,7 @@ import {
 export * from "./utils";
 
 export default class ValorantAPI implements ValorantAPIClass {
-  apiKey: string;
+  apiKey?: string;
 
   constructor(props: ValorantAPIProps) {
     this.apiKey = props.apiKey;

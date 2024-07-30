@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { UpcomingMatchV1OptionalProps, UpcomingMatchV1Response } from "../types";
-import { get, parseError, validateAPIKey } from "./lib";
+import { get, parseAPIKey, parseError, validateAPIKey } from "./lib";
 
 /**
  * Upcoming Match V1
@@ -11,7 +11,8 @@ import { get, parseError, validateAPIKey } from "./lib";
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getUpcomingMatches(apiKey: string, props?: UpcomingMatchV1OptionalProps): Promise<UpcomingMatchV1Response> {
+export async function getUpcomingMatches(apiKey?: string, props?: UpcomingMatchV1OptionalProps): Promise<UpcomingMatchV1Response> {
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {

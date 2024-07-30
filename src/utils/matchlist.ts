@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { MatchHistoryV3OptionalProps, MatchHistoryV3Response, MatchHistoryV4OptionalProps, MatchHistoryV4Response, Platform, Region, StoredMatchesV1OptionalProps, StoredMatchesV1Response } from "../types";
-import { get, parseError, validateAPIKey, validateRegion, warnDeprecated } from "./lib";
+import { get, parseAPIKey, parseError, validateAPIKey, validatePUUID, validateRegion, warnDeprecated } from "./lib";
 
 /**
  * Match History V3
@@ -15,10 +15,10 @@ import { get, parseError, validateAPIKey, validateRegion, warnDeprecated } from 
  * @throws {INVALID_API_KEY} - If the API key is invalid
  * @throws {INVALID_REGION} - If the region is invalid
  */
-export async function getMatchHistoryV3(region: Region, name: string, tag: string, apiKey: string): Promise<MatchHistoryV3Response>;
-export async function getMatchHistoryV3(region: Region, name: string, tag: string, apiKey: string, props?: MatchHistoryV3OptionalProps): Promise<MatchHistoryV3Response>;
-export async function getMatchHistoryV3(region: Region, puuid: string, apiKey: string): Promise<MatchHistoryV3Response>;
-export async function getMatchHistoryV3(region: Region, nameOrPuuid: string, tagOrApiKey: string, apiKeyOrProps?: string | MatchHistoryV3OptionalProps, optionalProps?: MatchHistoryV3OptionalProps): Promise<MatchHistoryV3Response> {
+export async function getMatchHistoryV3(region: Region, name: string, tag: string, apiKey?: string): Promise<MatchHistoryV3Response>;
+export async function getMatchHistoryV3(region: Region, name: string, tag: string, apiKey?: string, props?: MatchHistoryV3OptionalProps): Promise<MatchHistoryV3Response>;
+export async function getMatchHistoryV3(region: Region, puuid: string, apiKey?: string): Promise<MatchHistoryV3Response>;
+export async function getMatchHistoryV3(region: Region, nameOrPuuid: string, tagOrApiKey?: string, apiKeyOrProps?: string | MatchHistoryV3OptionalProps, optionalProps?: MatchHistoryV3OptionalProps): Promise<MatchHistoryV3Response> {
   warnDeprecated("getUserMatchHistoryV3", "getUserMatchHistoryV4");
 
   let url: string;
@@ -63,23 +63,23 @@ export async function getMatchHistoryV3(region: Region, nameOrPuuid: string, tag
  * @throws {INVALID_API_KEY} - If the API key is invalid
  * @throws {INVALID_REGION} - If the region is invalid
  */
-export async function getMatchHistoryV4(region: Region, platform: Platform, name: string, tag: string, apiKey: string): Promise<MatchHistoryV4Response>;
-export async function getMatchHistoryV4(region: Region, platform: Platform, name: string, tag: string, apiKey: string, props?: MatchHistoryV4OptionalProps): Promise<MatchHistoryV4Response>;
-export async function getMatchHistoryV4(region: Region, platform: Platform, puuid: string, apiKey: string): Promise<MatchHistoryV4Response>;
-export async function getMatchHistoryV4(region: Region, platform: Platform, nameOrPuuid: string, tagOrApiKey: string, apiKeyOrProps?: string | MatchHistoryV4OptionalProps, optionalProps?: MatchHistoryV4OptionalProps): Promise<MatchHistoryV4Response> {
+export async function getMatchHistoryV4(region: Region, platform: Platform, name: string, tag: string, apiKey?: string): Promise<MatchHistoryV4Response>;
+export async function getMatchHistoryV4(region: Region, platform: Platform, name: string, tag: string, apiKey?: string, props?: MatchHistoryV4OptionalProps): Promise<MatchHistoryV4Response>;
+export async function getMatchHistoryV4(region: Region, platform: Platform, puuid: string, apiKey?: string): Promise<MatchHistoryV4Response>;
+export async function getMatchHistoryV4(region: Region, platform: Platform, nameOrPuuid: string, tagOrApiKey?: string, apiKeyOrProps?: string | MatchHistoryV4OptionalProps, optionalProps?: MatchHistoryV4OptionalProps): Promise<MatchHistoryV4Response> {
   let url: string;
   let apiKey: string;
   let props: MatchHistoryV4OptionalProps | undefined;
 
-  if (typeof apiKeyOrProps === 'string') {
+  if (typeof apiKeyOrProps === 'string' || !validatePUUID(nameOrPuuid)) {
     const name = nameOrPuuid;
     const tag = tagOrApiKey;
-    apiKey = apiKeyOrProps;
+    apiKey = parseAPIKey(typeof apiKeyOrProps === "string" ? apiKeyOrProps : tagOrApiKey);
     props = optionalProps;
     url = `/v4/matches/${region}/${platform}/${name}/${tag}`;
   } else {
     const puuid = nameOrPuuid;
-    apiKey = tagOrApiKey as string;
+    apiKey = parseAPIKey(tagOrApiKey);
     props = apiKeyOrProps as MatchHistoryV4OptionalProps | undefined;
     url = `/v4/by-puuid/matches/${region}/${platform}/${puuid}`;
   }
@@ -108,20 +108,20 @@ export async function getMatchHistoryV4(region: Region, platform: Platform, name
  * @throws {INVALID_API_KEY} - If the API key is invalid
  * @throws {INVALID_REGION} - If the region is invalid
  */
-export async function getStoredMatchesV1(region: Region, name: string, tag: string, apiKey: string): Promise<StoredMatchesV1Response>;
-export async function getStoredMatchesV1(region: Region, name: string, tag: string, apiKey: string, props?: StoredMatchesV1OptionalProps): Promise<StoredMatchesV1Response>;
-export async function getStoredMatchesV1(region: Region, puuid: string, apiKey: string): Promise<StoredMatchesV1Response>;
-export async function getStoredMatchesV1(region: Region, nameOrPuuid: string, tagOrApiKey: string, apiKeyOrProps?: string | StoredMatchesV1OptionalProps, optionalProps?: StoredMatchesV1OptionalProps): Promise<StoredMatchesV1Response> {
+export async function getStoredMatchesV1(region: Region, name: string, tag: string, apiKey?: string): Promise<StoredMatchesV1Response>;
+export async function getStoredMatchesV1(region: Region, name: string, tag: string, apiKey?: string, props?: StoredMatchesV1OptionalProps): Promise<StoredMatchesV1Response>;
+export async function getStoredMatchesV1(region: Region, puuid: string, apiKey?: string): Promise<StoredMatchesV1Response>;
+export async function getStoredMatchesV1(region: Region, nameOrPuuid: string, tagOrApiKey?: string, apiKeyOrProps?: string | StoredMatchesV1OptionalProps, optionalProps?: StoredMatchesV1OptionalProps): Promise<StoredMatchesV1Response> {
   let url: string;
   let apiKey: string;
   let props: StoredMatchesV1OptionalProps | undefined;
 
-  if (typeof apiKeyOrProps === 'string') {
-    apiKey = apiKeyOrProps;
+  if (typeof apiKeyOrProps === 'string' || !validatePUUID(nameOrPuuid)) {
+    apiKey = parseAPIKey(typeof apiKeyOrProps === 'string' ? apiKeyOrProps : tagOrApiKey);
     props = optionalProps;
     url = `/v1/stored-matches/${region}/${nameOrPuuid}/${tagOrApiKey}`;
   } else {
-    apiKey = tagOrApiKey as string;
+    apiKey = parseAPIKey(tagOrApiKey);
     props = apiKeyOrProps as StoredMatchesV1OptionalProps | undefined;
     url = `/v1/by-puuid/stored-matches/${region}/${nameOrPuuid}`;
   }

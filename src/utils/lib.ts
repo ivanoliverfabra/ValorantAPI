@@ -1,8 +1,9 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
-import { API_KEY_REGEX, BASE_API_URL, COUNTRYCODES, REGIONS } from "../constants";
+import { API_KEY_NAME, API_KEY_REGEX, BASE_API_URL, COUNTRYCODES, PUUID_REGEX, REGIONS } from "../constants";
 import { APIResponse, CountryCode, DataError, FunctionParams, Region, StatusCodeTuple } from "../types";
 
-export function validateAPIKey(apiKey: string): boolean {
+export function validateAPIKey(apiKey?: string): boolean {
+  if (!apiKey) return false;
   return API_KEY_REGEX.test(apiKey);
 }
 
@@ -14,7 +15,11 @@ export function validateCountryCode(countryCode: CountryCode): boolean {
   return COUNTRYCODES.includes(countryCode);
 }
 
-export function initiateAxios(apiKey: string): AxiosInstance {
+export function validatePUUID(puuid: string): boolean {
+  return PUUID_REGEX.test(puuid);
+}
+
+export function initiateAxios(apiKey?: string): AxiosInstance {
   return axios.create({
     baseURL: BASE_API_URL,
     headers: {
@@ -45,6 +50,7 @@ export async function get<T = APIResponse>(apiKey: string, url: string, params?:
       ...rest as T,
     };
   } catch (error: any) {
+    // console.error('Error fetching data:', error);
     throw new Error(`Error fetching data: ${error?.message || 'Unknown error'}`);
   }
 }
@@ -63,6 +69,10 @@ export async function post<T = unknown>(apiKey: string, url: string, body?: Func
 
 export function warnDeprecated(deprecated: string, replacement: string): void {
   console.warn(`[DEPRECATED] ${deprecated} is deprecated. Use ${replacement} instead.`);
+}
+
+export function warnBroken(broken: string, fix?: string): void {
+  console.warn(`[BROKEN] ${broken} is no longer supported.${fix ? ` Use ${fix} instead.` : ''}`);
 }
 
 export const StatusCodeDescriptions: { [key in StatusCodeTuple as `${key[0]}_${key[1]}`]: string } = {
@@ -116,4 +126,9 @@ export function getStatusCodeDescription(code: number, status: number | "-"): st
 
 export function parseError<T = any, R = {}, S extends number = 400>(data: DataError<S>): APIResponse<T, R, S> {
   return { success: false, errors: [data] };
+}
+
+export function parseAPIKey(apiKey?: string): string {
+  if (!validateAPIKey(apiKey)) apiKey = undefined;
+  return apiKey || process.env[API_KEY_NAME] || '';
 }

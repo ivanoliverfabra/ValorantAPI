@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY, INVALID_REGION } from "../constants";
 import { PremierConferenceV1Response, PremierLeaderboardConference, PremierLeaderboardResponse, PremierSeasonsV1Response, PremierTeamDetailsV1Response, PremierTeamHistoryV1Response, PremierTeamSearchV1Props, PremierTeamSearchV1Response, Region } from "../types";
-import { get, parseError, validateAPIKey, validateRegion } from "./lib";
+import { get, parseAPIKey, parseError, validateAPIKey, validatePUUID, validateRegion } from "./lib";
 
 /**
  * Premier Team Details V1
@@ -12,17 +12,17 @@ import { get, parseError, validateAPIKey, validateRegion } from "./lib";
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getPremierTeamDetailsV1(name: string, tag: string, apiKey: string): Promise<PremierTeamDetailsV1Response>;
-export async function getPremierTeamDetailsV1(id: string, apiKey: string): Promise<PremierTeamDetailsV1Response>;
-export async function getPremierTeamDetailsV1(team_id_or_name: string, team_tag_or_apiKey: string, possiblyApiKey?: string): Promise<PremierTeamDetailsV1Response> {
+export async function getPremierTeamDetailsV1(name: string, tag: string, apiKey?: string): Promise<PremierTeamDetailsV1Response>;
+export async function getPremierTeamDetailsV1(id: string, apiKey?: string): Promise<PremierTeamDetailsV1Response>;
+export async function getPremierTeamDetailsV1(team_id_or_name: string, team_tag_or_apiKey?: string, possiblyApiKey?: string): Promise<PremierTeamDetailsV1Response> {
   let url: string;
   let apiKey: string;
 
-  if (typeof possiblyApiKey === 'string') {
-    apiKey = possiblyApiKey;
+  if (typeof possiblyApiKey === 'string' || !validatePUUID(team_id_or_name || "")) {
+    apiKey = parseAPIKey(possiblyApiKey);
     url = `/v1/premier/${team_id_or_name}/${team_tag_or_apiKey}`;
   } else {
-    apiKey = team_tag_or_apiKey;
+    apiKey = parseAPIKey(team_tag_or_apiKey);
     url = `/v1/premier/${team_id_or_name}`;
   }
 
@@ -46,17 +46,17 @@ export async function getPremierTeamDetailsV1(team_id_or_name: string, team_tag_
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getPremierTeamHistoryV1(name: string, tag: string, apiKey: string): Promise<PremierTeamHistoryV1Response>;
-export async function getPremierTeamHistoryV1(id: string, apiKey: string): Promise<PremierTeamHistoryV1Response>;
-export async function getPremierTeamHistoryV1(team_id_or_name: string, team_tag_or_apiKey: string, possiblyApiKey?: string): Promise<PremierTeamHistoryV1Response> {
+export async function getPremierTeamHistoryV1(name: string, tag: string, apiKey?: string): Promise<PremierTeamHistoryV1Response>;
+export async function getPremierTeamHistoryV1(id: string, apiKey?: string): Promise<PremierTeamHistoryV1Response>;
+export async function getPremierTeamHistoryV1(team_id_or_name: string, team_tag_or_apiKey?: string, possiblyApiKey?: string): Promise<PremierTeamHistoryV1Response> {
   let url: string;
   let apiKey: string;
 
-  if (typeof possiblyApiKey === 'string') {
-    apiKey = possiblyApiKey;
+  if (typeof possiblyApiKey === 'string' || !validatePUUID(team_id_or_name || "")) {
+    apiKey = parseAPIKey(possiblyApiKey);
     url = `/v1/premier/${team_id_or_name}/${team_tag_or_apiKey}/history`;
   } else {
-    apiKey = team_tag_or_apiKey;
+    apiKey = parseAPIKey(team_tag_or_apiKey);
     url = `/v1/premier/${team_id_or_name}/history`;
   }
 
@@ -80,9 +80,9 @@ export async function getPremierTeamHistoryV1(team_id_or_name: string, team_tag_
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function searchPremierTeamsV1(props: PremierTeamSearchV1Props, apiKey: string): Promise<PremierTeamSearchV1Response> {
+export async function searchPremierTeamsV1(props: PremierTeamSearchV1Props, apiKey?: string): Promise<PremierTeamSearchV1Response> {
   const url = `/v1/premier/search`;
-
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
@@ -101,9 +101,9 @@ export async function searchPremierTeamsV1(props: PremierTeamSearchV1Props, apiK
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getPremierConferences(apiKey: string): Promise<PremierConferenceV1Response> {
+export async function getPremierConferences(apiKey?: string): Promise<PremierConferenceV1Response> {
   const url = `/v1/premier/conferences`;
-
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
@@ -124,9 +124,9 @@ export async function getPremierConferences(apiKey: string): Promise<PremierConf
  * @throws {INVALID_API_KEY} - If the API key is invalid
  * @throws {INVALID_REGION} - If the region is invalid
  */
-export async function getPremierSeasonsV1(region: Region, apiKey: string): Promise<PremierSeasonsV1Response> {
+export async function getPremierSeasonsV1(region: Region, apiKey?: string): Promise<PremierSeasonsV1Response> {
   const url = `/v1/premier/seasons/${region}`;
-
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
   if (!validateRegion(region)) return parseError(INVALID_REGION);
 
@@ -150,21 +150,21 @@ export async function getPremierSeasonsV1(region: Region, apiKey: string): Promi
  * @throws {INVALID_API_KEY} - If the API key is invalid
  * @throws {INVALID_REGION} - If the region is invalid
  */
-export async function getPremierLeaderboard(region: Region, conference: PremierLeaderboardConference, division: number, apiKey: string): Promise<PremierLeaderboardResponse>;
-export async function getPremierLeaderboard(region: Region, conference: PremierLeaderboardConference, apiKey: string): Promise<PremierLeaderboardResponse>;
-export async function getPremierLeaderboard(region: Region, apiKey: string): Promise<PremierLeaderboardResponse>;
-export async function getPremierLeaderboard(region: Region, param1: PremierLeaderboardConference | string, param2?: number | string, param3?: string): Promise<PremierLeaderboardResponse> {
+export async function getPremierLeaderboard(region: Region, conference: PremierLeaderboardConference, division: number, apiKey?: string): Promise<PremierLeaderboardResponse>;
+export async function getPremierLeaderboard(region: Region, conference: PremierLeaderboardConference, apiKey?: string): Promise<PremierLeaderboardResponse>;
+export async function getPremierLeaderboard(region: Region, apiKey?: string): Promise<PremierLeaderboardResponse>;
+export async function getPremierLeaderboard(region: Region, param1?: PremierLeaderboardConference | string, param2?: number | string, param3?: string): Promise<PremierLeaderboardResponse> {
   let url: string;
   let apiKey: string;
 
-  if (typeof param1 === 'string' && !param2 && !param3) {
-    apiKey = param1;
+  if (!param2 && !param3) {
+    apiKey = parseAPIKey(param1);
     url = `/v1/premier/leaderboard/${region}`;
   } else if (typeof param1 === 'string' && typeof param2 === 'string' && !param3) {
-    apiKey = param2 as string;
+    apiKey = parseAPIKey(param2);
     url = `/v1/premier/leaderboard/${region}/${param1}`;
   } else if (typeof param1 === 'string' && typeof param2 === 'number' && typeof param3 === 'string') {
-    apiKey = param3 as string;
+    apiKey = parseAPIKey(param3);
     url = `/v1/premier/leaderboard/${region}/${param1}/${param2}`;
   } else {
     throw new Error("Invalid arguments");

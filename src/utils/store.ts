@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { FeaturedStoreV1Response, FeaturedStoreV2Response, StoreOffersV1Response, StoreOffersV2Response } from "../types";
-import { get, parseError, validateAPIKey } from "./lib";
+import { get, parseAPIKey, parseError, validateAPIKey } from "./lib";
 
 /**
  * Store Featured V1
@@ -10,7 +10,8 @@ import { get, parseError, validateAPIKey } from "./lib";
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getStoreFeaturedV1(apiKey: string): Promise<FeaturedStoreV1Response> {
+export async function getStoreFeaturedV1(apiKey?: string): Promise<FeaturedStoreV1Response> {
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
@@ -28,7 +29,8 @@ export async function getStoreFeaturedV1(apiKey: string): Promise<FeaturedStoreV
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getStoreFeaturedV2(apiKey: string): Promise<FeaturedStoreV2Response> {
+export async function getStoreFeaturedV2(apiKey?: string): Promise<FeaturedStoreV2Response> {
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
@@ -47,7 +49,8 @@ export async function getStoreFeaturedV2(apiKey: string): Promise<FeaturedStoreV
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getStoreOffersV1(apiKey: string): Promise<StoreOffersV1Response> {
+export async function getStoreOffersV1(apiKey?: string): Promise<StoreOffersV1Response> {
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {
@@ -66,7 +69,8 @@ export async function getStoreOffersV1(apiKey: string): Promise<StoreOffersV1Res
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
  */
-export async function getStoreOffersV2(apiKey: string): Promise<StoreOffersV2Response> {
+export async function getStoreOffersV2(apiKey?: string): Promise<StoreOffersV2Response> {
+  apiKey = parseAPIKey(apiKey);
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
 
   try {

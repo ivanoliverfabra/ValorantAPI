@@ -29,7 +29,7 @@ import { FeaturedStoreV1Response, FeaturedStoreV2Response, StoreOffersV1Response
 import { ValorantVersionV1Response } from "./version";
 
 export type ValorantAPIProps = {
-  apiKey: string;
+  apiKey?: string;
 };
 
 export type APIResponse<T = unknown, R = {}, S extends number = 400 | 403 | 404 | 408 | 429 | 500 | 503> = {
@@ -116,7 +116,7 @@ export type GetStoreOffersV1 = () => Promise<StoreOffersV1Response>;
 export type GetStoreOffersV2 = () => Promise<StoreOffersV2Response>;
 
 export interface ValorantAPIClass {
-  apiKey: string;
+  apiKey?: string;
 
   accounts: {
     v1: {

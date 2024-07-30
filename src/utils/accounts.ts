@@ -1,6 +1,6 @@
 import { INTERNAL_ERROR, INVALID_API_KEY } from "../constants";
 import { AccountDataV1OptionalProps, AccountDataV1Response, AccountDataV2OptionalProps, AccountDataV2Response } from "../types";
-import { get, parseError, validateAPIKey } from "./lib";
+import { get, parseAPIKey, parseError, validateAPIKey } from "./lib";
 
 /**
  * Account Data V1
@@ -13,11 +13,11 @@ import { get, parseError, validateAPIKey } from "./lib";
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
 */
-export async function getAccountDataV1(name: string, tag: string, apiKey: string, props?: AccountDataV1OptionalProps): Promise<AccountDataV1Response>;
-export async function getAccountDataV1(puuid: string, apiKey: string, props?: AccountDataV1OptionalProps): Promise<AccountDataV1Response>;
-export async function getAccountDataV1(param1: string, param2: string, param3?: string | AccountDataV1OptionalProps, param4?: AccountDataV1OptionalProps): Promise<AccountDataV1Response> {
-  const isPuuid = typeof param3 !== 'string';
-  const apiKey = isPuuid ? param2 : param3 as string;
+export async function getAccountDataV1(name: string, tag: string, apiKey?: string, props?: AccountDataV1OptionalProps): Promise<AccountDataV1Response>;
+export async function getAccountDataV1(puuid: string, apiKey?: string, props?: AccountDataV1OptionalProps): Promise<AccountDataV1Response>;
+export async function getAccountDataV1(param1: string, param2?: string, param3?: string | AccountDataV1OptionalProps, param4?: AccountDataV1OptionalProps): Promise<AccountDataV1Response> {
+  const isPuuid = typeof param3 !== 'string' && (!param2 || param2?.startsWith('HDEV'));
+  const apiKey = parseAPIKey(isPuuid ? param2 : param3 as string);
   const props = isPuuid ? param3 as AccountDataV1OptionalProps : param4;
 
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
@@ -42,11 +42,11 @@ export async function getAccountDataV1(param1: string, param2: string, param3?: 
  * @throws {INTERNAL_ERROR} - If an error occurs while fetching the data
  * @throws {INVALID_API_KEY} - If the API key is invalid
 */
-export async function getAccountDataV2(name: string, tag: string, apiKey: string, props?: AccountDataV2OptionalProps): Promise<AccountDataV2Response>;
-export async function getAccountDataV2(puuid: string, apiKey: string, props?: AccountDataV2OptionalProps): Promise<AccountDataV2Response>;
-export async function getAccountDataV2(param1: string, param2: string, param3?: string | AccountDataV2OptionalProps, param4?: AccountDataV2OptionalProps): Promise<AccountDataV2Response> {
-  const isPuuid = typeof param3 !== 'string';
-  const apiKey = isPuuid ? param2 : param3 as string;
+export async function getAccountDataV2(name: string, tag: string, apiKey?: string, props?: AccountDataV2OptionalProps): Promise<AccountDataV2Response>;
+export async function getAccountDataV2(puuid: string, apiKey?: string, props?: AccountDataV2OptionalProps): Promise<AccountDataV2Response>;
+export async function getAccountDataV2(param1: string, param2?: string, param3?: string | AccountDataV2OptionalProps, param4?: AccountDataV2OptionalProps): Promise<AccountDataV2Response> {
+  const isPuuid = typeof param3 !== 'string' && (!param2 || param2?.startsWith('HDEV'));
+  const apiKey = parseAPIKey(isPuuid ? param2 : param3 as string);
   const props = isPuuid ? param3 as AccountDataV2OptionalProps : param4;
 
   if (!validateAPIKey(apiKey)) return parseError(INVALID_API_KEY);
