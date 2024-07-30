@@ -6,8 +6,17 @@ ValorantAPI is a wrapper library for the unofficial Valorant API. It provides ea
 
 ```bash
 npm install @ivanoliverfabra/valorant-api
+```
+
+```bash
 pnpm add @ivanoliverfabra/valorant-api
+```
+
+```bash
 yarn add @ivanoliverfabra/valorant-api
+```
+
+```bash
 bun add @ivanoliverfabra/valorant-api
 ```
 
