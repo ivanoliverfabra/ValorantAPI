@@ -10,3 +10,13 @@ pnpm add @ivanoliverfabra/valorant-api
 yarn add @ivanoliverfabra/valorant-api
 bun add @ivanoliverfabra/valorant-api
 ```
+
+## Environment Variables
+
+Here are the environment variables that you need to set in order to use the library:
+
+```bash
+HDEV_API_KEY=YOUR_API_KEY
+```
+
+If you set the environment variable `HDEV_API_KEY` to your API key, you can use the library without passing the API key as a parameter to the functions.
