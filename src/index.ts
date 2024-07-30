@@ -33,14 +33,15 @@ import {
   ValorantAPIClass,
   ValorantAPIProps
 } from "./types";
+import { parseAPIKey } from "./utils/lib";
 
 export * from "./utils";
 
 export default class ValorantAPI implements ValorantAPIClass {
   apiKey?: string;
 
-  constructor(props: ValorantAPIProps) {
-    this.apiKey = props.apiKey;
+  constructor(props?: ValorantAPIProps) {
+    this.apiKey = parseAPIKey(props?.apiKey);
   }
 
   public accounts: ValorantAPIClass["accounts"] = {

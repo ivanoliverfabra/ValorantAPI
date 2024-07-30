@@ -132,3 +132,11 @@ export function parseAPIKey(apiKey?: string): string {
   if (!validateAPIKey(apiKey)) apiKey = undefined;
   return apiKey || process.env[API_KEY_NAME] || '';
 }
+
+export async function getExampleData<T = unknown>(functionName: string) {
+  const prefix = 'https://raw.githubusercontent.com/ivanoliverfabra/ValorantAPI/main/data/';
+  const suffix = '.json';
+
+  const { data } = await axios.get<T>(`${prefix}${functionName}${suffix}`);
+  return data;
+}

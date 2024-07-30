@@ -28,7 +28,7 @@ import {
   getUpcomingMatches,
   getValorantVersionV1,
   searchPremierTeamsV1
-} from "../src";
+} from "../src/test";
 
 const name = 'fabra';
 const tag = 'olivr';
