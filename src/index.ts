@@ -35,6 +35,7 @@ import {
 } from "./types";
 import { parseAPIKey } from "./utils/lib";
 
+export * as Types from "./types";
 export * from "./utils";
 
 export default class ValorantAPI implements ValorantAPIClass {
