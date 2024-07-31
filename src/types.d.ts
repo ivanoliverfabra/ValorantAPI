@@ -2097,7 +2097,7 @@ export type GetUpcomingMatches = (props?: UpcomingMatchV1OptionalProps) => Promi
 
 export type GetMatchDetailsV2 = (matchId: string) => Promise<MatchDetailsV2Response>;
 
-export type GetMatchDetailsV4 = (region: Region, matchId: string) => Promise<MatchDetailsV4Response | void>;
+export type GetMatchDetailsV4 = (region: Region, matchId: string) => Promise<MatchDetailsV4Response>;
 
 export type GetMatchHistoryV3<P extends boolean = false> = P extends true 
   ? (region: Region, puuid: string) => Promise<MatchHistoryV3Response>
@@ -2143,9 +2143,9 @@ export type GetPremierTeamHistoryV1<P extends boolean = false> = P extends true
 
 export type SearchPremierTeamsV1 = (props: PremierTeamSearchV1Props) => Promise<PremierTeamSearchV1Response>;
 
-export type GetQueueStatus = (region: Region) => Promise<QueueStatusV1Response | void>;
+export type GetQueueStatus = (region: Region) => Promise<QueueStatusV1Response>;
 
-export type GetRegionStatusV1 = (region: Region) => Promise<StatusV1Response | void>;
+export type GetRegionStatusV1 = (region: Region) => Promise<StatusV1Response>;
 
 export type GetStoreFeaturedV1 = () => Promise<FeaturedStoreV1Response>;
 
