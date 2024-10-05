@@ -6,13 +6,13 @@ import {
   getAccountDataV2,
   getLeaderboardV1,
   getLeaderboardV3,
+  getMMRDataV2,
+  getMMRDataV3,
+  getMMRHistoryV1,
   getMatchDetailsV2,
   getMatchDetailsV4,
   getMatchHistoryV3,
   getMatchHistoryV4,
-  getMMRDataV2,
-  getMMRDataV3,
-  getMMRHistoryV1,
   getPremierConferences,
   getPremierLeaderboard,
   getPremierSeasonsV1,
@@ -20,11 +20,11 @@ import {
   getPremierTeamHistoryV1,
   getQueueStatus,
   getRegionStatusV1,
-  getStoredMatchesV1,
   getStoreFeaturedV1,
   getStoreFeaturedV2,
   getStoreOffersV1,
   getStoreOffersV2,
+  getStoredMatchesV1,
   getUpcomingMatches,
   getValorantVersionV1,
   searchPremierTeamsV1
@@ -83,6 +83,7 @@ const tests = [
 for (const { name, func } of tests) {
   test(name, async () => {
     const data = await func();
+    console.log(data.success ? 'success' : data.errors[0].message)
     expect(data.success).toBe(true);
     expect(data).toBeDefined();
   });

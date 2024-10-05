@@ -1,6 +1,6 @@
-import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
+import axios, { type AxiosInstance, type AxiosRequestConfig } from "axios";
 import { API_KEY_NAME, API_KEY_REGEX, BASE_API_URL, COUNTRYCODES, PUUID_REGEX, REGIONS } from "../constants";
-import { APIResponse, CountryCode, DataError, FunctionParams, Region, StatusCodeTuple } from "../types";
+import type { APIResponse, CountryCode, DataError, FunctionParams, Region, StatusCodeTuple } from "../types";
 
 export function validateAPIKey(apiKey?: string): boolean {
   if (!apiKey) return false;
@@ -128,9 +128,9 @@ export function parseError<T = any, R = {}, S extends number = 400>(data: DataEr
   return { success: false, errors: [data] };
 }
 
-export function parseAPIKey(apiKey?: string): string {
-  if (!validateAPIKey(apiKey)) apiKey = undefined;
-  return apiKey || process.env[API_KEY_NAME] || '';
+export function parseAPIKey(providedApiKey?: string): string {
+  const apiKey = providedApiKey || process.env[API_KEY_NAME] || '';
+  return apiKey;
 }
 
 export async function getExampleData<T = unknown>(functionName: string) {
